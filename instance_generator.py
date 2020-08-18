@@ -78,3 +78,34 @@ class InstanceGenerator:
             self.index += 1
 
         return self.matrix_to_graph(M)
+
+    def generate_unit_sum_unif(self, n):
+        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' valuations are drawn
+        uniformly at random from the space of all unit-sum valuations.
+        
+        Args:
+            n: the number of agents in the bipartite graph
+            
+        Returns:
+            Weighted bipartite Graph, with nodes 1 through n representing agents.
+        """
+        M = []
+
+        for i in range(n):
+            #code for uniformly generating a point from the n-dimensional unit simplex
+            cut = np.random.rand(n)
+            cut = np.sort(cut)
+            cut = np.insert(cut, 0, 0)
+            val = [cut[j+1] - cut[j] for j in range(n)]
+            val = np.array(val)
+            np.random.shuffle(val)
+
+            M.append(val)
+
+        M = np.array(M)
+
+        if self.logging:
+            self.history[self.index] = M
+            self.index += 1
+
+        return self.matrix_to_graph(M)
