@@ -11,7 +11,16 @@ import numpy as np
 import pandas as pd
 
 class InstanceGenerator:
-    """Object that generates problem instances for the simulation."""
+    """Object that generates problem instances for the simulation.
+    
+    Attributes:
+        logging (bool): Whether or not to log generated instances for this InstanceGenerator.
+        history (dict): A dictionary containing all logged entries.
+        index (int): an index representing the id of the next entry that will be logged.
+        
+        
+    
+    """
 
     def __init__(self, logging=False):
         """Initializes a new InstanceGenerator.
@@ -21,7 +30,7 @@ class InstanceGenerator:
         """
         self.logging = logging
         self.history = {}
-        self.index = 0
+        self.index = 1
 
     def matrix_to_graph(self, M):
         """Helper method that transforms a square matrix into a weighted bipartite graph.
@@ -41,9 +50,31 @@ class InstanceGenerator:
         for i in range(n):
             agent_array = np.array([i+1]*n)
             value_array = M[i]
-            weight_data = np.array(agent_array, goods_array, value_array).T
-            weight_data = zip(weight_data)
+            weight_data = np.array([agent_array, goods_array, value_array]).T
             G.add_weighted_edges_from(weight_data)
 
         return G
+
+    def generate_unit_range_unif(self, n):
+        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' valuations are drawn
+        uniformly at random from the space of all unit-range valuations.
+        
+        Args:
+            n: the number of agents in the bipartite graph. For unit-range to make sense, n must be 2 or greater
             
+        Returns:
+            Weighted bipartite Graph, with nodes 1 through n representing agents.
+        """
+        M = []
+        for i in range(n):
+            val = np.concatenate([np.array([0,1]), np.random.rand(n-2)], axis=0)
+            np.random.shuffle(val)
+            M.append(val)
+
+        M = np.array(M)
+
+        if self.logging:
+            self.history[self.index] = M
+            self.index += 1
+
+        return self.matrix_to_graph(M)
