@@ -32,6 +32,7 @@ class InstanceGenerator:
         self.history = {}
         self.index = 1
 
+
     def matrix_to_graph(self, M):
         """Helper method that transforms a square matrix into a weighted bipartite graph.
         
@@ -54,6 +55,7 @@ class InstanceGenerator:
             G.add_weighted_edges_from(weight_data)
 
         return G
+
 
     def generate_unit_range_unif(self, n):
         """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' valuations are drawn
@@ -78,6 +80,7 @@ class InstanceGenerator:
             self.index += 1
 
         return self.matrix_to_graph(M)
+
 
     def generate_unit_sum_unif(self, n):
         """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' valuations are drawn
@@ -111,19 +114,46 @@ class InstanceGenerator:
         return self.matrix_to_graph(M)
 
 
-    def generate_unit_range_arrow(self, n, alpha):
-        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' ordinal preferences
-        are drawn uniformly at random and their cardinal utilities are determined by Arrow's exponential utility model,
-        then normalized to the unit-range constraint.
+    def normalize_unit_range(self, M):
+        """Normalizes the given valuation matrix according to unit-range.
 
         Args:
-            n (int): the number of agents in the bipartite graph. n must be at least 2 for the unit-range case.
+            M (np.array): two-dimensional square numpy array, where rows represent agent preferences over goods, of size n, with the
+            precondition that each row contains at least two distinct values.
+
+        Returns:
+            Two-dimensional numpy array where each row vector has a minimum value of 0 and a maximum value of 1.
+        """
+        min_array = np.min(M, axis=1)
+        max_array = np.max(M, axis=1)
+        return (M.T-min_array).T/(max_array-min_array) #hacky way to do row subtraction
+
+
+    def normalize_unit_sum(self, M):
+        """Normalizes the given valuation matrix according to unit-sum.
+
+        Args:
+            M (np.array): two-dimensional square numpy array, where rows represent agent preferences over goods, of size n.
+
+        Returns:
+            Two-dimensional numpy array where each row vector sums up to 1.
+        """
+        return (M.T/np.sum(M,axis=1)).T
+
+
+    def arrow_valuation(self, n, alpha):
+        """Generates an n x n matrix of agent valuations, where agents' ordinal preferences are drawn uniformly
+        at random and their cardinal utilities are determined by Arrow's exponential utility model.
+
+ 
+        Args:
+            n (int): the number of agents in the valuation profile to be generated.
             alpha (float): the weight parameter on the utility function of the agent. Positive alpha represents a risk
             averse utility model, negative alpha represents a risk loving utility model, and zero alpha represents a
             risk neutral utility model.
 
-        Returns:
-            Weighted bipartite Graph, with nodes 1 through n representing agents.        
+        Returns:     
+            Two-dimensional numpy array where each row represents agent preferences.
         """
         #generate random permutation of ranks over the items
         M = []
@@ -140,9 +170,42 @@ class InstanceGenerator:
                 val = 1/alpha * (1 - val)
 
             #unit-range normalization
-            M.append(val/np.max(val))
+            M.append(val)
 
-        M = np.array(M)
+        return np.array(M)
+
+
+    def benabbou_valuation(self, n, salary_mean, salary_variance, price_lower, price_upper):
+        """Generates an n x n matrix of valuations equivalent to the model used in Benabbou et. al 2019 to investigate housing assignment in 
+        Singapore: https://arxiv.org/pdf/1711.10241.pdf. This model assumes each agent has utility for a house based on their own salary (drawn
+        iid from a normal distribution), and the price of that house (drawn uniformly at random from a continuous interval).
+
+        Args:
+            n (int): the number of agents in the valuation profile to be generated.
+            salary_mean (float): the mean salary of an agent for the model.
+            salary_variance (float): the variance in salary of an agent for the model.
+            price_lower (float): the lower bound of a house's price in the model
+            price_upper (float): the upper bound of a house's price in the model.
+        """
+        pass
+
+
+    def generate_unit_range_arrow(self, n, alpha):
+        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' ordinal preferences
+        are drawn uniformly at random and their cardinal utilities are determined by Arrow's exponential utility model,
+        then normalized to the unit-range constraint.
+
+        Args:
+            n (int): the number of agents in the bipartite graph. n must be at least 2 for the unit-range case.
+            alpha (float): the weight parameter on the utility function of the agent. Positive alpha represents a risk
+            averse utility model, negative alpha represents a risk loving utility model, and zero alpha represents a
+            risk neutral utility model.
+
+        Returns:
+            Weighted bipartite Graph, with nodes 1 through n representing agents.        
+        """
+        M = self.arrow_valuation(n, alpha)
+        M = self.normalize_unit_range(M)
 
         if self.logging:
             self.history[self.index] = M
@@ -151,7 +214,6 @@ class InstanceGenerator:
         return self.matrix_to_graph(M)
 
 
-    #TODO should we consider collapsing this function and the above one into a single function?
     def generate_unit_sum_arrow(self, n, alpha):
         """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' ordinal preferences
         are drawn uniformly at random and their cardinal utilities are determined by Arrow's exponential utility model,
@@ -166,27 +228,12 @@ class InstanceGenerator:
         Returns:
             Weighted bipartite Graph, with nodes 1 through n representing agents.        
         """
-        #generate random permutation of ranks over the items
-        M = []
-
-        for i in range(n):
-            val = np.array(range(1,n+1))
-            np.random.shuffle(val)
-
-            if alpha == 0:
-                val = n - val
-            else:
-                val = -alpha*(n - val)
-                val = np.exp(val)
-                val = 1/alpha * (1 - val)
-
-            #unit-sum normalization
-            M.append(val/np.sum(val))
-
-        M = np.array(M)
+        M = self.arrow_valuation(n, alpha)
+        M = self.normalize_unit_sum(M)
 
         if self.logging:
             self.history[self.index] = M
             self.index += 1
 
         return self.matrix_to_graph(M)
+
