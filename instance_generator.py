@@ -18,8 +18,6 @@ class InstanceGenerator:
         history (dict): A dictionary containing all logged entries.
         index (int): an index representing the id of the next entry that will be logged.
         
-        
-    
     """
 
     def __init__(self, logging=False):
@@ -176,9 +174,9 @@ class InstanceGenerator:
 
 
     def benabbou_valuation(self, n, salary_mean, salary_variance, price_lower, price_upper):
-        """Generates an n x n matrix of valuations equivalent to the model used in Benabbou et. al 2019 to investigate housing assignment in 
-        Singapore: https://arxiv.org/pdf/1711.10241.pdf. This model assumes each agent has utility for a house based on their own salary (drawn
-        iid from a normal distribution), and the price of that house (drawn uniformly at random from a continuous interval).
+        """Generates an n x n matrix of valuations equivalent to the price-based utility model used in Benabbou et. al 2019 to investigate housing 
+        assignment in Singapore: https://arxiv.org/pdf/1711.10241.pdf. This model assumes each agent has utility for a house based on their own 
+        salary (drawn iid from a normal distribution), and the price of that house (drawn uniformly at random from a continuous interval).
 
         Args:
             n (int): the number of agents in the valuation profile to be generated.
@@ -186,8 +184,34 @@ class InstanceGenerator:
             salary_variance (float): the variance in salary of an agent for the model.
             price_lower (float): the lower bound of a house's price in the model
             price_upper (float): the upper bound of a house's price in the model.
+
+         Returns:     
+            Two-dimensional numpy array where each row represents agent preferences.       
         """
-        pass
+        agent_salaries = np.random.normal(salary_mean, np.sqrt(salary_variance), n)
+        house_prices = np.random.uniform(price_lower, price_upper, n)
+        M = (np.tile(house_prices, (n,1)).T - (agent_salaries/3)).T
+        M = M ** 2
+        return np.reciprocal(M)
+
+
+    def abdulkadiroglu_valuation(self, n, alpha):
+        """Generates an n x n matrix of valuations equivalent to the utility model used in Abdulkadiroglu et. all 2015 to investigate improving
+        deferred acceptance in the context of school choice: https://www.aeaweb.org/articles?id=10.1257/mic.20120027. This model assumes each
+        agent's utility for a given good is equal to some convex combination of an underlying value for the good (chosen uniformly from [0,1]),
+        and that agent's particular value for the good (also chosen uniformly from [0,1]).
+
+        Args:
+            n (int): number of agents in the valuation profile to be generated.
+            alpha (float): how much weight should be assigned to the underlying value for the good. Must be a float in [0,1].
+
+        Returns:
+            Two-dimensional numpy array where each row represents agent preferences.
+        """
+        agent_good_matrix = np.random.rand(n,n)
+        good_vector = np.random.rand(n)
+        return (1-alpha)*agent_good_matrix + alpha*good_vector
+
 
 
     def generate_unit_range_arrow(self, n, alpha):
@@ -237,3 +261,96 @@ class InstanceGenerator:
 
         return self.matrix_to_graph(M)
 
+
+    def generate_unit_range_benabbou(self, n, salary_mean, salary_variance, price_lower, price_upper):
+        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' preferences are created
+        according to the price-utility model created by Benabbou et. al 2019: https://arxiv.org/pdf/1711.10241.pdf, normalized
+        to the unit-range constraint.
+
+        Args:
+            n (int): the number of agents in the instance to be generated.
+            salary_mean (float): the mean salary of an agent for the model.
+            salary_variance (float): the variance in salary of an agent for the model.
+            price_lower (float): the lower bound of a house's price in the model
+            price_upper (float): the upper bound of a house's price in the model.
+
+         Returns:   
+            Weighted bipartite Graph, with nodes 1 through n representing agents.          
+        """
+        M = self.benabbou_valuation(n, salary_mean, salary_variance, price_lower, price_upper)
+        M = self.normalize_unit_range(M)
+
+        if self.logging:
+            self.history[self.index] = M
+            self.index += 1
+
+        return self.matrix_to_graph(M)
+
+
+    def generate_unit_sum_benabbou(self, n, salary_mean, salary_variance, price_lower, price_upper):
+        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' preferences are created
+        according to the price-utility model created by Benabbou et. al 2019: https://arxiv.org/pdf/1711.10241.pdf, normalized
+        to the unit-sum constraint.
+
+        Args:
+            n (int): the number of agents in the instance to be generated.
+            salary_mean (float): the mean salary of an agent for the model.
+            salary_variance (float): the variance in salary of an agent for the model.
+            price_lower (float): the lower bound of a house's price in the model
+            price_upper (float): the upper bound of a house's price in the model.
+
+         Returns:   
+            Weighted bipartite Graph, with nodes 1 through n representing agents.          
+        """
+        M = self.benabbou_valuation(n, salary_mean, salary_variance, price_lower, price_upper)
+        M = self.normalize_unit_sum(M)
+
+        if self.logging:
+            self.history[self.index] = M
+            self.index += 1
+
+        return self.matrix_to_graph(M)
+
+
+    def generate_unit_range_abdulkadiroglu(self, alpha, n):
+        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' preferences are created according to
+        the model suggested by Abdulkadiroglu et. al 2015: https://www.aeaweb.org/articles?id=10.1257/mic.20120027, normalized to
+        the unit-range constraint.
+
+        Args:
+            n (int): number of agents in the valuation profile to be generated.
+            alpha (float): how much weight should be assigned to the underlying value for the good. Must be a float in [0,1].
+
+        Returns:
+            Weighted bipartite Graph, with nodes 1 through n representing agents. 
+        """
+        M = self.abdulkadiroglu_valuation(n, alpha)
+        M = self.normalize_unit_range(M)
+
+        if self.logging:
+            self.history[self.index] = M
+            self.index += 1
+
+        return self.matrix_to_graph(M)
+
+
+    def generate_unit_sum_abdulkadiroglu(self, alpha, n):
+        """Generates a new instance of a weighted bipartite graph with 2n nodes, where agents' preferences are created according to
+        the model suggested by Abdulkadiroglu et. al 2015: https://www.aeaweb.org/articles?id=10.1257/mic.20120027, normalized to
+        the unit-sum constraint.
+
+        Args:
+            n (int): number of agents in the valuation profile to be generated.
+            alpha (float): how much weight should be assigned to the underlying value for the good. Must be a float in [0,1].
+
+        Returns:
+            Weighted bipartite Graph, with nodes 1 through n representing agents. 
+        """
+        M = self.abdulkadiroglu_valuation(n, alpha)
+        M = self.normalize_unit_sum(M)
+
+        if self.logging:
+            self.history[self.index] = M
+            self.index += 1
+
+        return self.matrix_to_graph(M)
