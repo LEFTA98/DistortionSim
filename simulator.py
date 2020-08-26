@@ -104,7 +104,54 @@ class Simulator:
 
             #only reach here if there's at least one node in component not in max_matching
             else:
-                T = list(S.difference(component.nodes))
+                T = list(set(S).difference(set(component.nodes)))
                 v = T[0]
                 self.bfs_even_odd(component,G,v)
 
+
+    def rank_maximal_allocation(self,G,agent_cap=None):
+        """Returns a rank-maximal matching of G, which is assumed to be a weighted bipartite graph.
+        
+        Args:
+            G (nx.Graph): Weighted bipartite Graph with nodes named 1 through n and positive weights on each edge. Agents are assumed to be nodes 1 through
+            i for some i <= n.
+            agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+            to len(G.nodes)//2 if not given.
+
+        Returns:
+            A set of 2-tuples representing a matching on G that has the rank-maximality property.
+        """
+        if agent_cap is None:
+            agent_cap = len(G.nodes)//2
+
+        H = G.copy()
+        self.rankify_graph(H,agent_cap)
+        
+
+
+    def serial_dictatorship(self, G, agent_cap=None):
+        """ Returns a matching of G created by running serial dictatorship. G is assumed to be a weighted bipartite graph.
+
+        Args:
+            G (nx.Graph): Weighted bipartite Graph with nodes named 1 through n and positive weights on each edge. Agents are assumed to be nodes 1 through
+            i for some i <= n.
+            agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+            to len(G.nodes)//2 if not given.
+
+        Returns:
+            A set of 2-tuples representing the matching found by serial dictatorship.
+        """
+        if agent_cap is None:
+            agent_cap = len(G.nodes)//2
+
+        H = G.copy()
+        self.rankify_graph(H, agent_cap)
+        M = set()
+
+        for i in range(1, agent_cap+1):
+            if len(H.adj[i]) != 0 :
+                most_preferred = min(H.adj[i].keys(), key = lambda k: H.adj[i][k]['rank'])
+                M.add((i, most_preferred))
+                H.remove_node(most_preferred)
+
+        return M
