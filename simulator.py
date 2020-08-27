@@ -26,7 +26,7 @@ class Simulator:
             instance_generator (InstanceGenerator): InstanceGenerator for creating problem instances for simulation
         """
         self.instance_generator = instance_generator
-        self.history = {'id': [], 'size': [], 'valuation':[], 'algo': [], 'distortion': []}
+        self.history = {'id': [], 'val_index': [], 'size': [], 'valuation':[], 'algo': [], 'distortion': []}
 
 
     def rankify_graph(self, G, agent_cap=None):
@@ -109,9 +109,9 @@ class Simulator:
                 self.bfs_even_odd(component,G,v)
 
 
-    def rank_maximal_allocation(self,G,agent_cap=None):
+    def rank_maximal_allocation(self, G,agent_cap=None):
         """Returns a rank-maximal matching of G, which is assumed to be a weighted bipartite graph, using Irving's algorithm.
-        
+
         Args:
             G (nx.Graph): Weighted bipartite Graph with nodes named 1 through n and positive weights on each edge. Agents are assumed to be nodes 1 through
             i for some i <= n.
@@ -142,25 +142,31 @@ class Simulator:
             self.even_odd_unreachable_decomposition(I)
 
             for j in range(i+1,n):
+                to_remove = set()
                 for (u,v) in edge_list[j]:
-                    if I.nodes[u-1]['decomp'] in ['O', 'U'] or I.nodes[v-1]['decomp'] in ['O','U']:
-                        edge_list[j].remove((u,v))
+                    if I.nodes[u]['decomp'] in ['O', 'U'] or I.nodes[v]['decomp'] in ['O','U']:
+                        to_remove.add((u,v))
+                        
+                edge_list[j] = edge_list[j].difference(to_remove)
+                        
+                    
 
             for (x,y) in I.edges:
-                if I.nodes[x-1]['decomp']+I.nodes[y-1]['decomp'] in ['OO', 'UO', 'OU']:
+                if I.nodes[x]['decomp']+I.nodes[y]['decomp'] in ['OO', 'UO', 'OU']:
                     I.remove_edge((x,y))
 
         return S
 
 
-    def serial_dictatorship(self, G, agent_cap=None):
-        """ Returns a matching of G creatgit sted by running serial dictatorship. G is assumed to be a weighted bipartite graph.
+    def serial_dictatorship(self, G, agent_cap=None, need_ranks=True):
+        """ Returns a matching of G created by running serial dictatorship. G is assumed to be a weighted bipartite graph.
 
         Args:
-            G (nx.Graph): Weighted bipartite Graph with nodes named 1 through n and positive weights on each edge. Agents are assumed to be nodes 1 through
-            i for some i <= n.
+            G (nx.Graph): Weighted bipartite Graph with nodes named after natural numbers and positive weights on each edge. Agents are assumed to be nodes of value up
+            to i for some i.
             agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
             to len(G.nodes)//2 if not given.
+            need_ranks (bool): whether or not the G already has ranks assigned to the edges. Defaults to True.
 
         Returns:
             A set of 2-tuples representing the matching found by serial dictatorship.
@@ -169,13 +175,72 @@ class Simulator:
             agent_cap = len(G.nodes)//2
 
         H = G.copy()
-        self.rankify_graph(H, agent_cap)
+        if need_ranks:
+            self.rankify_graph(H, agent_cap)
+
         M = set()
 
         for i in range(1, agent_cap+1):
-            if len(H.adj[i]) != 0 :
+            if i in H.nodes and len(H.adj[i]) != 0 :
                 most_preferred = min(H.adj[i].keys(), key = lambda k: H.adj[i][k]['rank'])
                 M.add((i, most_preferred))
                 H.remove_node(most_preferred)
 
         return M
+
+
+    def compute_bucket(self, x, n, m):
+        """Helper function for figuring out which bucket of form 1/n^(k/m) to put an edge of value x into, given n total agents and m buckets. Used in
+        partial_max_matching. x must be in [0,1].
+        
+        Args:
+            x (float): Edge value in [0,1].
+            n (int): Number of agents.
+            m (int): Number of buckets.
+
+        Returns:
+            float representing approximation of value x according to the buckets.
+        """
+        if x < 1/n:
+            return 0
+        
+        k = np.ceil(m * np.log(1/x)/np.log(n))
+        return 1/n**(k/m)
+
+
+    def partial_max_matching(self, G, m, agent_cap=None):
+        """Runs the PartialMaxMatching algorithm on weighted bipartite graph G with a total of m buckets. 
+
+        Args:
+            G (nx.Graph): Weighted bipartite Graph.
+            m (int): Number of buckets.
+            agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+            to len(G.nodes)//2 if not given.
+
+        Returns:
+             A set of 2-tuples representing a matching on G found by PartialMaxMatching.
+        """
+        if agent_cap is None:
+            agent_cap = len(G.nodes)//2
+
+        H = nx.Graph()
+        H.add_nodes_from(G.nodes)
+
+        for (u,v) in G.edges:
+            new_weight = self.compute_bucket(G[u][v]['weight'], agent_cap, m)
+
+            if new_weight != 0:
+                H.add_weighted_edges_from([(u,v, new_weight)])
+
+        first_matching = nx.algorithms.matching.max_weight_matching(H)
+
+        if sum([[u,v] for (u,v) in first_matching], []) == len(G.nodes):
+            return first_matching
+        else:
+            I = G.copy()
+            self.rankify_graph(I,agent_cap)
+            I.remove_nodes_from(sum([[u,v] for (u,v) in first_matching], []))
+
+            second_matching = self.serial_dictatorship(I,agent_cap,False)
+
+            return set().union(first_matching, second_matching)
