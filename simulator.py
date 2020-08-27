@@ -30,7 +30,7 @@ class Simulator:
 
 
     def rankify_graph(self, G, agent_cap=None):
-        """Augments a weighted bipartite graph with nodes 1 through n with ranks. For example, if agent 1 values good n-1 as their second-highest
+        """Augments a weighted bipartite graph containing nodes in {1...n} with ranks. For example, if agent 1 values good n-1 as their second-highest
         valued good, assign a rank of 2 to the edge (1, n-1).
 
         Args:
@@ -46,11 +46,12 @@ class Simulator:
             agent_cap = len(G.nodes)//2
 
         for i in range(1, agent_cap+1):
-            adj_list = [(key, G.adj[key][i]['weight']) for key in G.adj[i].keys() if G.adj[i][key] != {}]
-            adj_list.sort(key = lambda tup: tup[1], reverse = True) #sort by second value in the tuple
+            if i in G.nodes:
+                adj_list = [(key, G.adj[key][i]['weight']) for key in G.adj[i].keys() if G.adj[i][key] != {}]
+                adj_list.sort(key = lambda tup: tup[1], reverse = True) #sort by second value in the tuple
 
-            for j in range(len(adj_list)):
-                G[i][adj_list[j][0]]['rank'] = j+1
+                for j in range(len(adj_list)):
+                    G[i][adj_list[j][0]]['rank'] = j+1
 
         return G
 
@@ -88,7 +89,7 @@ class Simulator:
         https://en.wikipedia.org/wiki/Dulmage%E2%80%93Mendelsohn_decomposition
 
         Args:
-            G (nx.Graph): Bipartite Graph with nodes named 1 through n. Agents are assumed to be nodes 1 through i for some i <= n.
+            G (nx.Graph): Bipartite Graph with nodes in {1...n}. Agents are assumed to be nodes in {1..n} that are less than or equal to i for some i <= n.
 
         Returns:
             NoneType
@@ -113,7 +114,7 @@ class Simulator:
         """Returns a rank-maximal matching of G, which is assumed to be a weighted bipartite graph, using Irving's algorithm.
 
         Args:
-            G (nx.Graph): Weighted bipartite Graph with nodes named 1 through n and positive weights on each edge. Agents are assumed to be nodes 1 through
+            G (nx.Graph): Weighted bipartite Graph with nodes named after natural numbers and positive weights on each edge. Agents are assumed to be nodes 1 through
             i for some i <= n.
             agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
             to len(G.nodes)//2 if not given.
@@ -209,18 +210,18 @@ class Simulator:
 
 
     def partial_max_matching(self, G, m, agent_cap=None):
-        """Runs the PartialMaxMatching algorithm on weighted bipartite graph G with a total of m buckets. 
+        """Runs the PartialMaxMatching algorithm on weighted bipartite graph G with a total of m buckets. Assumes the nodes of G are enumerated from 1 to n.
 
         Args:
-            G (nx.Graph): Weighted bipartite Graph.
+            G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
             m (int): Number of buckets.
             agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
             to len(G.nodes)//2 if not given.
 
         Returns:
-             A set of 2-tuples representing a matching on G found by PartialMaxMatching.
+            A set of 2-tuples representing a matching on G found by PartialMaxMatching.
         """
-        if agent_cap is None:
+        if agent_cap is None: # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
             agent_cap = len(G.nodes)//2
 
         H = nx.Graph()
@@ -244,3 +245,110 @@ class Simulator:
             second_matching = self.serial_dictatorship(I,agent_cap,False)
 
             return set().union(first_matching, second_matching)
+
+
+    def modified_max_matching(self,G,agent_cap=None):
+        """Runs the ModifiedMaxMatching algorithm on a weighted bipartite Graph G that has been normalized to unit-range; that is, each agent's most valued good
+        must have a value of 1. Assumes the nodes of G are enumerated from 1 to n.
+
+        Args:
+            G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1], and each agent's most preferred good has a value of 1.
+            agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+            to len(G.nodes)//2 if not given.
+
+        Returns:
+            A set of 2-tuples representing a matching on G found by ModifiedMaxMatching.
+        """
+        if agent_cap is None: # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
+            agent_cap = len(G.nodes)//2
+
+        H = nx.Graph()
+        H.add_nodes_from(G.nodes)
+
+        for (u,v) in G.edges:
+            if G[u][v]['weight'] == 1:
+                H.add_weighted_edges_from([(u,v,1)])
+            elif G[u][v]['weight'] >= 1/np.sqrt(agent_cap):
+                H.add_weighted_edges_from([(u,v,1/np.sqrt(agent_cap))])
+            else:
+                H.add_weighted_edges_from([(u,v,0)])
+
+        first_matching = nx.algorithms.matching.max_weight_matching(H)
+
+        I = G.copy()
+        I.remove_nodes_from(sum([[u,v] for (u,v) in first_matching], []))
+        agent_nodes = [node for node in I.nodes if node <= agent_cap]
+        good_nodes = [node for node in I.nodes if node > agent_cap]
+        second_matching = set()
+        i=0
+        while i < min(len(good_nodes), len(agent_nodes)):
+            second_matching.add((agent_nodes[i], good_nodes[i]))
+            i += 1
+
+        return set().union(first_matching, second_matching)
+
+
+    def hybrid_max_matching(self, G, agent_cap=None):
+        """Runs the HybridMaxMatching algorithm on a weighted bipartite graph G, whose nodes are enumerated from 1 to n. Notice the top-trading cycle step is not implemented.
+        
+        Args:
+            G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
+            agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+            to len(G.nodes)//2 if not given.
+
+        Returns:
+            A set of 2-tuples representing a matching on G found by HybridMaxMatching.
+        """
+        if agent_cap is None:
+            agent_cap = len(G.nodes)//2
+
+        H = G.copy() # make a copy of graph with ranks; this'll be useful for later
+        self.rankify_graph(H, agent_cap)
+
+        I = nx.Graph()
+        I.add_nodes_from(G.nodes)
+        for (u,v) in G.edges:
+            if H[u][v]['rank'] == 1 and H[u][v]['weight'] >= 1/np.sqrt(agent_cap): # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
+                I.add_weighted_edges_from([(u,v,1/np.sqrt(agent_cap))])
+            elif H[u][v]['rank'] > 1 and H[u][v]['weight'] >= np.reciprocal((agent_cap**0.75)*min(H[u][v]['rank'], agent_cap**0.25)):
+                I.add_weighted_edges_from([(u,v,np.reciprocal((agent_cap**0.75)*min(H[u][v]['rank'], agent_cap**0.25)))])
+
+        first_matching = nx.algorithms.matching.max_weight_matching(I)
+
+        H.remove_nodes_from(sum([[u,v] for (u,v) in first_matching], []))
+        self.rankify_graph(H,agent_cap)
+
+        second_matching = self.rank_maximal_allocation(H,agent_cap)
+
+        H.remove_nodes_from(sum([[u,v] for (u,v) in second_matching], []))
+
+        if len(H.nodes) == 0:
+            return set().union(first_matching, second_matching)
+        else:
+            agent_nodes = [node for node in H.nodes if node <= agent_cap]
+            good_nodes = [node for node in H.nodes if node > agent_cap]
+            third_matching = set()
+            i = 0         
+            while i < min(len(good_nodes), len(agent_nodes)):
+                third_matching.add((agent_nodes[i], good_nodes[i]))
+                i += 1
+
+            return set().union(third_matching, set().union(first_matching, second_matching))   
+
+
+        def calculate_distortion(self,G,M):
+            """calculates the approximation ratio of the social welfare of the optimal matching on weighted complete bipartite graph G versus the social welfare
+            accrued by the given matching M. Notice that this is not actually the definition of distortion, as we are not taking a supremum over all possible
+            valuations.
+            
+            Args:
+                G (nx.Graph): Weighted bipartite complete Graph with weights in [0,1].
+                M (set((nx.Node,nx.Node))): A set of 2-tuples, with each 2-tuple representing a pairing of an agent in G to a good in G. 
+
+            Returns:
+                A float value >= 1 representing the approximation ratio of the optimal social welfare to the social welfare generated by M. 
+            """
+            algo_weight = sum([G[u][v]['weight'] for (u,v) in M], [])
+            opt_weight = sum([G[u][v]['weight'] for (u,v) in nx.algorithms.matching.max_weight_matching(G)], [])
+
+            return opt_weight/algo_weight
