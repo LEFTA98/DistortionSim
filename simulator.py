@@ -110,7 +110,7 @@ class Simulator:
 
 
     def rank_maximal_allocation(self,G,agent_cap=None):
-        """Returns a rank-maximal matching of G, which is assumed to be a weighted bipartite graph.
+        """Returns a rank-maximal matching of G, which is assumed to be a weighted bipartite graph, using Irving's algorithm.
         
         Args:
             G (nx.Graph): Weighted bipartite Graph with nodes named 1 through n and positive weights on each edge. Agents are assumed to be nodes 1 through
@@ -125,12 +125,36 @@ class Simulator:
             agent_cap = len(G.nodes)//2
 
         H = G.copy()
+        n = len(H.nodes)
         self.rankify_graph(H,agent_cap)
-        
+
+        edge_list = [set() for i in range(n)]
+
+        for (agent, good) in H.edges:
+            edge_list[H[agent][good]['rank']].add((agent, good))
+
+        I = nx.Graph()
+        I.add_nodes_from(H.nodes)
+
+        for i in range(n):
+            I.add_edges_from(edge_list[i])
+            S = nx.maximal_matching(I)
+            self.even_odd_unreachable_decomposition(I)
+
+            for j in range(i+1,n):
+                for (u,v) in edge_list[j]:
+                    if I.nodes[u-1]['decomp'] in ['O', 'U'] or I.nodes[v-1]['decomp'] in ['O','U']:
+                        edge_list[j].remove((u,v))
+
+            for (x,y) in I.edges:
+                if I.nodes[x-1]['decomp']+I.nodes[y-1]['decomp'] in ['OO', 'UO', 'OU']:
+                    I.remove_edge((x,y))
+
+        return S
 
 
     def serial_dictatorship(self, G, agent_cap=None):
-        """ Returns a matching of G created by running serial dictatorship. G is assumed to be a weighted bipartite graph.
+        """ Returns a matching of G creatgit sted by running serial dictatorship. G is assumed to be a weighted bipartite graph.
 
         Args:
             G (nx.Graph): Weighted bipartite Graph with nodes named 1 through n and positive weights on each edge. Agents are assumed to be nodes 1 through
