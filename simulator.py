@@ -136,15 +136,15 @@ class Simulator:
 if __name__=='__main__':
     instantiator = instance_generator.InstanceGenerator(True)
     sim = Simulator(instantiator)
-    for k in range(1,6):
-        print('current batch is', k)
-        n = 5*k
+    for k in range(1,21): # adjust the number of intervals here
+        print('current batch is', k) 
+        n = 5*k # adjust interval size here
 
-        for j in range(20):
+        for j in range(20): # adjust number of trials per n here
 
-            G = instantiator.generate_unit_range_unif(n)
+            G = instantiator.generate_unit_sum_abdulkadiroglu(1, n) #adjust the valuation generation method here
             val_index = instantiator.index-1
-            val_type = 'unit_range_unif'
+            val_type = 'unit_sum_abdulkadiroglu_1'
 
             sim.serial_dictatorship_experiment(val_index,val_type,G)
             sim.partial_max_matching_experiment(val_index,val_type,G,np.floor(np.log(n)))
@@ -153,7 +153,7 @@ if __name__=='__main__':
 
     
     df = pd.DataFrame(sim.history)
-    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/data/unit_range_unif_test.csv")
+    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/data/unit_sum_abdulkadiroglu_1.csv") #adjust path name here
 
     df = pd.Series(sim.instance_generator.history)
-    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/data/unit_range_test_instances.csv")
+    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/data/unit_sum_abdulkadiroglu_1_instances.csv") #adjust instance data path name here
