@@ -124,7 +124,7 @@ class InstanceGenerator:
         """
         min_array = np.min(M, axis=1)
         max_array = np.max(M, axis=1)
-        return (M.T-min_array).T/(max_array-min_array) #hacky way to do row subtraction
+        return ((M.T-min_array)/(max_array-min_array)).T #hacky way to do row subtraction
 
 
     def normalize_unit_sum(self, M):
