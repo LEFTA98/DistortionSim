@@ -179,7 +179,9 @@ class Simulator:
             size = len(G.nodes)//2
 
         M = epsilon_max_matching(G, epsilon, agent_cap)
+
         H = reassign_labels(G, M)
+
         M_0 = top_trading_cycles(H)
 
         self.history['id'].append(self.id)
@@ -206,8 +208,9 @@ if __name__=='__main__':
 
             sim.serial_dictatorship_experiment(val_index,val_type,G)
             sim.partial_max_matching_experiment(val_index,val_type,G,np.floor(np.log(n)))
-            sim.modified_max_matching_experiment(val_index,val_type,G)
-            sim.hybrid_max_matching_experiment(val_index,val_type,G)
+            sim.top_trading_cycles_experiment(val_index,val_type,G)
+            sim.epsilon_max_matching_experiment(val_index,val_type,G,1)
+            sim.epsilon_max_matching_experiment(val_index,val_type,G,0.1)
 
     
     df = pd.DataFrame(sim.history)

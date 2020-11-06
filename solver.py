@@ -348,7 +348,6 @@ def top_trading_cycles(G, agent_cap=None):
             H.remove_nodes_from([u, int(v+len(G.nodes)//2)])
             count -= 2
 
-
     return M
 
 
@@ -389,13 +388,15 @@ def epsilon_max_matching(G, epsilon, agent_cap=None):
 
     H = nx.Graph()
     H.add_nodes_from(G.nodes)
-    n = len(G.nodes)
 
     for (u,v) in G.edges:
         new_weight = compute_epsilon_bucket(G[u][v]['weight'], agent_cap, epsilon)
 
-        if new_weight != 0:
-            H.add_weighted_edges_from([(u,v, new_weight)])
+        if new_weight != 0:        
+            H.add_weighted_edges_from([(u,v, np.power((2/(2+epsilon)),new_weight))])
+        else:
+            H.add_weighted_edges_from([(u,v,np.finfo(np.float).eps)]) #hack to still include this edge in matching
+
 
     return nx.algorithms.matching.max_weight_matching(H) # this technically should be TTC'ed afterwards
 
@@ -417,7 +418,7 @@ def reassign_labels(G,M,agent_cap=None):
         agent_cap = len(G.nodes)//2
 
     li = list(M)
-    li = [(i, j-len(G.nodes)//2) if i < j else (j, i-len(G.nodes)//2) for (i,j) in li]
+    li = [(j, i + len(G.nodes)//2) if i < j else (i, j+len(G.nodes)//2) for (i,j) in li]
     d = dict(li)
 
     return nx.relabel.relabel_nodes(G,d,True)
