@@ -331,20 +331,23 @@ def top_trading_cycles(G, agent_cap=None):
 
     H = G.copy()
     M = set()
+    count = len(H.nodes)
 
-    while len(H.nodes) != 0:
+    while count > 0:
         rankify_graph(H, agent_cap)
 
         I = nx.DiGraph()
         I.add_nodes_from(H.nodes)
         for (u,v) in H.edges:
             if H[u][v]['rank'] == 1:
-                I.add_edge(u,v - len(G.nodes)//2) #draw an edge between the agent u and the agent corresponding to good v
+                I.add_edge(u,int(v - len(G.nodes)//2)) #draw an edge between the agent u and the agent corresponding to good v
 
         C = nx.algorithms.cycles.find_cycle(I)
         for (u,v) in C:
-            M.add((u, v + len(G.nodes)//2))
-            H.remove_nodes_from([u, v+len(G.nodes)//2])
+            M.add((u, int(v + len(G.nodes)//2)))
+            H.remove_nodes_from([u, int(v+len(G.nodes)//2)])
+            count -= 2
+
 
     return M
 
@@ -414,7 +417,7 @@ def reassign_labels(G,M,agent_cap=None):
         agent_cap = len(G.nodes)//2
 
     li = list(M)
-    li = [(i, j-len(G.nodes)//2) for (i,j) in li]
+    li = [(i, j-len(G.nodes)//2) if i < j else (j, i-len(G.nodes)//2) for (i,j) in li]
     d = dict(li)
 
     return nx.relabel.relabel_nodes(G,d,True)
