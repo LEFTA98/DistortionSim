@@ -314,8 +314,114 @@ def hybrid_max_matching(G, agent_cap=None):
         return set().union(third_matching, set().union(first_matching, second_matching))   
 
 
+def top_trading_cycles(G, agent_cap=None):
+    """Runs the top-trading cycles algorithm on a weighted bipartite graph G, whose nodes are enumerated from 1 to n, assuming the initial 
+    allocation is agent i getting good i. Notice for this algorithm to work, agent_cap MUST be set at len(G.nodes)//2.
+    
+    Args:
+        G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
+        agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+        to len(G.nodes)//2 if not given.
+
+    Returns:
+        A set of 2-tuples representing a matching on G found by HybridMaxMatching.    
+    """
+    if agent_cap is None:
+        agent_cap = len(G.nodes)//2
+
+    H = G.copy()
+    M = set()
+
+    while len(H.nodes) != 0:
+        rankify_graph(H, agent_cap)
+
+        I = nx.DiGraph()
+        I.add_nodes_from(H.nodes)
+        for (u,v) in H.edges:
+            if H[u][v]['rank'] == 1:
+                I.add_edge(u,v - len(G.nodes)//2) #draw an edge between the agent u and the agent corresponding to good v
+
+        C = nx.algorithms.cycles.find_cycle(I)
+        for (u,v) in C:
+            M.add((u, v + len(G.nodes)//2))
+            H.remove_nodes_from([u, v+len(G.nodes)//2])
+
+    return M
+
+
+def compute_epsilon_bucket(x,n,epsilon):
+    """Helper function which computes which bucket of (2/2+epsilon)^i x should be rounded to, given n agents. x must be in [0,1]; if x
+    is too small to be bucketed, 0 will be returned instead.
+    
+    Args:
+        x (float): Edge value in [0,1].
+        n (int): Number of agents.
+        epsilon (float): epsilon where (1+epsilon) is the approximation ratio.
+        
+    Returns:
+        float approximation of x according to the buckets."""
+
+    cap = np.ceil(np.log(n**2/epsilon)/np.log(1+epsilon/2))
+    threshold = np.power(2/(2+epsilon), cap)
+
+    if x < threshold:
+        return 0
+    else:
+        return np.ceil(np.log(x)/np.log(2/(2+epsilon)))
+
+
+def epsilon_max_matching(G, epsilon, agent_cap=None):
+    """Runs Algorithm 2 from the write-up on weighted bipartite Graph G.
+    
+    Args:
+        G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
+        agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is 
+        equal to i. Defaults to len(G.nodes)//2 if not given.
+
+    Returns:
+        A set of 2-tuples representing a matching on G found by HybridMaxMatching.  
+    """
+    if agent_cap is None: # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
+        agent_cap = len(G.nodes)//2
+
+    H = nx.Graph()
+    H.add_nodes_from(G.nodes)
+    n = len(G.nodes)
+
+    for (u,v) in G.edges:
+        new_weight = compute_epsilon_bucket(G[u][v]['weight'], agent_cap, epsilon)
+
+        if new_weight != 0:
+            H.add_weighted_edges_from([(u,v, new_weight)])
+
+    return nx.algorithms.matching.max_weight_matching(H) # this technically should be TTC'ed afterwards
+
+
+def reassign_labels(G,M,agent_cap=None):
+    """Given a weighted bipartite Graph G and a matching M on G, where G is enumerated from 1 to n, returns a relabelled version of G such 
+    that each agent i gets good i + n//2. This primes the graph for the top trading cycle algorithm.
+    
+    Args:
+        G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
+        M (set of (int,int)): the matching that we are trying to relabel the Graph to.
+        agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is 
+        equal to i. Defaults to len(G.nodes)//2 if not given.
+
+    Returns:
+        weighted bipartite Graph
+    """
+    if agent_cap is None: # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
+        agent_cap = len(G.nodes)//2
+
+    li = list(M)
+    li = [(i, j-len(G.nodes)//2) for (i,j) in li]
+    d = dict(li)
+
+    return nx.relabel.relabel_nodes(G,d,True)
+
+
 def calculate_distortion(G,M):
-    """calculates the approximation ratio of the social welfare of the optimal matching on weighted complete bipartite graph G versus the social welfare
+    """Calculates the approximation ratio of the social welfare of the optimal matching on weighted complete bipartite graph G versus the social welfare
     accrued by the given matching M. Notice that this is not actually the definition of distortion, as we are not taking a supremum over all possible
     valuations.
     
