@@ -13,6 +13,7 @@ import instance_generator
 from solver import serial_dictatorship, partial_max_matching, modified_max_matching, hybrid_max_matching, calculate_distortion, reassign_labels, top_trading_cycles, epsilon_max_matching
 
 
+#TODO the experiment code in here has a ton of repetition - think about how this could be better formatted?
 class Simulator:
     """Object that solves instances of matching problems given to it and aggregates the results in a pretty manner.
 
@@ -179,9 +180,7 @@ class Simulator:
             size = len(G.nodes)//2
 
         M = epsilon_max_matching(G, epsilon, agent_cap)
-
         H = reassign_labels(G, M)
-
         M_0 = top_trading_cycles(H)
 
         self.history['id'].append(self.id)
@@ -196,11 +195,10 @@ class Simulator:
 if __name__=='__main__':
     instantiator = instance_generator.InstanceGenerator(True)
     sim = Simulator(instantiator)
-    for k in range(1,21): # adjust the number of intervals here
-        print('current batch is', k) 
-        n = 5*k # adjust interval size here
+    for n in [5,10,20,50,100]: # adjust the number of intervals here
+        print('current batch is', n) 
 
-        for j in range(50): # adjust number of trials per n here
+        for j in range(20): # adjust number of trials per n here
 
             G = instantiator.generate_unit_range_unif(n) #adjust the valuation generation method here
             val_index = instantiator.index-1
@@ -214,7 +212,7 @@ if __name__=='__main__':
 
     
     df = pd.DataFrame(sim.history)
-    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/data/unit_range_unif_ttc.csv") #adjust path name here
+    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_unif_ttc.csv") #adjust path name here
 
     df = pd.Series(sim.instance_generator.history)
-    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/data/unit_range_unif_ttc.csv") #adjust instance data path name here
+    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_unif_ttc_instances.csv") #adjust instance data path name here
