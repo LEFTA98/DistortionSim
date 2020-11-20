@@ -52,7 +52,7 @@ def priority_augment(G, prio='rank_maximal', agent_cap=None):
         agent_cap = len(G.nodes)//2
 
     H = G.copy()
-    n = len(G.nodes)
+    n = agent_cap
     H = rankify_graph(H, agent_cap = agent_cap)
 
     for (u,v) in H.edges:
@@ -316,7 +316,7 @@ def hybrid_max_matching(G, agent_cap=None):
         agent_cap = len(G.nodes)//2
 
     H = G.copy() # make a copy of graph with ranks; this'll be useful for later
-    rankify_graph(H, agent_cap)
+    H = rankify_graph(H, agent_cap)
 
     I = nx.Graph() #add weights from query to graph, compute max-matching
     I.add_nodes_from(G.nodes)
@@ -407,11 +407,13 @@ def compute_epsilon_bucket(x,n,epsilon):
         return np.ceil(np.log(x)/np.log(2/(2+epsilon)))
 
 
-def epsilon_max_matching(G, epsilon, agent_cap=None):
+def epsilon_max_matching(G, epsilon, prio='pareto', agent_cap=None):
     """Runs Algorithm 2 from the write-up on weighted bipartite Graph G.
     
     Args:
         G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
+        epsilon (float): the approximation ratio we wish to achieve; this algorithm guarantees a 1+epsilon approximation.
+        prio (String): String in ['pareto', 'rank_maximal', 'max_cardinality_rank_maximal', 'fair'] that represents the priority vector used for this problem. Defaults to 'rank_maximal'.
         agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is 
         equal to i. Defaults to len(G.nodes)//2 if not given.
 
@@ -423,6 +425,7 @@ def epsilon_max_matching(G, epsilon, agent_cap=None):
 
     H = nx.Graph()
     H.add_nodes_from(G.nodes)
+    n = agent_cap
 
     for (u,v) in G.edges:
         new_weight = compute_epsilon_bucket(G[u][v]['weight'], agent_cap, epsilon)
@@ -432,8 +435,132 @@ def epsilon_max_matching(G, epsilon, agent_cap=None):
         else:
             H.add_weighted_edges_from([(u,v,np.finfo(np.float).eps)]) #hack to still include this edge in matching
 
+    I = G.copy()
+    I = rankify_graph(I)
+
+    for (u,v) in H.edges:
+        r = I[u][v]['rank']
+        if prio=='fair':
+            H[u][v]['weight'] += 4*np.power(n,2*n) - 2*np.power(n,r-1)
+        elif prio=='max_cardinality_rank_maximal':
+            H[u][v]['weight'] += np.power(n,2*n) + np.power(n,2*(n-r))
+        elif prio=='rank_maximal':
+            H[u][v]['weight'] += np.power(n,2*(n-r+1))
 
     return nx.algorithms.matching.max_weight_matching(H) # this technically should be TTC'ed afterwards
+
+
+def twothirds_max_matching(G,prio='rank_maximal',agent_cap=None):
+    """Given a weighted bipartite Graph G and a priority prio, returns a priority-prio matching that is an O(n^2/3) approximation to the welfare-optimal
+    priority-prio matching. Equivalent to Algorithm 3 in the final write-up.
+    
+    Args:
+        G (nx.Graph): Weighted bipartite Graph assumed to satisfy either unit-sum or unit-range normalization.
+        prio (String): String in ['rank_maximal', 'max_cardinality_rank_maximal', 'fair'] that represents the priority vector used for this problem. Defaults to 'rank_maximal'.
+        agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is 
+        equal to i. Defaults to len(G.nodes)//2 if not given.
+
+    Returns:
+        A set of 2-tuples representing a matching on G.
+    """
+    if agent_cap is None: # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
+        agent_cap = len(G.nodes)//2
+
+    H = G.copy()
+    H = rankify_graph(H)
+    n = agent_cap
+
+    for (u,v) in H.edges:
+        r = H[u][v]['rank']
+
+        if r == 1:
+            H[u][v]['weight'] = np.reciprocal(np.power(n,1/3)) if H[u][v]['weight'] >= np.reciprocal(np.power(n,1/3)) else 0
+        else:
+            H[u][v]['weight'] = np.reciprocal(np.min([r, np.power(n, 1/3)])*np.power(n, 2/3)) if H[u][v]['weight'] >= np.reciprocal(np.min([r, np.power(n, 1/3)])*np.power(n, 2/3)) else 0
+        
+        if prio=='fair':
+            H[u][v]['weight'] += 4*np.power(n,2*n) - 2*np.power(n,r-1)
+        elif prio=='max_cardinality_rank_maximal':
+            H[u][v]['weight'] += np.power(n,2*n) + np.power(n,2*(n-r))
+        else:
+            H[u][v]['weight'] += np.power(n,2*(n-r+1))
+
+    return nx.algorithms.matching.max_weight_matching(H)
+        
+
+#TODO this is super messy, try to clean this up if you have time
+def updated_hybrid_max_matching(G, agent_cap=None):
+    """Runs the Algorithm 4 (an updated version of hybridMaxMatching) from the write-up on a weighted bipartite graph G, whose nodes are enumerated from 1 to n. Notice the top-trading cycle 
+    step is not implemented.
+    
+    Args:
+        G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
+        agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+        to len(G.nodes)//2 if not given.
+
+    Returns:
+        A set of 2-tuples representing a matching on G found by HybridMaxMatching.
+    """
+    if agent_cap is None: # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
+        agent_cap = len(G.nodes)//2    
+
+    H = G.copy() # make a copy of graph with ranks; this'll be useful for later
+    H = rankify_graph(H, agent_cap)
+    n = agent_cap
+
+    for (u,v) in H.edges:
+        r = H[u][v]['rank']
+
+        if r == 1:
+            H[u][v]['weight'] = np.reciprocal(np.power(n,1/3)) if H[u][v]['weight'] >= np.reciprocal(np.power(n,1/3)) else 0
+        else:
+            H[u][v]['weight'] = np.reciprocal(np.min([r, np.power(n, 1/3)])*np.power(n, 2/3)) if H[u][v]['weight'] >= np.reciprocal(np.min([r, np.power(n, 1/3)])*np.power(n, 2/3)) else 0
+
+    M_mm = nx.algorithms.matching.max_weight_matching(H)
+
+    to_remove = []
+    for (u,v) in M_mm:
+        if H[u][v]['weight'] == 0:
+            to_remove.append((u,v))
+
+    M_mm = M_mm.difference(set(to_remove))
+
+    I = G.copy()
+    I = rankify_graph(I, agent_cap)
+
+    if len(M_mm) == 0:
+        for (u,v) in I.edges:
+            if I[u][v]['rank'] > np.floor(1/2 * np.power(n, 1/3)):
+                I.remove_edge(u,v)
+
+        M_aux = nx.algorithms.matching.max_weight_matching(I,maxcardinality=True) #compute a maximum cardinality matching
+
+    else:
+        for (u,v) in I.edges:
+            if I[u][v]['rank'] > 1:
+                I.remove_edge(u,v)
+
+
+        M_aux = nx.algorithms.matching.max_weight_matching(I,maxcardinality=True)
+
+    to_remove = []
+    for (u,v) in M_aux:
+        if u in set.union(*map(set,M_mm)) or v in set.union(*map(set,M_mm)):
+            to_remove.append((u,v))
+    
+    M_aux = M_aux.difference(set(to_remove))
+
+    J = G.copy()
+    J.remove_nodes_from(list(set.union(*map(set, set().union(M_mm,M_aux)))))
+    agent_nodes = [node for node in J.nodes if node <= agent_cap]
+    good_nodes = [node for node in J.nodes if node > agent_cap]
+    M_rest = set()
+    i = 0         
+    while i < min(len(good_nodes), len(agent_nodes)):
+        M_rest.add((agent_nodes[i], good_nodes[i]))
+        i += 1
+
+    return set().union(M_rest, set().union(M_mm,M_aux))
 
 
 def reassign_labels(G,M,agent_cap=None):
