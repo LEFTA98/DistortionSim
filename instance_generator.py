@@ -397,4 +397,8 @@ class InstanceGenerator:
             M = np.array(M)
             graph_list.append(self.matrix_to_graph(M))
 
+            if self.logging:
+                self.history[self.index] = M
+                self.index += 1
+
         return graph_list

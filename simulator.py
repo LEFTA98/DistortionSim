@@ -269,24 +269,54 @@ class Simulator:
 if __name__=='__main__':
     instantiator = instance_generator.InstanceGenerator(True)
     sim = Simulator(instantiator)
-    for n in [5,10,20,50,100]: # adjust the number of intervals here
-        print('current batch is', n) 
+    # for n in [5,10,20,50,100]: # adjust the number of intervals here
+    #     print('current batch is', n) 
 
-        for j in range(20): # adjust number of trials per n here
+    #     for j in range(20): # adjust number of trials per n here
 
-            G = instantiator.generate_unit_range_arrow(n, -1) #adjust the valuation generation method here
-            val_index = instantiator.index-1
-            val_type = 'unit_range_arrow_-1'
+    #         G = instantiator.generate_unit_range_arrow(n, -1) #adjust the valuation generation method here
+    #         val_index = instantiator.index-1
+    #         val_type = 'unit_range_arrow_-1'
+
+    #         sim.serial_dictatorship_experiment(val_index,val_type,G)
+    #         sim.updated_hybrid_max_matching_experiment(val_index,val_type,G)
+    #         sim.top_trading_cycles_experiment(val_index,val_type,G)
+    #         sim.epsilon_max_matching_experiment(val_index,val_type,G,1)
+    #         sim.epsilon_max_matching_experiment(val_index,val_type,G,0.1)
+
+    
+    # df = pd.DataFrame(sim.history)
+    # df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_arrow_-1_pareto.csv") #adjust path name here
+
+    # df = pd.Series(sim.instance_generator.history)
+    # df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_arrow_-1_pareto.csv") #adjust instance data path name here
+
+    val_type = "theta0.2unitsum"
+    filenames = ["rdata/ord_n5_theta0.2.txt", "rdata/ord_n10_theta0.2.txt", "rdata/ord_n20_theta0.2.txt", "rdata/ord_n50_theta0.2.txt", "rdata/ord_n100_theta0.2.txt"]
+    sizes = [5,10,20,50,100]
+
+    for j in range(len(sizes)):
+        print('current n value is', sizes[j])
+
+        G_list = instantiator.generate_list_from_ordinal_preferences(filenames[j], sizes[j], 100, "unit_sum")
+        val_index = instantiator.index - 100
+
+        for i in range(len(G_list)):
+            G = G_list[i]
 
             sim.serial_dictatorship_experiment(val_index,val_type,G)
-            sim.updated_hybrid_max_matching_experiment(val_index,val_type,G)
             sim.top_trading_cycles_experiment(val_index,val_type,G)
             sim.epsilon_max_matching_experiment(val_index,val_type,G,1)
             sim.epsilon_max_matching_experiment(val_index,val_type,G,0.1)
+            sim.updated_hybrid_max_matching_experiment(val_index,val_type,G)
 
-    
-    df = pd.DataFrame(sim.history)
-    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_arrow_-1_pareto.csv") #adjust path name here
+            val_index += 1
 
-    df = pd.Series(sim.instance_generator.history)
-    df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_arrow_-1_pareto.csv") #adjust instance data path name here
+        s = "ijcaidata/"+val_type+"n"+str(sizes[j])+".csv"
+        s_instances = "ijcaidata/"+val_type+"n"+str(sizes[j])+"instances.csv"
+
+        df = pd.DataFrame(sim.history)
+        df.to_csv(s)
+
+        df = pd.Series(sim.instance_generator.history)
+        df.to_csv(s_instances)
