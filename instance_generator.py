@@ -9,6 +9,7 @@ risk-neutral, and risk-loving utility functions. ALso logs all problem instances
 import networkx as nx
 import numpy as np
 import pandas as pd
+import util
 
 class InstanceGenerator:
     """Object that generates problem instances for the simulation.
@@ -354,3 +355,46 @@ class InstanceGenerator:
             self.index += 1
 
         return self.matrix_to_graph(M)
+
+
+    def generate_list_from_ordinal_preferences(self,s,n,k,normalization="unit_sum"):
+        """Generates a list of Graph objects based off of the given R data file s with n agents and goods, and k total trials, normalized to either unit-sum or unit-range.
+
+        Args:
+            s (str): the name of the file containing the R data.
+            n (int): the number of agents and goods in the R data.
+            k (int): the number of trials.
+            normalization (str): whether or not the normalization should be unit-sum or unit range. Defaults to unit-sum.
+
+        Returns:
+            List of Weighted bipartite Graphs with nodes 1 through n representing agents.
+        """
+        matrix_list = util.unpack_r_data(s,n,k)
+        graph_list = []
+
+        for i in range(matrix_list.shape[0]):
+            A = matrix_list[i]
+            M = []
+
+            for j in range(A.shape[0]):
+                d = {}
+                vals = np.random.rand(n)
+
+                if normalization == "unit_range":
+                    val_max, val_min = np.max(vals), np.min(vals)
+                    vals = (vals - val_min)/(val_max - val_min)
+                else:
+                    vals = vals/np.sum(vals)
+
+                vals.sort()
+                vals = np.flip(vals)
+
+                for l in range(n):
+                    d[l+1] = vals[l]
+
+                M.append([d[item] for item in A[j]])               
+
+            M = np.array(M)
+            graph_list.append(self.matrix_to_graph(M))
+
+        return graph_list
