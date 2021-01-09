@@ -260,7 +260,8 @@ def partial_max_matching(G, m, agent_cap=None):
         return set().union(first_matching, second_matching)
 
 
-def modified_max_matching(G,agent_cap=None):
+#TODO modify this to include priority-p
+def modified_max_matching(G,prio='pareto',agent_cap=None):
     """Runs the ModifiedMaxMatching algorithm on a weighted bipartite Graph G that has been normalized to unit-range; that is, each agent's most valued good
     must have a value of 1. Assumes the nodes of G are enumerated from 1 to n.
 
@@ -277,6 +278,7 @@ def modified_max_matching(G,agent_cap=None):
 
     H = nx.Graph()
     H.add_nodes_from(G.nodes)
+    n = agent_cap
 
     for (u,v) in G.edges:
         if G[u][v]['weight'] == 1:
@@ -285,6 +287,18 @@ def modified_max_matching(G,agent_cap=None):
             H.add_weighted_edges_from([(u,v,1/np.sqrt(agent_cap))])
         else:
             H.add_weighted_edges_from([(u,v,0)])
+
+    I = G.copy()
+    I = rankify_graph(I)
+
+    for (u,v) in H.edges:
+        r = I[u][v]['rank']
+        if prio=='fair':
+            H[u][v]['weight'] += 4*np.power(n,2*n) - 2*np.power(n,r-1)
+        elif prio=='max_cardinality_rank_maximal':
+            H[u][v]['weight'] += np.power(n,2*n) + np.power(n,2*(n-r))
+        elif prio=='rank_maximal':
+            H[u][v]['weight'] += np.power(n,2*(n-r+1))
 
     first_matching = nx.algorithms.matching.max_weight_matching(H)
 
@@ -299,54 +313,6 @@ def modified_max_matching(G,agent_cap=None):
         i += 1
 
     return set().union(first_matching, second_matching)
-
-
-def hybrid_max_matching(G, agent_cap=None):
-    """Runs the HybridMaxMatching algorithm on a weighted bipartite graph G, whose nodes are enumerated from 1 to n. Notice the top-trading cycle step is not implemented.
-    
-    Args:
-        G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
-        agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
-        to len(G.nodes)//2 if not given.
-
-    Returns:
-        A set of 2-tuples representing a matching on G found by HybridMaxMatching.
-    """
-    if agent_cap is None:
-        agent_cap = len(G.nodes)//2
-
-    H = G.copy() # make a copy of graph with ranks; this'll be useful for later
-    H = rankify_graph(H, agent_cap)
-
-    I = nx.Graph() #add weights from query to graph, compute max-matching
-    I.add_nodes_from(G.nodes)
-    for (u,v) in G.edges:
-        if H[u][v]['rank'] == 1 and H[u][v]['weight'] >= 1/np.sqrt(agent_cap): # note in instances where nodes MUST be labelled 1...n, agent_cap=|agents|
-            I.add_weighted_edges_from([(u,v,1/np.sqrt(agent_cap))])
-        elif H[u][v]['rank'] > 1 and H[u][v]['weight'] >= np.reciprocal((agent_cap**0.75)*min(H[u][v]['rank'], agent_cap**0.25)):
-            I.add_weighted_edges_from([(u,v,np.reciprocal((agent_cap**0.75)*min(H[u][v]['rank'], agent_cap**0.25)))])
-
-    first_matching = nx.algorithms.matching.max_weight_matching(I)
-
-    H.remove_nodes_from(sum([[u,v] for (u,v) in first_matching], []))
-    rankify_graph(H,agent_cap)
-
-    second_matching = rank_maximal_allocation(H,agent_cap) #compute rank-maximal alloc on remainder
-
-    H.remove_nodes_from(sum([[u,v] for (u,v) in second_matching], []))
-
-    if len(H.nodes) == 0: #arbitrarily match remainder
-        return set().union(first_matching, second_matching)
-    else:
-        agent_nodes = [node for node in H.nodes if node <= agent_cap]
-        good_nodes = [node for node in H.nodes if node > agent_cap]
-        third_matching = set()
-        i = 0         
-        while i < min(len(good_nodes), len(agent_nodes)):
-            third_matching.add((agent_nodes[i], good_nodes[i]))
-            i += 1
-
-        return set().union(third_matching, set().union(first_matching, second_matching))   
 
 
 def top_trading_cycles(G, agent_cap=None):
