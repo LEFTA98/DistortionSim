@@ -88,7 +88,7 @@ class Simulator:
         self.history['distortion'].append(solver.calculate_distortion(G,M_0))        
 
 
-    def modified_max_matching_experiment(self, val_index, val_type, G, size=None, agent_cap=None):
+    def modified_max_matching_experiment(self, val_index, val_type, G, prio='pareto', size=None, agent_cap=None):
         """Finds the distortion of running ModifiedMaxMatching on the given input.
         
         Args:
@@ -102,7 +102,7 @@ class Simulator:
         if size is None:
             size = len(G.nodes)//2
 
-        M = solver.modified_max_matching(G,agent_cap)
+        M = solver.modified_max_matching(G,prio=prio,agent_cap=agent_cap)
         H = solver.reassign_labels(G, M)
         M_0 = solver.top_trading_cycles(H)
 
@@ -152,7 +152,7 @@ class Simulator:
         if size is None:
             size = len(G.nodes)//2
 
-        M = solver.epsilon_max_matching(G, epsilon, agent_cap)
+        M = solver.epsilon_max_matching(G, epsilon, agent_cap=agent_cap)
         H = solver.reassign_labels(G, M)
         M_0 = solver.top_trading_cycles(H)
 
@@ -165,7 +165,7 @@ class Simulator:
         self.history['distortion'].append(solver.calculate_distortion(G,M_0))
 
 
-    def epsilon_max_matching_prio_experiment(self, val_index, val_type, G, epsilon, prio, size=None, agent_cap=None):
+    def epsilon_max_matching_prio_experiment(self, val_index, val_type, G, epsilon, prio='pareto', size=None, agent_cap=None):
         """Finds the distortion of running epsilon max matching on the given input.
         
         Args:
@@ -226,7 +226,7 @@ class Simulator:
         if size is None:
             size = len(G.nodes)//2
 
-        M = solver.updated_hybrid_max_matching(G,agent_cap)
+        M = solver.updated_hybrid_max_matching(G,agent_cap=agent_cap)
         H = solver.reassign_labels(G, M)
         M_0 = solver.top_trading_cycles(H)
 
@@ -264,8 +264,10 @@ if __name__=='__main__':
     # df = pd.Series(sim.instance_generator.history)
     # df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_arrow_-1_pareto.csv") #adjust instance data path name here
 
-    val_type = "theta5unitrange"
-    filenames = ["rdata/ord_n5_theta5.txt", "rdata/ord_n10_theta5.txt", "rdata/ord_n20_theta5.txt", "rdata/ord_n50_theta5.txt", "rdata/ord_n100_theta5.txt"]
+    # current experiment: theta=1, val=unit_range, prio=pareto_opt
+
+    val_type = "theta1unitrange"
+    filenames = ["rdata/ord_n5_theta1.txt", "rdata/ord_n10_theta1.txt", "rdata/ord_n20_theta1.txt", "rdata/ord_n50_theta1.txt", "rdata/ord_n100_theta1.txt"]
     sizes = [5,10,20,50,100]
 
     for j in range(len(sizes)):

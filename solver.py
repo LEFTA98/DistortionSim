@@ -312,12 +312,55 @@ def modified_max_matching(G,prio='pareto',agent_cap=None):
         second_matching.add((agent_nodes[i], good_nodes[i]))
         i += 1
 
-    return set().union(first_matching, second_matching)
+    match = set().union(first_matching, second_matching)
+    match = set([(a,b) if a < b else (b,a) for (a,b) in match])
+    if prio=='pareto':
+        return top_trading_cycles(G,agent_cap,match)
+    else:
+        return match
 
 
-def top_trading_cycles(G, agent_cap=None):
-    """Runs the top-trading cycles algorithm on a weighted bipartite graph G, whose nodes are enumerated from 1 to n, assuming the initial 
-    allocation is agent i getting good i. Notice for this algorithm to work, agent_cap MUST be set at len(G.nodes)//2.
+#TODO remove this old version of ttc once new one is verified to work
+# def top_trading_cycles(G, agent_cap=None):
+#     """Runs the top-trading cycles algorithm on a weighted bipartite graph G, whose nodes are enumerated from 1 to n, assuming the initial 
+#     allocation is agent i getting good i. Notice for this algorithm to work, agent_cap MUST be set at len(G.nodes)//2.
+    
+#     Args:
+#         G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
+#         agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
+#         to len(G.nodes)//2 if not given.
+
+#     Returns:
+#         A set of 2-tuples representing a matching on G found by HybridMaxMatching.    
+#     """
+#     if agent_cap is None:
+#         agent_cap = len(G.nodes)//2
+
+#     H = G.copy()
+#     M = set()
+#     count = len(H.nodes)
+
+#     while count > 0:
+#         rankify_graph(H, agent_cap)
+
+#         I = nx.DiGraph()
+#         I.add_nodes_from(H.nodes)
+#         for (u,v) in H.edges:
+#             if H[u][v]['rank'] == 1:
+#                 I.add_edge(u,int(v - len(G.nodes)//2)) #draw an edge between the agent u and the agent corresponding to good v
+
+#         C = nx.algorithms.cycles.find_cycle(I)
+#         for (u,v) in C:
+#             M.add((u, int(v + len(G.nodes)//2)))
+#             H.remove_nodes_from([u, int(v+len(G.nodes)//2)])
+#             count -= 2
+
+#     return M
+
+
+def top_trading_cycles(G, agent_cap=None, initial_matching=None):
+    """Runs the top-trading cycles algorithm on a weighted bipartite graph G, assuming the initial allocation is agent i getting good i. Notice for this
+    algorithm to work, agent_cap MUST be set at len(G.nodes)//2.
     
     Args:
         G (nx.Graph): Weighted bipartite Graph, with all edge weights assumed to be in [0,1].
@@ -329,25 +372,30 @@ def top_trading_cycles(G, agent_cap=None):
     """
     if agent_cap is None:
         agent_cap = len(G.nodes)//2
+        
+    if initial_matching is None:
+        initial_matching = set([(i+1, i+agent_cap+1) for i in range(agent_cap)])
+        
+    agents_to_goods_d = dict(initial_matching)
+    goods_to_agents_d = dict([(b,a) for (a,b) in initial_matching])
 
     H = G.copy()
     M = set()
-    count = len(H.nodes)
 
-    while count > 0:
+    while len(H.nodes) != 0:
         rankify_graph(H, agent_cap)
+        
 
         I = nx.DiGraph()
         I.add_nodes_from(H.nodes)
         for (u,v) in H.edges:
             if H[u][v]['rank'] == 1:
-                I.add_edge(u,int(v - len(G.nodes)//2)) #draw an edge between the agent u and the agent corresponding to good v
+                I.add_edge(u,goods_to_agents_d[v]) #draw an edge between the agent u and the agent corresponding to good v
 
         C = nx.algorithms.cycles.find_cycle(I)
         for (u,v) in C:
-            M.add((u, int(v + len(G.nodes)//2)))
-            H.remove_nodes_from([u, int(v+len(G.nodes)//2)])
-            count -= 2
+            M.add((u, agents_to_goods_d[v]))
+            H.remove_nodes_from([u, agents_to_goods_d[v]])
 
     return M
 
@@ -413,7 +461,12 @@ def epsilon_max_matching(G, epsilon, prio='pareto', agent_cap=None):
         elif prio=='rank_maximal':
             H[u][v]['weight'] += np.power(n,2*(n-r+1))
 
-    return nx.algorithms.matching.max_weight_matching(H) # this technically should be TTC'ed afterwards
+    match = nx.algorithms.matching.max_weight_matching(H) # this technically should be TTC'ed afterwards
+    match = set([(a,b) if a < b else (b,a) for (a,b) in match])
+    if prio=='pareto':
+        return top_trading_cycles(G,agent_cap,match)
+    else:
+        return match
 
 
 def twothirds_max_matching(G,prio='rank_maximal',agent_cap=None):
@@ -526,7 +579,9 @@ def updated_hybrid_max_matching(G, agent_cap=None):
         M_rest.add((agent_nodes[i], good_nodes[i]))
         i += 1
 
-    return set().union(M_rest, set().union(M_mm,M_aux))
+    match = set().union(M_rest, set().union(M_mm,M_aux))
+    match = set([(a,b) if a < b else (b,a) for (a,b) in match])
+    return top_trading_cycles(G,agent_cap,match)
 
 
 def reassign_labels(G,M,agent_cap=None):
@@ -572,7 +627,7 @@ def calculate_distortion(G,M):
 
 def calculate_modified_distortion(G,M,prio='rank_maximal'):
     """Calculates the approximation of social welfare among allocations that satisfy the criterion prio by finding the social welfare of the
-    optimal matching on weighted complete bipartite grpah G subject to the criterion, then dividing it by the social welfare achieved by given
+    optimal matching on weighted complete bipartite graph G subject to the criterion, then dividing it by the social welfare achieved by given
     matching M.
     
     Args:
