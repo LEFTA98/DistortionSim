@@ -32,7 +32,7 @@ def rankify_graph(G, agent_cap=None):
     return G
 
 
-def priority_augment(G, prio='rank_maximal', agent_cap=None):
+def priority_augment(G, prio='pareto', agent_cap=None):
     """Augments a weighted bipartite graph G to generate a new weighted biparitite graph H, such that G and H have identical vertices,
     but solving the maximum weight matching problem on H will yield a matching in G that is maximum weight subject to either rank maximality,
     max-cardinality rank maximality, or fairness. The augmentation is based on the paper associated with this experiment.
@@ -61,7 +61,7 @@ def priority_augment(G, prio='rank_maximal', agent_cap=None):
             H[u][v]['weight'] += 4*np.power(n,2*n) - 2*np.power(n,r-1)
         elif prio=='max_cardinality_rank_maximal':
             H[u][v]['weight'] += np.power(n,2*n) + np.power(n,2*(n-r))
-        else:
+        elif prio=='rank_maximal':
             H[u][v]['weight'] += np.power(n,2*(n-r+1))
 
     return H

@@ -1,0 +1,2501 @@
+,id,val_index,size,valuation,algo,distortion
+0,1,1,5.0,theta1unitsum,serial_dictatorship,1.3654803880663238
+1,2,1,5.0,theta1unitsum,ttc_matching,1.0718213529337846
+2,3,1,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+3,4,1,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+4,5,1,,theta1unitsum,twothirds_max_matching fair,1.0
+5,6,2,5.0,theta1unitsum,serial_dictatorship,1.940998656650478
+6,7,2,5.0,theta1unitsum,ttc_matching,1.1098665912961443
+7,8,2,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+8,9,2,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+9,10,2,,theta1unitsum,twothirds_max_matching fair,1.0
+10,11,3,5.0,theta1unitsum,serial_dictatorship,1.490474369098211
+11,12,3,5.0,theta1unitsum,ttc_matching,1.1388994509002983
+12,13,3,5.0,theta1unitsum,epsilon_max_matching fair1,1.0144387804086705
+13,14,3,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+14,15,3,,theta1unitsum,twothirds_max_matching fair,1.0
+15,16,4,5.0,theta1unitsum,serial_dictatorship,1.269775512838435
+16,17,4,5.0,theta1unitsum,ttc_matching,1.143958149612942
+17,18,4,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+18,19,4,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+19,20,4,,theta1unitsum,twothirds_max_matching fair,1.004179723732914
+20,21,5,5.0,theta1unitsum,serial_dictatorship,1.5470785147954682
+21,22,5,5.0,theta1unitsum,ttc_matching,1.1227754946655681
+22,23,5,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+23,24,5,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+24,25,5,,theta1unitsum,twothirds_max_matching fair,1.0
+25,26,6,5.0,theta1unitsum,serial_dictatorship,1.6567699285275062
+26,27,6,5.0,theta1unitsum,ttc_matching,1.2671984286627425
+27,28,6,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+28,29,6,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+29,30,6,,theta1unitsum,twothirds_max_matching fair,0.9999999999999999
+30,31,7,5.0,theta1unitsum,serial_dictatorship,1.3836353975381455
+31,32,7,5.0,theta1unitsum,ttc_matching,1.3836353975381455
+32,33,7,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+33,34,7,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+34,35,7,,theta1unitsum,twothirds_max_matching fair,1.0
+35,36,8,5.0,theta1unitsum,serial_dictatorship,1.75886794691189
+36,37,8,5.0,theta1unitsum,ttc_matching,1.055232085263409
+37,38,8,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+38,39,8,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+39,40,8,,theta1unitsum,twothirds_max_matching fair,1.0
+40,41,9,5.0,theta1unitsum,serial_dictatorship,1.4207105496021164
+41,42,9,5.0,theta1unitsum,ttc_matching,1.2819018080461269
+42,43,9,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+43,44,9,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.002400538498012
+44,45,9,,theta1unitsum,twothirds_max_matching fair,1.002400538498012
+45,46,10,5.0,theta1unitsum,serial_dictatorship,1.7897307494334758
+46,47,10,5.0,theta1unitsum,ttc_matching,1.1777312551960846
+47,48,10,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+48,49,10,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+49,50,10,,theta1unitsum,twothirds_max_matching fair,1.050447493015646
+50,51,11,5.0,theta1unitsum,serial_dictatorship,1.3374813336660738
+51,52,11,5.0,theta1unitsum,ttc_matching,1.2432203514995281
+52,53,11,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+53,54,11,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+54,55,11,,theta1unitsum,twothirds_max_matching fair,1.0
+55,56,12,5.0,theta1unitsum,serial_dictatorship,1.6331155452854509
+56,57,12,5.0,theta1unitsum,ttc_matching,1.361490855328442
+57,58,12,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+58,59,12,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+59,60,12,,theta1unitsum,twothirds_max_matching fair,1.0
+60,61,13,5.0,theta1unitsum,serial_dictatorship,1.1187273516572402
+61,62,13,5.0,theta1unitsum,ttc_matching,1.0996470419283904
+62,63,13,5.0,theta1unitsum,epsilon_max_matching fair1,1.0478506819060254
+63,64,13,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+64,65,13,,theta1unitsum,twothirds_max_matching fair,1.0043223584649537
+65,66,14,5.0,theta1unitsum,serial_dictatorship,1.5136061756500838
+66,67,14,5.0,theta1unitsum,ttc_matching,1.2255193066184504
+67,68,14,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+68,69,14,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+69,70,14,,theta1unitsum,twothirds_max_matching fair,1.0
+70,71,15,5.0,theta1unitsum,serial_dictatorship,1.475343913451886
+71,72,15,5.0,theta1unitsum,ttc_matching,1.1270431734829298
+72,73,15,5.0,theta1unitsum,epsilon_max_matching fair1,1.1278943287815006
+73,74,15,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+74,75,15,,theta1unitsum,twothirds_max_matching fair,1.249680216643731
+75,76,16,5.0,theta1unitsum,serial_dictatorship,1.1060430201590934
+76,77,16,5.0,theta1unitsum,ttc_matching,1.0143782675061135
+77,78,16,5.0,theta1unitsum,epsilon_max_matching fair1,1.0205008626558913
+78,79,16,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+79,80,16,,theta1unitsum,twothirds_max_matching fair,1.0
+80,81,17,5.0,theta1unitsum,serial_dictatorship,1.553893633492443
+81,82,17,5.0,theta1unitsum,ttc_matching,1.0492743975205978
+82,83,17,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+83,84,17,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+84,85,17,,theta1unitsum,twothirds_max_matching fair,1.0
+85,86,18,5.0,theta1unitsum,serial_dictatorship,1.0633466039057486
+86,87,18,5.0,theta1unitsum,ttc_matching,1.0633466039057486
+87,88,18,5.0,theta1unitsum,epsilon_max_matching fair1,1.0255324839618045
+88,89,18,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+89,90,18,,theta1unitsum,twothirds_max_matching fair,1.0255324839618045
+90,91,19,5.0,theta1unitsum,serial_dictatorship,1.4277848088680984
+91,92,19,5.0,theta1unitsum,ttc_matching,1.4277848088680984
+92,93,19,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+93,94,19,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+94,95,19,,theta1unitsum,twothirds_max_matching fair,1.0
+95,96,20,5.0,theta1unitsum,serial_dictatorship,1.449439029236393
+96,97,20,5.0,theta1unitsum,ttc_matching,1.2201023862896605
+97,98,20,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+98,99,20,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+99,100,20,,theta1unitsum,twothirds_max_matching fair,1.0
+100,101,21,5.0,theta1unitsum,serial_dictatorship,1.4998877088053042
+101,102,21,5.0,theta1unitsum,ttc_matching,1.4998877088053042
+102,103,21,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+103,104,21,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+104,105,21,,theta1unitsum,twothirds_max_matching fair,1.1584614635599282
+105,106,22,5.0,theta1unitsum,serial_dictatorship,1.6094667365751445
+106,107,22,5.0,theta1unitsum,ttc_matching,1.6094667365751445
+107,108,22,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+108,109,22,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+109,110,22,,theta1unitsum,twothirds_max_matching fair,1.0
+110,111,23,5.0,theta1unitsum,serial_dictatorship,1.1851316962286678
+111,112,23,5.0,theta1unitsum,ttc_matching,1.0092175473096348
+112,113,23,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+113,114,23,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+114,115,23,,theta1unitsum,twothirds_max_matching fair,1.0
+115,116,24,5.0,theta1unitsum,serial_dictatorship,1.2083513508514767
+116,117,24,5.0,theta1unitsum,ttc_matching,1.2083513508514767
+117,118,24,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+118,119,24,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+119,120,24,,theta1unitsum,twothirds_max_matching fair,1.083383894892218
+120,121,25,5.0,theta1unitsum,serial_dictatorship,1.2649573426397183
+121,122,25,5.0,theta1unitsum,ttc_matching,1.0156014158624753
+122,123,25,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+123,124,25,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+124,125,25,,theta1unitsum,twothirds_max_matching fair,1.0342392064456378
+125,126,26,5.0,theta1unitsum,serial_dictatorship,1.5645240885064329
+126,127,26,5.0,theta1unitsum,ttc_matching,1.4800400868927241
+127,128,26,5.0,theta1unitsum,epsilon_max_matching fair1,1.0287507920513603
+128,129,26,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+129,130,26,,theta1unitsum,twothirds_max_matching fair,1.0287507920513603
+130,131,27,5.0,theta1unitsum,serial_dictatorship,2.7280711207898647
+131,132,27,5.0,theta1unitsum,ttc_matching,1.156135112066421
+132,133,27,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+133,134,27,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+134,135,27,,theta1unitsum,twothirds_max_matching fair,1.0
+135,136,28,5.0,theta1unitsum,serial_dictatorship,1.4643991233489866
+136,137,28,5.0,theta1unitsum,ttc_matching,1.0340051393501333
+137,138,28,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+138,139,28,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+139,140,28,,theta1unitsum,twothirds_max_matching fair,1.0
+140,141,29,5.0,theta1unitsum,serial_dictatorship,1.139985239822236
+141,142,29,5.0,theta1unitsum,ttc_matching,0.9999999999999999
+142,143,29,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+143,144,29,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+144,145,29,,theta1unitsum,twothirds_max_matching fair,1.0
+145,146,30,5.0,theta1unitsum,serial_dictatorship,1.3047391429587627
+146,147,30,5.0,theta1unitsum,ttc_matching,1.3047391429587627
+147,148,30,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+148,149,30,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+149,150,30,,theta1unitsum,twothirds_max_matching fair,1.0
+150,151,31,5.0,theta1unitsum,serial_dictatorship,1.4197747997741703
+151,152,31,5.0,theta1unitsum,ttc_matching,1.1466822397504914
+152,153,31,5.0,theta1unitsum,epsilon_max_matching fair1,1.039910511903368
+153,154,31,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+154,155,31,,theta1unitsum,twothirds_max_matching fair,1.0
+155,156,32,5.0,theta1unitsum,serial_dictatorship,1.575556438134525
+156,157,32,5.0,theta1unitsum,ttc_matching,1.11458562638091
+157,158,32,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+158,159,32,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+159,160,32,,theta1unitsum,twothirds_max_matching fair,1.0
+160,161,33,5.0,theta1unitsum,serial_dictatorship,1.5056723487188965
+161,162,33,5.0,theta1unitsum,ttc_matching,1.5056723487188965
+162,163,33,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+163,164,33,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+164,165,33,,theta1unitsum,twothirds_max_matching fair,1.0
+165,166,34,5.0,theta1unitsum,serial_dictatorship,1.605610367138506
+166,167,34,5.0,theta1unitsum,ttc_matching,1.129708030214023
+167,168,34,5.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+168,169,34,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+169,170,34,,theta1unitsum,twothirds_max_matching fair,1.0872707205991972
+170,171,35,5.0,theta1unitsum,serial_dictatorship,1.4746267140038993
+171,172,35,5.0,theta1unitsum,ttc_matching,1.107007306867547
+172,173,35,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+173,174,35,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+174,175,35,,theta1unitsum,twothirds_max_matching fair,1.0
+175,176,36,5.0,theta1unitsum,serial_dictatorship,1.4670944809994617
+176,177,36,5.0,theta1unitsum,ttc_matching,1.0292305788064435
+177,178,36,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+178,179,36,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+179,180,36,,theta1unitsum,twothirds_max_matching fair,1.0
+180,181,37,5.0,theta1unitsum,serial_dictatorship,1.2133367662894439
+181,182,37,5.0,theta1unitsum,ttc_matching,1.0
+182,183,37,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+183,184,37,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+184,185,37,,theta1unitsum,twothirds_max_matching fair,1.1482290915701365
+185,186,38,5.0,theta1unitsum,serial_dictatorship,1.3210249266077376
+186,187,38,5.0,theta1unitsum,ttc_matching,1.3210249266077376
+187,188,38,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+188,189,38,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+189,190,38,,theta1unitsum,twothirds_max_matching fair,1.0
+190,191,39,5.0,theta1unitsum,serial_dictatorship,1.8415945386387482
+191,192,39,5.0,theta1unitsum,ttc_matching,1.0400192067994993
+192,193,39,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+193,194,39,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+194,195,39,,theta1unitsum,twothirds_max_matching fair,1.0
+195,196,40,5.0,theta1unitsum,serial_dictatorship,1.1314494211419397
+196,197,40,5.0,theta1unitsum,ttc_matching,1.0
+197,198,40,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+198,199,40,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+199,200,40,,theta1unitsum,twothirds_max_matching fair,1.250139261248255
+200,201,41,5.0,theta1unitsum,serial_dictatorship,1.4993706244922878
+201,202,41,5.0,theta1unitsum,ttc_matching,1.0
+202,203,41,5.0,theta1unitsum,epsilon_max_matching fair1,1.0675360450784654
+203,204,41,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+204,205,41,,theta1unitsum,twothirds_max_matching fair,1.0675360450784654
+205,206,42,5.0,theta1unitsum,serial_dictatorship,1.695757750357458
+206,207,42,5.0,theta1unitsum,ttc_matching,1.445209729714353
+207,208,42,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+208,209,42,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+209,210,42,,theta1unitsum,twothirds_max_matching fair,1.0
+210,211,43,5.0,theta1unitsum,serial_dictatorship,1.5602192175846594
+211,212,43,5.0,theta1unitsum,ttc_matching,1.0631246755037262
+212,213,43,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+213,214,43,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+214,215,43,,theta1unitsum,twothirds_max_matching fair,1.0
+215,216,44,5.0,theta1unitsum,serial_dictatorship,1.9767648753834612
+216,217,44,5.0,theta1unitsum,ttc_matching,1.3870696319464064
+217,218,44,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+218,219,44,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+219,220,44,,theta1unitsum,twothirds_max_matching fair,1.0601035100171992
+220,221,45,5.0,theta1unitsum,serial_dictatorship,1.6684171521961688
+221,222,45,5.0,theta1unitsum,ttc_matching,1.5236630528802315
+222,223,45,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+223,224,45,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+224,225,45,,theta1unitsum,twothirds_max_matching fair,1.0
+225,226,46,5.0,theta1unitsum,serial_dictatorship,2.2837860601174
+226,227,46,5.0,theta1unitsum,ttc_matching,1.1087379857553377
+227,228,46,5.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+228,229,46,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+229,230,46,,theta1unitsum,twothirds_max_matching fair,1.1087379857553377
+230,231,47,5.0,theta1unitsum,serial_dictatorship,1.3905689345428622
+231,232,47,5.0,theta1unitsum,ttc_matching,1.242444258610328
+232,233,47,5.0,theta1unitsum,epsilon_max_matching fair1,1.0183948114231063
+233,234,47,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+234,235,47,,theta1unitsum,twothirds_max_matching fair,1.0183948114231063
+235,236,48,5.0,theta1unitsum,serial_dictatorship,1.5239387134348656
+236,237,48,5.0,theta1unitsum,ttc_matching,1.5239387134348656
+237,238,48,5.0,theta1unitsum,epsilon_max_matching fair1,1.0709734732630116
+238,239,48,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+239,240,48,,theta1unitsum,twothirds_max_matching fair,1.1812314166197224
+240,241,49,5.0,theta1unitsum,serial_dictatorship,1.8658602541281506
+241,242,49,5.0,theta1unitsum,ttc_matching,1.1795456834818394
+242,243,49,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+243,244,49,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+244,245,49,,theta1unitsum,twothirds_max_matching fair,1.0
+245,246,50,5.0,theta1unitsum,serial_dictatorship,1.3292885683021447
+246,247,50,5.0,theta1unitsum,ttc_matching,1.1060499612373642
+247,248,50,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+248,249,50,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+249,250,50,,theta1unitsum,twothirds_max_matching fair,1.0
+250,251,51,5.0,theta1unitsum,serial_dictatorship,1.6056982844939072
+251,252,51,5.0,theta1unitsum,ttc_matching,1.0705577091950336
+252,253,51,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+253,254,51,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+254,255,51,,theta1unitsum,twothirds_max_matching fair,1.0
+255,256,52,5.0,theta1unitsum,serial_dictatorship,2.0941799583372003
+256,257,52,5.0,theta1unitsum,ttc_matching,1.2062281363586738
+257,258,52,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+258,259,52,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+259,260,52,,theta1unitsum,twothirds_max_matching fair,1.0
+260,261,53,5.0,theta1unitsum,serial_dictatorship,2.0089029663308655
+261,262,53,5.0,theta1unitsum,ttc_matching,1.200325914946273
+262,263,53,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+263,264,53,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+264,265,53,,theta1unitsum,twothirds_max_matching fair,1.0
+265,266,54,5.0,theta1unitsum,serial_dictatorship,1.1728043712598846
+266,267,54,5.0,theta1unitsum,ttc_matching,1.0290291267753067
+267,268,54,5.0,theta1unitsum,epsilon_max_matching fair1,1.0114399264231027
+268,269,54,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+269,270,54,,theta1unitsum,twothirds_max_matching fair,1.0433807302917273
+270,271,55,5.0,theta1unitsum,serial_dictatorship,1.4414581460410476
+271,272,55,5.0,theta1unitsum,ttc_matching,1.1767273538313012
+272,273,55,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999998
+273,274,55,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+274,275,55,,theta1unitsum,twothirds_max_matching fair,1.0
+275,276,56,5.0,theta1unitsum,serial_dictatorship,1.2038746008824484
+276,277,56,5.0,theta1unitsum,ttc_matching,1.2038746008824484
+277,278,56,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+278,279,56,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+279,280,56,,theta1unitsum,twothirds_max_matching fair,1.0
+280,281,57,5.0,theta1unitsum,serial_dictatorship,2.7202192713110263
+281,282,57,5.0,theta1unitsum,ttc_matching,1.4667239419455989
+282,283,57,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+283,284,57,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+284,285,57,,theta1unitsum,twothirds_max_matching fair,1.0
+285,286,58,5.0,theta1unitsum,serial_dictatorship,1.8113884002385718
+286,287,58,5.0,theta1unitsum,ttc_matching,1.132002219482256
+287,288,58,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+288,289,58,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+289,290,58,,theta1unitsum,twothirds_max_matching fair,1.0612628909875352
+290,291,59,5.0,theta1unitsum,serial_dictatorship,1.324426258576585
+291,292,59,5.0,theta1unitsum,ttc_matching,1.324426258576585
+292,293,59,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+293,294,59,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+294,295,59,,theta1unitsum,twothirds_max_matching fair,1.0768836111164213
+295,296,60,5.0,theta1unitsum,serial_dictatorship,1.5707649940604984
+296,297,60,5.0,theta1unitsum,ttc_matching,1.5707649940604984
+297,298,60,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+298,299,60,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+299,300,60,,theta1unitsum,twothirds_max_matching fair,1.0
+300,301,61,5.0,theta1unitsum,serial_dictatorship,1.70673691474049
+301,302,61,5.0,theta1unitsum,ttc_matching,1.0
+302,303,61,5.0,theta1unitsum,epsilon_max_matching fair1,1.0816949670552538
+303,304,61,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+304,305,61,,theta1unitsum,twothirds_max_matching fair,1.0816949670552538
+305,306,62,5.0,theta1unitsum,serial_dictatorship,1.191624129905693
+306,307,62,5.0,theta1unitsum,ttc_matching,1.0444929355899715
+307,308,62,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+308,309,62,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+309,310,62,,theta1unitsum,twothirds_max_matching fair,1.1423816553156585
+310,311,63,5.0,theta1unitsum,serial_dictatorship,1.5210976115743957
+311,312,63,5.0,theta1unitsum,ttc_matching,1.2057329950655713
+312,313,63,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+313,314,63,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+314,315,63,,theta1unitsum,twothirds_max_matching fair,1.0589739865221326
+315,316,64,5.0,theta1unitsum,serial_dictatorship,1.2756172015206209
+316,317,64,5.0,theta1unitsum,ttc_matching,1.065114551056176
+317,318,64,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+318,319,64,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+319,320,64,,theta1unitsum,twothirds_max_matching fair,1.0492968134605374
+320,321,65,5.0,theta1unitsum,serial_dictatorship,1.1715507861936931
+321,322,65,5.0,theta1unitsum,ttc_matching,1.0684837867276267
+322,323,65,5.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+323,324,65,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+324,325,65,,theta1unitsum,twothirds_max_matching fair,1.0
+325,326,66,5.0,theta1unitsum,serial_dictatorship,1.921659538072703
+326,327,66,5.0,theta1unitsum,ttc_matching,1.650585788850986
+327,328,66,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+328,329,66,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+329,330,66,,theta1unitsum,twothirds_max_matching fair,1.0
+330,331,67,5.0,theta1unitsum,serial_dictatorship,1.328997037543547
+331,332,67,5.0,theta1unitsum,ttc_matching,1.0515169319800064
+332,333,67,5.0,theta1unitsum,epsilon_max_matching fair1,1.003758276660898
+333,334,67,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+334,335,67,,theta1unitsum,twothirds_max_matching fair,1.0037582766608977
+335,336,68,5.0,theta1unitsum,serial_dictatorship,1.2592578485922608
+336,337,68,5.0,theta1unitsum,ttc_matching,1.0560523979139764
+337,338,68,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+338,339,68,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+339,340,68,,theta1unitsum,twothirds_max_matching fair,1.2526889995201835
+340,341,69,5.0,theta1unitsum,serial_dictatorship,1.135177227392281
+341,342,69,5.0,theta1unitsum,ttc_matching,1.135177227392281
+342,343,69,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+343,344,69,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+344,345,69,,theta1unitsum,twothirds_max_matching fair,1.0
+345,346,70,5.0,theta1unitsum,serial_dictatorship,1.2143314295591656
+346,347,70,5.0,theta1unitsum,ttc_matching,1.2143314295591656
+347,348,70,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+348,349,70,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+349,350,70,,theta1unitsum,twothirds_max_matching fair,1.0
+350,351,71,5.0,theta1unitsum,serial_dictatorship,1.2860724790440667
+351,352,71,5.0,theta1unitsum,ttc_matching,1.2860724790440667
+352,353,71,5.0,theta1unitsum,epsilon_max_matching fair1,1.1119972529238242
+353,354,71,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+354,355,71,,theta1unitsum,twothirds_max_matching fair,1.1119972529238242
+355,356,72,5.0,theta1unitsum,serial_dictatorship,1.562405368475523
+356,357,72,5.0,theta1unitsum,ttc_matching,1.2094427735680966
+357,358,72,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+358,359,72,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+359,360,72,,theta1unitsum,twothirds_max_matching fair,1.0
+360,361,73,5.0,theta1unitsum,serial_dictatorship,2.0483451712226666
+361,362,73,5.0,theta1unitsum,ttc_matching,1.3806079995382545
+362,363,73,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+363,364,73,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+364,365,73,,theta1unitsum,twothirds_max_matching fair,1.1179800202759251
+365,366,74,5.0,theta1unitsum,serial_dictatorship,1.2855369593155113
+366,367,74,5.0,theta1unitsum,ttc_matching,1.1142068837479908
+367,368,74,5.0,theta1unitsum,epsilon_max_matching fair1,1.0213194908942302
+368,369,74,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+369,370,74,,theta1unitsum,twothirds_max_matching fair,1.0213194908942302
+370,371,75,5.0,theta1unitsum,serial_dictatorship,1.5733212922393087
+371,372,75,5.0,theta1unitsum,ttc_matching,1.517313681849645
+372,373,75,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+373,374,75,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+374,375,75,,theta1unitsum,twothirds_max_matching fair,1.0
+375,376,76,5.0,theta1unitsum,serial_dictatorship,1.3507805358946654
+376,377,76,5.0,theta1unitsum,ttc_matching,1.1169063991755137
+377,378,76,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+378,379,76,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+379,380,76,,theta1unitsum,twothirds_max_matching fair,1.0
+380,381,77,5.0,theta1unitsum,serial_dictatorship,1.136533744044577
+381,382,77,5.0,theta1unitsum,ttc_matching,1.0959810223550825
+382,383,77,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999998
+383,384,77,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+384,385,77,,theta1unitsum,twothirds_max_matching fair,1.117430406449383
+385,386,78,5.0,theta1unitsum,serial_dictatorship,1.8596639511079112
+386,387,78,5.0,theta1unitsum,ttc_matching,1.2579846871282045
+387,388,78,5.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+388,389,78,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+389,390,78,,theta1unitsum,twothirds_max_matching fair,1.3368662316477513
+390,391,79,5.0,theta1unitsum,serial_dictatorship,1.4706764030046537
+391,392,79,5.0,theta1unitsum,ttc_matching,1.253113024588959
+392,393,79,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+393,394,79,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+394,395,79,,theta1unitsum,twothirds_max_matching fair,1.0
+395,396,80,5.0,theta1unitsum,serial_dictatorship,1.1756144692669739
+396,397,80,5.0,theta1unitsum,ttc_matching,1.1756144692669739
+397,398,80,5.0,theta1unitsum,epsilon_max_matching fair1,1.012598501461054
+398,399,80,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+399,400,80,,theta1unitsum,twothirds_max_matching fair,1.012598501461054
+400,401,81,5.0,theta1unitsum,serial_dictatorship,1.357950314297464
+401,402,81,5.0,theta1unitsum,ttc_matching,1.0
+402,403,81,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+403,404,81,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+404,405,81,,theta1unitsum,twothirds_max_matching fair,1.0
+405,406,82,5.0,theta1unitsum,serial_dictatorship,1.259088788031205
+406,407,82,5.0,theta1unitsum,ttc_matching,1.1364508920348373
+407,408,82,5.0,theta1unitsum,epsilon_max_matching fair1,1.0140149421305706
+408,409,82,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+409,410,82,,theta1unitsum,twothirds_max_matching fair,1.0
+410,411,83,5.0,theta1unitsum,serial_dictatorship,1.2580010904774037
+411,412,83,5.0,theta1unitsum,ttc_matching,1.2506475846586291
+412,413,83,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+413,414,83,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+414,415,83,,theta1unitsum,twothirds_max_matching fair,1.0739235197161774
+415,416,84,5.0,theta1unitsum,serial_dictatorship,1.4178793134861665
+416,417,84,5.0,theta1unitsum,ttc_matching,1.4178793134861665
+417,418,84,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+418,419,84,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+419,420,84,,theta1unitsum,twothirds_max_matching fair,1.011122747899716
+420,421,85,5.0,theta1unitsum,serial_dictatorship,1.6017562482850791
+421,422,85,5.0,theta1unitsum,ttc_matching,1.0
+422,423,85,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+423,424,85,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+424,425,85,,theta1unitsum,twothirds_max_matching fair,1.0
+425,426,86,5.0,theta1unitsum,serial_dictatorship,1.080584989427354
+426,427,86,5.0,theta1unitsum,ttc_matching,1.080584989427354
+427,428,86,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999998
+428,429,86,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+429,430,86,,theta1unitsum,twothirds_max_matching fair,1.0
+430,431,87,5.0,theta1unitsum,serial_dictatorship,1.3379586026090484
+431,432,87,5.0,theta1unitsum,ttc_matching,1.3379586026090484
+432,433,87,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+433,434,87,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+434,435,87,,theta1unitsum,twothirds_max_matching fair,1.0
+435,436,88,5.0,theta1unitsum,serial_dictatorship,1.5109043133860722
+436,437,88,5.0,theta1unitsum,ttc_matching,1.5109043133860722
+437,438,88,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+438,439,88,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+439,440,88,,theta1unitsum,twothirds_max_matching fair,1.0
+440,441,89,5.0,theta1unitsum,serial_dictatorship,1.6263702022434954
+441,442,89,5.0,theta1unitsum,ttc_matching,1.172897350091126
+442,443,89,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+443,444,89,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+444,445,89,,theta1unitsum,twothirds_max_matching fair,1.1216943053124868
+445,446,90,5.0,theta1unitsum,serial_dictatorship,1.5156835270323668
+446,447,90,5.0,theta1unitsum,ttc_matching,1.5156835270323668
+447,448,90,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+448,449,90,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+449,450,90,,theta1unitsum,twothirds_max_matching fair,1.0
+450,451,91,5.0,theta1unitsum,serial_dictatorship,1.3358203556729373
+451,452,91,5.0,theta1unitsum,ttc_matching,1.241794103265785
+452,453,91,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+453,454,91,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+454,455,91,,theta1unitsum,twothirds_max_matching fair,1.0046252720275393
+455,456,92,5.0,theta1unitsum,serial_dictatorship,1.334352986486117
+456,457,92,5.0,theta1unitsum,ttc_matching,1.334352986486117
+457,458,92,5.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+458,459,92,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+459,460,92,,theta1unitsum,twothirds_max_matching fair,1.0
+460,461,93,5.0,theta1unitsum,serial_dictatorship,2.0100622808701267
+461,462,93,5.0,theta1unitsum,ttc_matching,1.4415872678439319
+462,463,93,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+463,464,93,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+464,465,93,,theta1unitsum,twothirds_max_matching fair,1.0
+465,466,94,5.0,theta1unitsum,serial_dictatorship,1.482856223664498
+466,467,94,5.0,theta1unitsum,ttc_matching,1.482856223664498
+467,468,94,5.0,theta1unitsum,epsilon_max_matching fair1,1.0379276641297583
+468,469,94,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+469,470,94,,theta1unitsum,twothirds_max_matching fair,1.0379276641297583
+470,471,95,5.0,theta1unitsum,serial_dictatorship,2.026172913021413
+471,472,95,5.0,theta1unitsum,ttc_matching,1.1310083189804563
+472,473,95,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+473,474,95,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+474,475,95,,theta1unitsum,twothirds_max_matching fair,1.0
+475,476,96,5.0,theta1unitsum,serial_dictatorship,1.9250754802955334
+476,477,96,5.0,theta1unitsum,ttc_matching,1.1446427217952668
+477,478,96,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+478,479,96,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+479,480,96,,theta1unitsum,twothirds_max_matching fair,1.078308983695077
+480,481,97,5.0,theta1unitsum,serial_dictatorship,1.853541628485929
+481,482,97,5.0,theta1unitsum,ttc_matching,1.0769585206574446
+482,483,97,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+483,484,97,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+484,485,97,,theta1unitsum,twothirds_max_matching fair,1.0
+485,486,98,5.0,theta1unitsum,serial_dictatorship,1.4756835859000592
+486,487,98,5.0,theta1unitsum,ttc_matching,1.4756835859000592
+487,488,98,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+488,489,98,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+489,490,98,,theta1unitsum,twothirds_max_matching fair,1.0
+490,491,99,5.0,theta1unitsum,serial_dictatorship,1.2296261665944375
+491,492,99,5.0,theta1unitsum,ttc_matching,1.2296261665944375
+492,493,99,5.0,theta1unitsum,epsilon_max_matching fair1,1.0
+493,494,99,5.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+494,495,99,,theta1unitsum,twothirds_max_matching fair,1.0
+495,496,100,5.0,theta1unitsum,serial_dictatorship,1.3515595404611975
+496,497,100,5.0,theta1unitsum,ttc_matching,1.1431446003940446
+497,498,100,5.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999998
+498,499,100,5.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+499,500,100,,theta1unitsum,twothirds_max_matching fair,1.0
+500,501,101,10.0,theta1unitsum,serial_dictatorship,1.2861127878945906
+501,502,101,10.0,theta1unitsum,ttc_matching,1.1450585230265786
+502,503,101,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+503,504,101,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+504,505,101,,theta1unitsum,twothirds_max_matching fair,0.06280739421804964
+505,506,102,10.0,theta1unitsum,serial_dictatorship,1.2903540740673758
+506,507,102,10.0,theta1unitsum,ttc_matching,1.080137512677121
+507,508,102,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+508,509,102,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+509,510,102,,theta1unitsum,twothirds_max_matching fair,0.08393408615964232
+510,511,103,10.0,theta1unitsum,serial_dictatorship,1.5030310198856762
+511,512,103,10.0,theta1unitsum,ttc_matching,1.2807763816604119
+512,513,103,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+513,514,103,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+514,515,103,,theta1unitsum,twothirds_max_matching fair,0.10729481874629852
+515,516,104,10.0,theta1unitsum,serial_dictatorship,1.359758244519361
+516,517,104,10.0,theta1unitsum,ttc_matching,1.2434302458523485
+517,518,104,10.0,theta1unitsum,epsilon_max_matching fair1,1.0297499282408102
+518,519,104,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+519,520,104,,theta1unitsum,twothirds_max_matching fair,0.1626699395122046
+520,521,105,10.0,theta1unitsum,serial_dictatorship,1.3772451335717717
+521,522,105,10.0,theta1unitsum,ttc_matching,1.0524168127141666
+522,523,105,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+523,524,105,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+524,525,105,,theta1unitsum,twothirds_max_matching fair,0.056883777159132544
+525,526,106,10.0,theta1unitsum,serial_dictatorship,1.3897062764428223
+526,527,106,10.0,theta1unitsum,ttc_matching,1.1492316094451167
+527,528,106,10.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999998
+528,529,106,10.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+529,530,106,,theta1unitsum,twothirds_max_matching fair,0.21912953621446737
+530,531,107,10.0,theta1unitsum,serial_dictatorship,1.2626457565176223
+531,532,107,10.0,theta1unitsum,ttc_matching,1.1148076344442008
+532,533,107,10.0,theta1unitsum,epsilon_max_matching fair1,1.1282904746852485
+533,534,107,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+534,535,107,,theta1unitsum,twothirds_max_matching fair,0.048996905255469084
+535,536,108,10.0,theta1unitsum,serial_dictatorship,1.2877640852533276
+536,537,108,10.0,theta1unitsum,ttc_matching,1.2483089330294121
+537,538,108,10.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+538,539,108,10.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+539,540,108,,theta1unitsum,twothirds_max_matching fair,0.157066394327581
+540,541,109,10.0,theta1unitsum,serial_dictatorship,1.2483387012712202
+541,542,109,10.0,theta1unitsum,ttc_matching,1.1438273542730066
+542,543,109,10.0,theta1unitsum,epsilon_max_matching fair1,1.0365332681932173
+543,544,109,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+544,545,109,,theta1unitsum,twothirds_max_matching fair,0.07013231661034672
+545,546,110,10.0,theta1unitsum,serial_dictatorship,1.4547274911284094
+546,547,110,10.0,theta1unitsum,ttc_matching,1.1342594655091185
+547,548,110,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+548,549,110,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+549,550,110,,theta1unitsum,twothirds_max_matching fair,0.1424262796131977
+550,551,111,10.0,theta1unitsum,serial_dictatorship,1.6113637070027607
+551,552,111,10.0,theta1unitsum,ttc_matching,1.2152223096881891
+552,553,111,10.0,theta1unitsum,epsilon_max_matching fair1,1.0733561303878605
+553,554,111,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+554,555,111,,theta1unitsum,twothirds_max_matching fair,0.0843748047192296
+555,556,112,10.0,theta1unitsum,serial_dictatorship,1.3930324585191693
+556,557,112,10.0,theta1unitsum,ttc_matching,1.2516590783504753
+557,558,112,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+558,559,112,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+559,560,112,,theta1unitsum,twothirds_max_matching fair,0.08039577384949066
+560,561,113,10.0,theta1unitsum,serial_dictatorship,1.719556947336998
+561,562,113,10.0,theta1unitsum,ttc_matching,1.1568381788096658
+562,563,113,10.0,theta1unitsum,epsilon_max_matching fair1,1.065209687487098
+563,564,113,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+564,565,113,,theta1unitsum,twothirds_max_matching fair,0.1291211185270727
+565,566,114,10.0,theta1unitsum,serial_dictatorship,1.2601064604192016
+566,567,114,10.0,theta1unitsum,ttc_matching,1.1732773841500683
+567,568,114,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+568,569,114,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+569,570,114,,theta1unitsum,twothirds_max_matching fair,0.09957927055022742
+570,571,115,10.0,theta1unitsum,serial_dictatorship,1.7711057299875985
+571,572,115,10.0,theta1unitsum,ttc_matching,1.1740460469092893
+572,573,115,10.0,theta1unitsum,epsilon_max_matching fair1,1.0850571916716036
+573,574,115,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+574,575,115,,theta1unitsum,twothirds_max_matching fair,0.06062996056054494
+575,576,116,10.0,theta1unitsum,serial_dictatorship,1.5945400500478022
+576,577,116,10.0,theta1unitsum,ttc_matching,1.301298266461742
+577,578,116,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+578,579,116,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+579,580,116,,theta1unitsum,twothirds_max_matching fair,0.06662939197685
+580,581,117,10.0,theta1unitsum,serial_dictatorship,1.2556581238263382
+581,582,117,10.0,theta1unitsum,ttc_matching,1.2277577366055403
+582,583,117,10.0,theta1unitsum,epsilon_max_matching fair1,1.044907639308553
+583,584,117,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+584,585,117,,theta1unitsum,twothirds_max_matching fair,0.06783338165822256
+585,586,118,10.0,theta1unitsum,serial_dictatorship,1.519793642594453
+586,587,118,10.0,theta1unitsum,ttc_matching,1.1029198256486832
+587,588,118,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+588,589,118,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+589,590,118,,theta1unitsum,twothirds_max_matching fair,0.18535730434936093
+590,591,119,10.0,theta1unitsum,serial_dictatorship,1.2433471143262786
+591,592,119,10.0,theta1unitsum,ttc_matching,1.0300008992177503
+592,593,119,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+593,594,119,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+594,595,119,,theta1unitsum,twothirds_max_matching fair,0.0716942564704566
+595,596,120,10.0,theta1unitsum,serial_dictatorship,1.6834033179800256
+596,597,120,10.0,theta1unitsum,ttc_matching,1.3505567879805755
+597,598,120,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+598,599,120,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+599,600,120,,theta1unitsum,twothirds_max_matching fair,0.09556077357438311
+600,601,121,10.0,theta1unitsum,serial_dictatorship,1.3590601206345987
+601,602,121,10.0,theta1unitsum,ttc_matching,1.15259954177482
+602,603,121,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+603,604,121,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+604,605,121,,theta1unitsum,twothirds_max_matching fair,0.12732529932078368
+605,606,122,10.0,theta1unitsum,serial_dictatorship,1.395134927241915
+606,607,122,10.0,theta1unitsum,ttc_matching,1.0459392839368271
+607,608,122,10.0,theta1unitsum,epsilon_max_matching fair1,1.0085046533853073
+608,609,122,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+609,610,122,,theta1unitsum,twothirds_max_matching fair,0.10670771262151513
+610,611,123,10.0,theta1unitsum,serial_dictatorship,1.667236239812147
+611,612,123,10.0,theta1unitsum,ttc_matching,1.260210269531601
+612,613,123,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+613,614,123,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+614,615,123,,theta1unitsum,twothirds_max_matching fair,0.06298943363719597
+615,616,124,10.0,theta1unitsum,serial_dictatorship,1.4167224631806339
+616,617,124,10.0,theta1unitsum,ttc_matching,1.1272782780500024
+617,618,124,10.0,theta1unitsum,epsilon_max_matching fair1,1.0366068711210081
+618,619,124,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+619,620,124,,theta1unitsum,twothirds_max_matching fair,0.08036050787631834
+620,621,125,10.0,theta1unitsum,serial_dictatorship,1.2664678219238874
+621,622,125,10.0,theta1unitsum,ttc_matching,1.1258941244655511
+622,623,125,10.0,theta1unitsum,epsilon_max_matching fair1,1.0121287315803513
+623,624,125,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0121287315803513
+624,625,125,,theta1unitsum,twothirds_max_matching fair,0.0788033356713128
+625,626,126,10.0,theta1unitsum,serial_dictatorship,1.33824084556269
+626,627,126,10.0,theta1unitsum,ttc_matching,1.1292262084580256
+627,628,126,10.0,theta1unitsum,epsilon_max_matching fair1,1.0052454167501998
+628,629,126,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+629,630,126,,theta1unitsum,twothirds_max_matching fair,0.05562462809455879
+630,631,127,10.0,theta1unitsum,serial_dictatorship,1.5291839557176998
+631,632,127,10.0,theta1unitsum,ttc_matching,1.3521020857809325
+632,633,127,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+633,634,127,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+634,635,127,,theta1unitsum,twothirds_max_matching fair,0.06748140748045703
+635,636,128,10.0,theta1unitsum,serial_dictatorship,1.5631835877423683
+636,637,128,10.0,theta1unitsum,ttc_matching,1.1243201465627435
+637,638,128,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+638,639,128,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+639,640,128,,theta1unitsum,twothirds_max_matching fair,0.060615001710121644
+640,641,129,10.0,theta1unitsum,serial_dictatorship,1.6036876743855912
+641,642,129,10.0,theta1unitsum,ttc_matching,1.1738078825401914
+642,643,129,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+643,644,129,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+644,645,129,,theta1unitsum,twothirds_max_matching fair,0.0957496910357082
+645,646,130,10.0,theta1unitsum,serial_dictatorship,1.6001082877745374
+646,647,130,10.0,theta1unitsum,ttc_matching,1.1537756234037422
+647,648,130,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+648,649,130,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+649,650,130,,theta1unitsum,twothirds_max_matching fair,0.10073119887617915
+650,651,131,10.0,theta1unitsum,serial_dictatorship,1.3825150224312406
+651,652,131,10.0,theta1unitsum,ttc_matching,1.3479378112759532
+652,653,131,10.0,theta1unitsum,epsilon_max_matching fair1,1.05356896864942
+653,654,131,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+654,655,131,,theta1unitsum,twothirds_max_matching fair,0.10601043812866247
+655,656,132,10.0,theta1unitsum,serial_dictatorship,1.4192627247169491
+656,657,132,10.0,theta1unitsum,ttc_matching,1.1417574985610726
+657,658,132,10.0,theta1unitsum,epsilon_max_matching fair1,1.0400044364633882
+658,659,132,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+659,660,132,,theta1unitsum,twothirds_max_matching fair,0.058671315828137505
+660,661,133,10.0,theta1unitsum,serial_dictatorship,1.4718332814327388
+661,662,133,10.0,theta1unitsum,ttc_matching,1.0228646783490043
+662,663,133,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+663,664,133,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+664,665,133,,theta1unitsum,twothirds_max_matching fair,0.15271373878682395
+665,666,134,10.0,theta1unitsum,serial_dictatorship,1.3661952412657812
+666,667,134,10.0,theta1unitsum,ttc_matching,1.1315941425885923
+667,668,134,10.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+668,669,134,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+669,670,134,,theta1unitsum,twothirds_max_matching fair,0.10002329768367013
+670,671,135,10.0,theta1unitsum,serial_dictatorship,1.4277471647144198
+671,672,135,10.0,theta1unitsum,ttc_matching,1.132292814630719
+672,673,135,10.0,theta1unitsum,epsilon_max_matching fair1,1.0680514263275136
+673,674,135,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+674,675,135,,theta1unitsum,twothirds_max_matching fair,0.05760342795778807
+675,676,136,10.0,theta1unitsum,serial_dictatorship,1.2263148326541744
+676,677,136,10.0,theta1unitsum,ttc_matching,1.1552092599552253
+677,678,136,10.0,theta1unitsum,epsilon_max_matching fair1,1.034587710474167
+678,679,136,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+679,680,136,,theta1unitsum,twothirds_max_matching fair,0.09994004853406745
+680,681,137,10.0,theta1unitsum,serial_dictatorship,1.3304823060337185
+681,682,137,10.0,theta1unitsum,ttc_matching,1.112292112582977
+682,683,137,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+683,684,137,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+684,685,137,,theta1unitsum,twothirds_max_matching fair,0.07599001184555687
+685,686,138,10.0,theta1unitsum,serial_dictatorship,1.3827860106963072
+686,687,138,10.0,theta1unitsum,ttc_matching,1.2021741414892007
+687,688,138,10.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+688,689,138,10.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+689,690,138,,theta1unitsum,twothirds_max_matching fair,0.13400635093998559
+690,691,139,10.0,theta1unitsum,serial_dictatorship,1.5111195639949233
+691,692,139,10.0,theta1unitsum,ttc_matching,1.2918781717962138
+692,693,139,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+693,694,139,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+694,695,139,,theta1unitsum,twothirds_max_matching fair,0.07488759841483422
+695,696,140,10.0,theta1unitsum,serial_dictatorship,1.392943387775323
+696,697,140,10.0,theta1unitsum,ttc_matching,1.1956954067029826
+697,698,140,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+698,699,140,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+699,700,140,,theta1unitsum,twothirds_max_matching fair,0.25433569221411834
+700,701,141,10.0,theta1unitsum,serial_dictatorship,1.409714649054221
+701,702,141,10.0,theta1unitsum,ttc_matching,1.2429467422273748
+702,703,141,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+703,704,141,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+704,705,141,,theta1unitsum,twothirds_max_matching fair,0.07487002980018709
+705,706,142,10.0,theta1unitsum,serial_dictatorship,1.5472038524871312
+706,707,142,10.0,theta1unitsum,ttc_matching,1.1842588326011383
+707,708,142,10.0,theta1unitsum,epsilon_max_matching fair1,1.0130137023816472
+708,709,142,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+709,710,142,,theta1unitsum,twothirds_max_matching fair,0.16605995551334252
+710,711,143,10.0,theta1unitsum,serial_dictatorship,1.2690375737511825
+711,712,143,10.0,theta1unitsum,ttc_matching,1.2690375737511825
+712,713,143,10.0,theta1unitsum,epsilon_max_matching fair1,1.0041480483272738
+713,714,143,10.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+714,715,143,,theta1unitsum,twothirds_max_matching fair,0.16935700061351466
+715,716,144,10.0,theta1unitsum,serial_dictatorship,1.1872197492227972
+716,717,144,10.0,theta1unitsum,ttc_matching,1.0385897725134197
+717,718,144,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+718,719,144,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+719,720,144,,theta1unitsum,twothirds_max_matching fair,0.08082415290315725
+720,721,145,10.0,theta1unitsum,serial_dictatorship,1.3313382895807542
+721,722,145,10.0,theta1unitsum,ttc_matching,1.291492722104816
+722,723,145,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+723,724,145,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+724,725,145,,theta1unitsum,twothirds_max_matching fair,0.10916751002138746
+725,726,146,10.0,theta1unitsum,serial_dictatorship,1.3256177245312395
+726,727,146,10.0,theta1unitsum,ttc_matching,1.225247920679115
+727,728,146,10.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+728,729,146,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+729,730,146,,theta1unitsum,twothirds_max_matching fair,0.06312863037542274
+730,731,147,10.0,theta1unitsum,serial_dictatorship,1.279194052337966
+731,732,147,10.0,theta1unitsum,ttc_matching,1.0717050714284164
+732,733,147,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+733,734,147,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+734,735,147,,theta1unitsum,twothirds_max_matching fair,0.05732141707620195
+735,736,148,10.0,theta1unitsum,serial_dictatorship,1.3999020100837791
+736,737,148,10.0,theta1unitsum,ttc_matching,1.1666155449538453
+737,738,148,10.0,theta1unitsum,epsilon_max_matching fair1,1.0943131604984737
+738,739,148,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+739,740,148,,theta1unitsum,twothirds_max_matching fair,0.09597375392897359
+740,741,149,10.0,theta1unitsum,serial_dictatorship,1.3757424332933774
+741,742,149,10.0,theta1unitsum,ttc_matching,1.2470708502527819
+742,743,149,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+743,744,149,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+744,745,149,,theta1unitsum,twothirds_max_matching fair,0.04953623786975176
+745,746,150,10.0,theta1unitsum,serial_dictatorship,1.613815276229851
+746,747,150,10.0,theta1unitsum,ttc_matching,1.1762784431373898
+747,748,150,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+748,749,150,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+749,750,150,,theta1unitsum,twothirds_max_matching fair,0.10737977157506041
+750,751,151,10.0,theta1unitsum,serial_dictatorship,1.418513137803794
+751,752,151,10.0,theta1unitsum,ttc_matching,1.0971296753635418
+752,753,151,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+753,754,151,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+754,755,151,,theta1unitsum,twothirds_max_matching fair,0.05770092014001189
+755,756,152,10.0,theta1unitsum,serial_dictatorship,1.3938543317692482
+756,757,152,10.0,theta1unitsum,ttc_matching,1.3938543317692482
+757,758,152,10.0,theta1unitsum,epsilon_max_matching fair1,1.003071061553408
+758,759,152,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.003071061553408
+759,760,152,,theta1unitsum,twothirds_max_matching fair,0.09083982466633496
+760,761,153,10.0,theta1unitsum,serial_dictatorship,1.4000621006882503
+761,762,153,10.0,theta1unitsum,ttc_matching,1.213518404588237
+762,763,153,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+763,764,153,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+764,765,153,,theta1unitsum,twothirds_max_matching fair,0.035363989972357276
+765,766,154,10.0,theta1unitsum,serial_dictatorship,1.78188065388055
+766,767,154,10.0,theta1unitsum,ttc_matching,1.5239511156317098
+767,768,154,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+768,769,154,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+769,770,154,,theta1unitsum,twothirds_max_matching fair,0.19665136494350938
+770,771,155,10.0,theta1unitsum,serial_dictatorship,1.5239455877007488
+771,772,155,10.0,theta1unitsum,ttc_matching,1.0873744993246683
+772,773,155,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+773,774,155,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+774,775,155,,theta1unitsum,twothirds_max_matching fair,0.02738879730025845
+775,776,156,10.0,theta1unitsum,serial_dictatorship,1.5179426380335568
+776,777,156,10.0,theta1unitsum,ttc_matching,1.362345653136196
+777,778,156,10.0,theta1unitsum,epsilon_max_matching fair1,1.0651872873569945
+778,779,156,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+779,780,156,,theta1unitsum,twothirds_max_matching fair,0.06276048909163763
+780,781,157,10.0,theta1unitsum,serial_dictatorship,1.512951086071429
+781,782,157,10.0,theta1unitsum,ttc_matching,1.1734895674741899
+782,783,157,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+783,784,157,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+784,785,157,,theta1unitsum,twothirds_max_matching fair,0.08623678254344426
+785,786,158,10.0,theta1unitsum,serial_dictatorship,1.4102158514593124
+786,787,158,10.0,theta1unitsum,ttc_matching,1.298154149256969
+787,788,158,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+788,789,158,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+789,790,158,,theta1unitsum,twothirds_max_matching fair,0.040274644558820065
+790,791,159,10.0,theta1unitsum,serial_dictatorship,1.439058493195011
+791,792,159,10.0,theta1unitsum,ttc_matching,1.3357686516971103
+792,793,159,10.0,theta1unitsum,epsilon_max_matching fair1,1.037276070024505
+793,794,159,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+794,795,159,,theta1unitsum,twothirds_max_matching fair,0.11264219718826167
+795,796,160,10.0,theta1unitsum,serial_dictatorship,1.2951550911808496
+796,797,160,10.0,theta1unitsum,ttc_matching,1.2951550911808496
+797,798,160,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+798,799,160,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+799,800,160,,theta1unitsum,twothirds_max_matching fair,0.05496965884203677
+800,801,161,10.0,theta1unitsum,serial_dictatorship,1.4930291100886046
+801,802,161,10.0,theta1unitsum,ttc_matching,1.187980584804708
+802,803,161,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+803,804,161,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+804,805,161,,theta1unitsum,twothirds_max_matching fair,0.1156778816306965
+805,806,162,10.0,theta1unitsum,serial_dictatorship,1.3482959216076902
+806,807,162,10.0,theta1unitsum,ttc_matching,1.208734875528008
+807,808,162,10.0,theta1unitsum,epsilon_max_matching fair1,1.09046542544844
+808,809,162,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+809,810,162,,theta1unitsum,twothirds_max_matching fair,0.08704240908075685
+810,811,163,10.0,theta1unitsum,serial_dictatorship,1.4423302339283632
+811,812,163,10.0,theta1unitsum,ttc_matching,1.4237255848025265
+812,813,163,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+813,814,163,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+814,815,163,,theta1unitsum,twothirds_max_matching fair,0.1129943450240161
+815,816,164,10.0,theta1unitsum,serial_dictatorship,1.3096107897687959
+816,817,164,10.0,theta1unitsum,ttc_matching,1.1932383166763696
+817,818,164,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+818,819,164,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+819,820,164,,theta1unitsum,twothirds_max_matching fair,0.11787286356130168
+820,821,165,10.0,theta1unitsum,serial_dictatorship,1.4502477378868222
+821,822,165,10.0,theta1unitsum,ttc_matching,1.2453096226477067
+822,823,165,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+823,824,165,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+824,825,165,,theta1unitsum,twothirds_max_matching fair,0.09000764285396573
+825,826,166,10.0,theta1unitsum,serial_dictatorship,1.2265407840342728
+826,827,166,10.0,theta1unitsum,ttc_matching,1.2265407840342728
+827,828,166,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+828,829,166,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+829,830,166,,theta1unitsum,twothirds_max_matching fair,0.11556942253896557
+830,831,167,10.0,theta1unitsum,serial_dictatorship,1.3192186740731056
+831,832,167,10.0,theta1unitsum,ttc_matching,1.2791725483638512
+832,833,167,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+833,834,167,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+834,835,167,,theta1unitsum,twothirds_max_matching fair,0.10454405282701744
+835,836,168,10.0,theta1unitsum,serial_dictatorship,1.5536722258161595
+836,837,168,10.0,theta1unitsum,ttc_matching,1.3206824481385895
+837,838,168,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+838,839,168,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+839,840,168,,theta1unitsum,twothirds_max_matching fair,0.13898656746848218
+840,841,169,10.0,theta1unitsum,serial_dictatorship,1.5642132925962686
+841,842,169,10.0,theta1unitsum,ttc_matching,1.2570178385057502
+842,843,169,10.0,theta1unitsum,epsilon_max_matching fair1,1.0246309740653379
+843,844,169,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+844,845,169,,theta1unitsum,twothirds_max_matching fair,0.08827712422228964
+845,846,170,10.0,theta1unitsum,serial_dictatorship,1.2495196802377047
+846,847,170,10.0,theta1unitsum,ttc_matching,1.1226464502228832
+847,848,170,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+848,849,170,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+849,850,170,,theta1unitsum,twothirds_max_matching fair,0.09485592891694834
+850,851,171,10.0,theta1unitsum,serial_dictatorship,1.5793059615597411
+851,852,171,10.0,theta1unitsum,ttc_matching,1.3591571782342313
+852,853,171,10.0,theta1unitsum,epsilon_max_matching fair1,1.0399517839507084
+853,854,171,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+854,855,171,,theta1unitsum,twothirds_max_matching fair,0.05593433491353965
+855,856,172,10.0,theta1unitsum,serial_dictatorship,1.4535188368549241
+856,857,172,10.0,theta1unitsum,ttc_matching,1.2677156166962753
+857,858,172,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+858,859,172,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+859,860,172,,theta1unitsum,twothirds_max_matching fair,0.1539728394273527
+860,861,173,10.0,theta1unitsum,serial_dictatorship,1.785730298164013
+861,862,173,10.0,theta1unitsum,ttc_matching,1.1835035419004114
+862,863,173,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+863,864,173,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+864,865,173,,theta1unitsum,twothirds_max_matching fair,0.04568147063243735
+865,866,174,10.0,theta1unitsum,serial_dictatorship,1.3669618466649351
+866,867,174,10.0,theta1unitsum,ttc_matching,1.2834359125025858
+867,868,174,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+868,869,174,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+869,870,174,,theta1unitsum,twothirds_max_matching fair,0.08840194692000013
+870,871,175,10.0,theta1unitsum,serial_dictatorship,1.2750301955439483
+871,872,175,10.0,theta1unitsum,ttc_matching,1.1902044044191378
+872,873,175,10.0,theta1unitsum,epsilon_max_matching fair1,1.032319062130671
+873,874,175,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+874,875,175,,theta1unitsum,twothirds_max_matching fair,0.11790733134429301
+875,876,176,10.0,theta1unitsum,serial_dictatorship,1.625151972754599
+876,877,176,10.0,theta1unitsum,ttc_matching,1.218399685264171
+877,878,176,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+878,879,176,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+879,880,176,,theta1unitsum,twothirds_max_matching fair,0.10598400200903171
+880,881,177,10.0,theta1unitsum,serial_dictatorship,1.5388831240014267
+881,882,177,10.0,theta1unitsum,ttc_matching,1.324456251084311
+882,883,177,10.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999999
+883,884,177,10.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+884,885,177,,theta1unitsum,twothirds_max_matching fair,0.10880428232050424
+885,886,178,10.0,theta1unitsum,serial_dictatorship,1.5009292184150174
+886,887,178,10.0,theta1unitsum,ttc_matching,1.1185479283592479
+887,888,178,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+888,889,178,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+889,890,178,,theta1unitsum,twothirds_max_matching fair,0.10195396371054354
+890,891,179,10.0,theta1unitsum,serial_dictatorship,1.4760070008032775
+891,892,179,10.0,theta1unitsum,ttc_matching,1.3183641080260446
+892,893,179,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+893,894,179,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+894,895,179,,theta1unitsum,twothirds_max_matching fair,0.12132773890873311
+895,896,180,10.0,theta1unitsum,serial_dictatorship,1.1454887111471836
+896,897,180,10.0,theta1unitsum,ttc_matching,1.0511518897387722
+897,898,180,10.0,theta1unitsum,epsilon_max_matching fair1,1.0202581623683307
+898,899,180,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+899,900,180,,theta1unitsum,twothirds_max_matching fair,0.15945801856226166
+900,901,181,10.0,theta1unitsum,serial_dictatorship,1.9518616929327735
+901,902,181,10.0,theta1unitsum,ttc_matching,1.4859790545501306
+902,903,181,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+903,904,181,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+904,905,181,,theta1unitsum,twothirds_max_matching fair,0.10536476510912547
+905,906,182,10.0,theta1unitsum,serial_dictatorship,1.5477070626868457
+906,907,182,10.0,theta1unitsum,ttc_matching,1.256034006758286
+907,908,182,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+908,909,182,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+909,910,182,,theta1unitsum,twothirds_max_matching fair,0.09455848435792545
+910,911,183,10.0,theta1unitsum,serial_dictatorship,1.4855678186374113
+911,912,183,10.0,theta1unitsum,ttc_matching,1.2726402077274455
+912,913,183,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+913,914,183,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+914,915,183,,theta1unitsum,twothirds_max_matching fair,0.12127470407597865
+915,916,184,10.0,theta1unitsum,serial_dictatorship,1.4525431085229021
+916,917,184,10.0,theta1unitsum,ttc_matching,1.2852000446254639
+917,918,184,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+918,919,184,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+919,920,184,,theta1unitsum,twothirds_max_matching fair,0.09642985065236864
+920,921,185,10.0,theta1unitsum,serial_dictatorship,1.471149471499807
+921,922,185,10.0,theta1unitsum,ttc_matching,1.2624678125007176
+922,923,185,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+923,924,185,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+924,925,185,,theta1unitsum,twothirds_max_matching fair,0.0804214312832548
+925,926,186,10.0,theta1unitsum,serial_dictatorship,1.3093394206794775
+926,927,186,10.0,theta1unitsum,ttc_matching,1.2525064149228062
+927,928,186,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+928,929,186,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+929,930,186,,theta1unitsum,twothirds_max_matching fair,0.0706682326306102
+930,931,187,10.0,theta1unitsum,serial_dictatorship,1.4321096068587023
+931,932,187,10.0,theta1unitsum,ttc_matching,1.1912253879037618
+932,933,187,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+933,934,187,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+934,935,187,,theta1unitsum,twothirds_max_matching fair,0.044867069742329325
+935,936,188,10.0,theta1unitsum,serial_dictatorship,1.578592102601931
+936,937,188,10.0,theta1unitsum,ttc_matching,1.3368190888705458
+937,938,188,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+938,939,188,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+939,940,188,,theta1unitsum,twothirds_max_matching fair,0.09721082934125384
+940,941,189,10.0,theta1unitsum,serial_dictatorship,1.6188847079445456
+941,942,189,10.0,theta1unitsum,ttc_matching,1.098738510587177
+942,943,189,10.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+943,944,189,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+944,945,189,,theta1unitsum,twothirds_max_matching fair,0.09404846296343349
+945,946,190,10.0,theta1unitsum,serial_dictatorship,1.7082131119155852
+946,947,190,10.0,theta1unitsum,ttc_matching,1.3933121132172959
+947,948,190,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+948,949,190,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+949,950,190,,theta1unitsum,twothirds_max_matching fair,0.09196138414888307
+950,951,191,10.0,theta1unitsum,serial_dictatorship,1.2139739968605465
+951,952,191,10.0,theta1unitsum,ttc_matching,1.130851412862283
+952,953,191,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+953,954,191,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+954,955,191,,theta1unitsum,twothirds_max_matching fair,0.12445362129653735
+955,956,192,10.0,theta1unitsum,serial_dictatorship,1.2359337352912396
+956,957,192,10.0,theta1unitsum,ttc_matching,1.2359337352912396
+957,958,192,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+958,959,192,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+959,960,192,,theta1unitsum,twothirds_max_matching fair,0.12404800050731704
+960,961,193,10.0,theta1unitsum,serial_dictatorship,1.4748971015113803
+961,962,193,10.0,theta1unitsum,ttc_matching,1.300476125009608
+962,963,193,10.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+963,964,193,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+964,965,193,,theta1unitsum,twothirds_max_matching fair,0.17144587577442427
+965,966,194,10.0,theta1unitsum,serial_dictatorship,1.2265008707274774
+966,967,194,10.0,theta1unitsum,ttc_matching,1.0960199885639794
+967,968,194,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+968,969,194,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+969,970,194,,theta1unitsum,twothirds_max_matching fair,0.15781279554013444
+970,971,195,10.0,theta1unitsum,serial_dictatorship,1.4037218766492527
+971,972,195,10.0,theta1unitsum,ttc_matching,1.2055549861309778
+972,973,195,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+973,974,195,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+974,975,195,,theta1unitsum,twothirds_max_matching fair,0.09219092176295354
+975,976,196,10.0,theta1unitsum,serial_dictatorship,1.3489301364790223
+976,977,196,10.0,theta1unitsum,ttc_matching,1.2184583430887606
+977,978,196,10.0,theta1unitsum,epsilon_max_matching fair1,1.1328609947289434
+978,979,196,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+979,980,196,,theta1unitsum,twothirds_max_matching fair,0.08607676767451992
+980,981,197,10.0,theta1unitsum,serial_dictatorship,1.3699262537421826
+981,982,197,10.0,theta1unitsum,ttc_matching,1.2786126121091694
+982,983,197,10.0,theta1unitsum,epsilon_max_matching fair1,1.0730362794890642
+983,984,197,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+984,985,197,,theta1unitsum,twothirds_max_matching fair,0.08010655363777554
+985,986,198,10.0,theta1unitsum,serial_dictatorship,1.7569902261566865
+986,987,198,10.0,theta1unitsum,ttc_matching,1.266746255418668
+987,988,198,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+988,989,198,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+989,990,198,,theta1unitsum,twothirds_max_matching fair,0.11600897825432087
+990,991,199,10.0,theta1unitsum,serial_dictatorship,1.6924237855720208
+991,992,199,10.0,theta1unitsum,ttc_matching,1.307506869523957
+992,993,199,10.0,theta1unitsum,epsilon_max_matching fair1,1.0
+993,994,199,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+994,995,199,,theta1unitsum,twothirds_max_matching fair,0.07484433379744812
+995,996,200,10.0,theta1unitsum,serial_dictatorship,1.4910302671092495
+996,997,200,10.0,theta1unitsum,ttc_matching,1.1014375284301678
+997,998,200,10.0,theta1unitsum,epsilon_max_matching fair1,1.0197166113474811
+998,999,200,10.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+999,1000,200,,theta1unitsum,twothirds_max_matching fair,0.11454538717124788
+1000,1001,201,20.0,theta1unitsum,serial_dictatorship,1.3064569549760054
+1001,1002,201,20.0,theta1unitsum,ttc_matching,1.2478753177558515
+1002,1003,201,20.0,theta1unitsum,epsilon_max_matching fair1,1.008154065718697
+1003,1004,201,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1004,1005,201,,theta1unitsum,twothirds_max_matching fair,1.4971838088546343
+1005,1006,202,20.0,theta1unitsum,serial_dictatorship,1.2682703911469644
+1006,1007,202,20.0,theta1unitsum,ttc_matching,1.2068522956555976
+1007,1008,202,20.0,theta1unitsum,epsilon_max_matching fair1,1.0162510817363894
+1008,1009,202,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999997
+1009,1010,202,,theta1unitsum,twothirds_max_matching fair,1.2766248991742304
+1010,1011,203,20.0,theta1unitsum,serial_dictatorship,1.3877691888466244
+1011,1012,203,20.0,theta1unitsum,ttc_matching,1.1751522848637308
+1012,1013,203,20.0,theta1unitsum,epsilon_max_matching fair1,1.0369542242784666
+1013,1014,203,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0040929748620242
+1014,1015,203,,theta1unitsum,twothirds_max_matching fair,1.322747749882142
+1015,1016,204,20.0,theta1unitsum,serial_dictatorship,1.3218096822478405
+1016,1017,204,20.0,theta1unitsum,ttc_matching,1.2710953424594043
+1017,1018,204,20.0,theta1unitsum,epsilon_max_matching fair1,1.0116156975538704
+1018,1019,204,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1019,1020,204,,theta1unitsum,twothirds_max_matching fair,1.2924059596603636
+1020,1021,205,20.0,theta1unitsum,serial_dictatorship,1.4467387053769294
+1021,1022,205,20.0,theta1unitsum,ttc_matching,1.3130092130202267
+1022,1023,205,20.0,theta1unitsum,epsilon_max_matching fair1,1.0401722649554768
+1023,1024,205,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1024,1025,205,,theta1unitsum,twothirds_max_matching fair,1.3283078453412052
+1025,1026,206,20.0,theta1unitsum,serial_dictatorship,1.2535093306947118
+1026,1027,206,20.0,theta1unitsum,ttc_matching,1.159715776822558
+1027,1028,206,20.0,theta1unitsum,epsilon_max_matching fair1,1.0246642568394024
+1028,1029,206,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1029,1030,206,,theta1unitsum,twothirds_max_matching fair,1.2960896922089604
+1030,1031,207,20.0,theta1unitsum,serial_dictatorship,1.4165803179245133
+1031,1032,207,20.0,theta1unitsum,ttc_matching,1.2026051841846614
+1032,1033,207,20.0,theta1unitsum,epsilon_max_matching fair1,1.003214964196753
+1033,1034,207,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1034,1035,207,,theta1unitsum,twothirds_max_matching fair,1.3418417918621197
+1035,1036,208,20.0,theta1unitsum,serial_dictatorship,1.3330139728218013
+1036,1037,208,20.0,theta1unitsum,ttc_matching,1.1910599750071813
+1037,1038,208,20.0,theta1unitsum,epsilon_max_matching fair1,1.0123336153934586
+1038,1039,208,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+1039,1040,208,,theta1unitsum,twothirds_max_matching fair,1.153020924951179
+1040,1041,209,20.0,theta1unitsum,serial_dictatorship,1.3146925289647151
+1041,1042,209,20.0,theta1unitsum,ttc_matching,1.2164864873605274
+1042,1043,209,20.0,theta1unitsum,epsilon_max_matching fair1,1.0160846688297942
+1043,1044,209,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0043225351403822
+1044,1045,209,,theta1unitsum,twothirds_max_matching fair,1.459849309560543
+1045,1046,210,20.0,theta1unitsum,serial_dictatorship,1.323687889234787
+1046,1047,210,20.0,theta1unitsum,ttc_matching,1.1704291506122282
+1047,1048,210,20.0,theta1unitsum,epsilon_max_matching fair1,1.0282469121143223
+1048,1049,210,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000004
+1049,1050,210,,theta1unitsum,twothirds_max_matching fair,1.2227250346491727
+1050,1051,211,20.0,theta1unitsum,serial_dictatorship,1.349851810908243
+1051,1052,211,20.0,theta1unitsum,ttc_matching,1.2498971170532678
+1052,1053,211,20.0,theta1unitsum,epsilon_max_matching fair1,1.016440235517871
+1053,1054,211,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1054,1055,211,,theta1unitsum,twothirds_max_matching fair,1.5149281405433705
+1055,1056,212,20.0,theta1unitsum,serial_dictatorship,1.3222380915763234
+1056,1057,212,20.0,theta1unitsum,ttc_matching,1.1764812931881807
+1057,1058,212,20.0,theta1unitsum,epsilon_max_matching fair1,1.0575697898591099
+1058,1059,212,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0003141917841167
+1059,1060,212,,theta1unitsum,twothirds_max_matching fair,1.2709422980888923
+1060,1061,213,20.0,theta1unitsum,serial_dictatorship,1.3400297493757498
+1061,1062,213,20.0,theta1unitsum,ttc_matching,1.2179113231075984
+1062,1063,213,20.0,theta1unitsum,epsilon_max_matching fair1,1.0000000000000002
+1063,1064,213,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.001499967183005
+1064,1065,213,,theta1unitsum,twothirds_max_matching fair,1.1609856576734716
+1065,1066,214,20.0,theta1unitsum,serial_dictatorship,1.5467699619576945
+1066,1067,214,20.0,theta1unitsum,ttc_matching,1.2951771909274776
+1067,1068,214,20.0,theta1unitsum,epsilon_max_matching fair1,1.0093888271111269
+1068,1069,214,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1069,1070,214,,theta1unitsum,twothirds_max_matching fair,1.1983105512252077
+1070,1071,215,20.0,theta1unitsum,serial_dictatorship,1.296859632815991
+1071,1072,215,20.0,theta1unitsum,ttc_matching,1.197340470496548
+1072,1073,215,20.0,theta1unitsum,epsilon_max_matching fair1,1.0122775655226914
+1073,1074,215,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.002224530413205
+1074,1075,215,,theta1unitsum,twothirds_max_matching fair,1.0856915539092293
+1075,1076,216,20.0,theta1unitsum,serial_dictatorship,1.3529847078330937
+1076,1077,216,20.0,theta1unitsum,ttc_matching,1.193641386975949
+1077,1078,216,20.0,theta1unitsum,epsilon_max_matching fair1,1.0197838808136563
+1078,1079,216,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.002501630800983
+1079,1080,216,,theta1unitsum,twothirds_max_matching fair,1.288660599428843
+1080,1081,217,20.0,theta1unitsum,serial_dictatorship,1.4234633653236917
+1081,1082,217,20.0,theta1unitsum,ttc_matching,1.205769363897282
+1082,1083,217,20.0,theta1unitsum,epsilon_max_matching fair1,1.0072897554670093
+1083,1084,217,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1084,1085,217,,theta1unitsum,twothirds_max_matching fair,1.2868921575356191
+1085,1086,218,20.0,theta1unitsum,serial_dictatorship,1.3330662853296507
+1086,1087,218,20.0,theta1unitsum,ttc_matching,1.1778827149882867
+1087,1088,218,20.0,theta1unitsum,epsilon_max_matching fair1,1.0519883913709067
+1088,1089,218,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1089,1090,218,,theta1unitsum,twothirds_max_matching fair,1.2438667352207298
+1090,1091,219,20.0,theta1unitsum,serial_dictatorship,1.305469213983909
+1091,1092,219,20.0,theta1unitsum,ttc_matching,1.2222699657933789
+1092,1093,219,20.0,theta1unitsum,epsilon_max_matching fair1,1.006593271062744
+1093,1094,219,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1094,1095,219,,theta1unitsum,twothirds_max_matching fair,1.3099428084602511
+1095,1096,220,20.0,theta1unitsum,serial_dictatorship,1.3925328789555294
+1096,1097,220,20.0,theta1unitsum,ttc_matching,1.162528223420602
+1097,1098,220,20.0,theta1unitsum,epsilon_max_matching fair1,1.0278626580751618
+1098,1099,220,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+1099,1100,220,,theta1unitsum,twothirds_max_matching fair,1.204189272706312
+1100,1101,221,20.0,theta1unitsum,serial_dictatorship,1.352695322859996
+1101,1102,221,20.0,theta1unitsum,ttc_matching,1.2564511557947622
+1102,1103,221,20.0,theta1unitsum,epsilon_max_matching fair1,1.0055774652199831
+1103,1104,221,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1104,1105,221,,theta1unitsum,twothirds_max_matching fair,1.1708456646463263
+1105,1106,222,20.0,theta1unitsum,serial_dictatorship,1.3978484397039734
+1106,1107,222,20.0,theta1unitsum,ttc_matching,1.3517876758073506
+1107,1108,222,20.0,theta1unitsum,epsilon_max_matching fair1,1.0147186101859131
+1108,1109,222,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1109,1110,222,,theta1unitsum,twothirds_max_matching fair,1.209223494391532
+1110,1111,223,20.0,theta1unitsum,serial_dictatorship,1.3173596371266205
+1111,1112,223,20.0,theta1unitsum,ttc_matching,1.1953095989964309
+1112,1113,223,20.0,theta1unitsum,epsilon_max_matching fair1,1.0332454762257977
+1113,1114,223,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.001808602059081
+1114,1115,223,,theta1unitsum,twothirds_max_matching fair,1.38753061301006
+1115,1116,224,20.0,theta1unitsum,serial_dictatorship,1.295054578110787
+1116,1117,224,20.0,theta1unitsum,ttc_matching,1.2022855130524799
+1117,1118,224,20.0,theta1unitsum,epsilon_max_matching fair1,1.0208318171800819
+1118,1119,224,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1119,1120,224,,theta1unitsum,twothirds_max_matching fair,1.110554058034965
+1120,1121,225,20.0,theta1unitsum,serial_dictatorship,1.4030203016891045
+1121,1122,225,20.0,theta1unitsum,ttc_matching,1.2329712876272385
+1122,1123,225,20.0,theta1unitsum,epsilon_max_matching fair1,1.0087834811932588
+1123,1124,225,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1124,1125,225,,theta1unitsum,twothirds_max_matching fair,1.1520888581552893
+1125,1126,226,20.0,theta1unitsum,serial_dictatorship,1.3357931099167866
+1126,1127,226,20.0,theta1unitsum,ttc_matching,1.2011802509159677
+1127,1128,226,20.0,theta1unitsum,epsilon_max_matching fair1,1.0107593649326234
+1128,1129,226,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0014781334583907
+1129,1130,226,,theta1unitsum,twothirds_max_matching fair,1.2398900875509067
+1130,1131,227,20.0,theta1unitsum,serial_dictatorship,1.205934605831667
+1131,1132,227,20.0,theta1unitsum,ttc_matching,1.1375352262406238
+1132,1133,227,20.0,theta1unitsum,epsilon_max_matching fair1,1.0257496206040952
+1133,1134,227,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0004264795517777
+1134,1135,227,,theta1unitsum,twothirds_max_matching fair,1.2812527855098694
+1135,1136,228,20.0,theta1unitsum,serial_dictatorship,1.3568826874543094
+1136,1137,228,20.0,theta1unitsum,ttc_matching,1.2541334924679717
+1137,1138,228,20.0,theta1unitsum,epsilon_max_matching fair1,1.0199353752931664
+1138,1139,228,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0002436627084819
+1139,1140,228,,theta1unitsum,twothirds_max_matching fair,1.284177264019309
+1140,1141,229,20.0,theta1unitsum,serial_dictatorship,1.3384688731921845
+1141,1142,229,20.0,theta1unitsum,ttc_matching,1.2655847243451337
+1142,1143,229,20.0,theta1unitsum,epsilon_max_matching fair1,1.0034850335177183
+1143,1144,229,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1144,1145,229,,theta1unitsum,twothirds_max_matching fair,1.3256969971153072
+1145,1146,230,20.0,theta1unitsum,serial_dictatorship,1.273748485317904
+1146,1147,230,20.0,theta1unitsum,ttc_matching,1.246011955342605
+1147,1148,230,20.0,theta1unitsum,epsilon_max_matching fair1,1.0242844276079803
+1148,1149,230,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0020251321959253
+1149,1150,230,,theta1unitsum,twothirds_max_matching fair,1.1502458979046903
+1150,1151,231,20.0,theta1unitsum,serial_dictatorship,1.2970366378341507
+1151,1152,231,20.0,theta1unitsum,ttc_matching,1.2043750805120688
+1152,1153,231,20.0,theta1unitsum,epsilon_max_matching fair1,1.0
+1153,1154,231,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1154,1155,231,,theta1unitsum,twothirds_max_matching fair,1.3977402746649716
+1155,1156,232,20.0,theta1unitsum,serial_dictatorship,1.3699750898457077
+1156,1157,232,20.0,theta1unitsum,ttc_matching,1.230788938528691
+1157,1158,232,20.0,theta1unitsum,epsilon_max_matching fair1,1.0164598921959167
+1158,1159,232,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1159,1160,232,,theta1unitsum,twothirds_max_matching fair,1.1414327002090008
+1160,1161,233,20.0,theta1unitsum,serial_dictatorship,1.304739122462206
+1161,1162,233,20.0,theta1unitsum,ttc_matching,1.1835683688492233
+1162,1163,233,20.0,theta1unitsum,epsilon_max_matching fair1,1.022855077071476
+1163,1164,233,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1164,1165,233,,theta1unitsum,twothirds_max_matching fair,1.3734414039810785
+1165,1166,234,20.0,theta1unitsum,serial_dictatorship,1.2356260374950425
+1166,1167,234,20.0,theta1unitsum,ttc_matching,1.1836443319958734
+1167,1168,234,20.0,theta1unitsum,epsilon_max_matching fair1,1.0025452647709643
+1168,1169,234,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1169,1170,234,,theta1unitsum,twothirds_max_matching fair,1.1631284986527184
+1170,1171,235,20.0,theta1unitsum,serial_dictatorship,1.4872137792903322
+1171,1172,235,20.0,theta1unitsum,ttc_matching,1.2662442525715185
+1172,1173,235,20.0,theta1unitsum,epsilon_max_matching fair1,1.02087037264652
+1173,1174,235,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0031811107238389
+1174,1175,235,,theta1unitsum,twothirds_max_matching fair,1.2344168184095818
+1175,1176,236,20.0,theta1unitsum,serial_dictatorship,1.3624008406640606
+1176,1177,236,20.0,theta1unitsum,ttc_matching,1.2327567123344605
+1177,1178,236,20.0,theta1unitsum,epsilon_max_matching fair1,1.015949325424737
+1178,1179,236,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0008865865677943
+1179,1180,236,,theta1unitsum,twothirds_max_matching fair,1.1891250328101932
+1180,1181,237,20.0,theta1unitsum,serial_dictatorship,1.4430289689989366
+1181,1182,237,20.0,theta1unitsum,ttc_matching,1.1748299948322893
+1182,1183,237,20.0,theta1unitsum,epsilon_max_matching fair1,1.0054780272273733
+1183,1184,237,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0044112287435647
+1184,1185,237,,theta1unitsum,twothirds_max_matching fair,1.294094828650765
+1185,1186,238,20.0,theta1unitsum,serial_dictatorship,1.3870341652857845
+1186,1187,238,20.0,theta1unitsum,ttc_matching,1.2255725198326455
+1187,1188,238,20.0,theta1unitsum,epsilon_max_matching fair1,1.0075005043644092
+1188,1189,238,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1189,1190,238,,theta1unitsum,twothirds_max_matching fair,1.3000981712061188
+1190,1191,239,20.0,theta1unitsum,serial_dictatorship,1.336544577792305
+1191,1192,239,20.0,theta1unitsum,ttc_matching,1.1831802708054047
+1192,1193,239,20.0,theta1unitsum,epsilon_max_matching fair1,1.0278189648652558
+1193,1194,239,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1194,1195,239,,theta1unitsum,twothirds_max_matching fair,1.220328027946545
+1195,1196,240,20.0,theta1unitsum,serial_dictatorship,1.4078797288661324
+1196,1197,240,20.0,theta1unitsum,ttc_matching,1.251629051308901
+1197,1198,240,20.0,theta1unitsum,epsilon_max_matching fair1,1.0155476404270458
+1198,1199,240,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1199,1200,240,,theta1unitsum,twothirds_max_matching fair,1.239378252109036
+1200,1201,241,20.0,theta1unitsum,serial_dictatorship,1.3381169526501429
+1201,1202,241,20.0,theta1unitsum,ttc_matching,1.2376172444421922
+1202,1203,241,20.0,theta1unitsum,epsilon_max_matching fair1,1.0160398897870593
+1203,1204,241,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1204,1205,241,,theta1unitsum,twothirds_max_matching fair,1.1646992067234474
+1205,1206,242,20.0,theta1unitsum,serial_dictatorship,1.4871202436212456
+1206,1207,242,20.0,theta1unitsum,ttc_matching,1.2115374880698444
+1207,1208,242,20.0,theta1unitsum,epsilon_max_matching fair1,1.020035963091896
+1208,1209,242,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0004002648674366
+1209,1210,242,,theta1unitsum,twothirds_max_matching fair,1.3507229626914803
+1210,1211,243,20.0,theta1unitsum,serial_dictatorship,1.3516705683839545
+1211,1212,243,20.0,theta1unitsum,ttc_matching,1.2505255256513053
+1212,1213,243,20.0,theta1unitsum,epsilon_max_matching fair1,1.0210152991329113
+1213,1214,243,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0010795568489206
+1214,1215,243,,theta1unitsum,twothirds_max_matching fair,1.2198770663436747
+1215,1216,244,20.0,theta1unitsum,serial_dictatorship,1.4114312453774054
+1216,1217,244,20.0,theta1unitsum,ttc_matching,1.3287557203479334
+1217,1218,244,20.0,theta1unitsum,epsilon_max_matching fair1,1.0398233263576644
+1218,1219,244,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1219,1220,244,,theta1unitsum,twothirds_max_matching fair,1.2193839395353874
+1220,1221,245,20.0,theta1unitsum,serial_dictatorship,1.3343439855417907
+1221,1222,245,20.0,theta1unitsum,ttc_matching,1.287388667765591
+1222,1223,245,20.0,theta1unitsum,epsilon_max_matching fair1,1.0184776339017958
+1223,1224,245,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1224,1225,245,,theta1unitsum,twothirds_max_matching fair,1.2311923304784929
+1225,1226,246,20.0,theta1unitsum,serial_dictatorship,1.3857550164459966
+1226,1227,246,20.0,theta1unitsum,ttc_matching,1.2781566346164401
+1227,1228,246,20.0,theta1unitsum,epsilon_max_matching fair1,1.0507945160491827
+1228,1229,246,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0009543766536497
+1229,1230,246,,theta1unitsum,twothirds_max_matching fair,1.0580584351289213
+1230,1231,247,20.0,theta1unitsum,serial_dictatorship,1.458737391223698
+1231,1232,247,20.0,theta1unitsum,ttc_matching,1.3370276284883438
+1232,1233,247,20.0,theta1unitsum,epsilon_max_matching fair1,1.0207048801153868
+1233,1234,247,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1234,1235,247,,theta1unitsum,twothirds_max_matching fair,1.117690082418571
+1235,1236,248,20.0,theta1unitsum,serial_dictatorship,1.413919636881281
+1236,1237,248,20.0,theta1unitsum,ttc_matching,1.3131888662301556
+1237,1238,248,20.0,theta1unitsum,epsilon_max_matching fair1,1.0326194358305256
+1238,1239,248,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1239,1240,248,,theta1unitsum,twothirds_max_matching fair,1.1294480656595203
+1240,1241,249,20.0,theta1unitsum,serial_dictatorship,1.3121427317259975
+1241,1242,249,20.0,theta1unitsum,ttc_matching,1.2189132051463905
+1242,1243,249,20.0,theta1unitsum,epsilon_max_matching fair1,1.0242535970775126
+1243,1244,249,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0015802387494228
+1244,1245,249,,theta1unitsum,twothirds_max_matching fair,1.6175920252660991
+1245,1246,250,20.0,theta1unitsum,serial_dictatorship,1.3219540402784444
+1246,1247,250,20.0,theta1unitsum,ttc_matching,1.1457521828293262
+1247,1248,250,20.0,theta1unitsum,epsilon_max_matching fair1,1.015877014615235
+1248,1249,250,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1249,1250,250,,theta1unitsum,twothirds_max_matching fair,1.277395864220847
+1250,1251,251,20.0,theta1unitsum,serial_dictatorship,1.312914883531708
+1251,1252,251,20.0,theta1unitsum,ttc_matching,1.2496821210189908
+1252,1253,251,20.0,theta1unitsum,epsilon_max_matching fair1,1.0074654601576485
+1253,1254,251,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1254,1255,251,,theta1unitsum,twothirds_max_matching fair,1.164895047502179
+1255,1256,252,20.0,theta1unitsum,serial_dictatorship,1.4724844709484783
+1256,1257,252,20.0,theta1unitsum,ttc_matching,1.2834288878037599
+1257,1258,252,20.0,theta1unitsum,epsilon_max_matching fair1,1.0185869861474113
+1258,1259,252,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0007853574445247
+1259,1260,252,,theta1unitsum,twothirds_max_matching fair,1.1286539686809693
+1260,1261,253,20.0,theta1unitsum,serial_dictatorship,1.487079920464106
+1261,1262,253,20.0,theta1unitsum,ttc_matching,1.2664599309015558
+1262,1263,253,20.0,theta1unitsum,epsilon_max_matching fair1,1.0023940706781664
+1263,1264,253,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1264,1265,253,,theta1unitsum,twothirds_max_matching fair,1.27076819903881
+1265,1266,254,20.0,theta1unitsum,serial_dictatorship,1.4242838151459676
+1266,1267,254,20.0,theta1unitsum,ttc_matching,1.3005426452590974
+1267,1268,254,20.0,theta1unitsum,epsilon_max_matching fair1,1.029815931701009
+1268,1269,254,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0025964277608064
+1269,1270,254,,theta1unitsum,twothirds_max_matching fair,1.185336791194657
+1270,1271,255,20.0,theta1unitsum,serial_dictatorship,1.272377293816295
+1271,1272,255,20.0,theta1unitsum,ttc_matching,1.2295707509100462
+1272,1273,255,20.0,theta1unitsum,epsilon_max_matching fair1,1.0106276818369664
+1273,1274,255,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+1274,1275,255,,theta1unitsum,twothirds_max_matching fair,1.1415038287295363
+1275,1276,256,20.0,theta1unitsum,serial_dictatorship,1.3847436577340964
+1276,1277,256,20.0,theta1unitsum,ttc_matching,1.2322423438166357
+1277,1278,256,20.0,theta1unitsum,epsilon_max_matching fair1,1.0250920051855246
+1278,1279,256,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1279,1280,256,,theta1unitsum,twothirds_max_matching fair,1.0910063028708492
+1280,1281,257,20.0,theta1unitsum,serial_dictatorship,1.335939872339274
+1281,1282,257,20.0,theta1unitsum,ttc_matching,1.1566396229209213
+1282,1283,257,20.0,theta1unitsum,epsilon_max_matching fair1,1.0139849152802134
+1283,1284,257,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1284,1285,257,,theta1unitsum,twothirds_max_matching fair,1.1422813755071366
+1285,1286,258,20.0,theta1unitsum,serial_dictatorship,1.3188429655092058
+1286,1287,258,20.0,theta1unitsum,ttc_matching,1.2350910524444998
+1287,1288,258,20.0,theta1unitsum,epsilon_max_matching fair1,1.0249069213314093
+1288,1289,258,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0028342286099994
+1289,1290,258,,theta1unitsum,twothirds_max_matching fair,1.272030393523409
+1290,1291,259,20.0,theta1unitsum,serial_dictatorship,1.2919736802967763
+1291,1292,259,20.0,theta1unitsum,ttc_matching,1.1975660213502157
+1292,1293,259,20.0,theta1unitsum,epsilon_max_matching fair1,1.0246563065601988
+1293,1294,259,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1294,1295,259,,theta1unitsum,twothirds_max_matching fair,1.1011467821112557
+1295,1296,260,20.0,theta1unitsum,serial_dictatorship,1.419802257149495
+1296,1297,260,20.0,theta1unitsum,ttc_matching,1.1780028017469029
+1297,1298,260,20.0,theta1unitsum,epsilon_max_matching fair1,1.005324415520882
+1298,1299,260,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1299,1300,260,,theta1unitsum,twothirds_max_matching fair,1.2901374913836565
+1300,1301,261,20.0,theta1unitsum,serial_dictatorship,1.2543887019704676
+1301,1302,261,20.0,theta1unitsum,ttc_matching,1.1326885829510962
+1302,1303,261,20.0,theta1unitsum,epsilon_max_matching fair1,1.013327302920432
+1303,1304,261,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1304,1305,261,,theta1unitsum,twothirds_max_matching fair,1.3524551879392248
+1305,1306,262,20.0,theta1unitsum,serial_dictatorship,1.3215019232736531
+1306,1307,262,20.0,theta1unitsum,ttc_matching,1.1592945622441015
+1307,1308,262,20.0,theta1unitsum,epsilon_max_matching fair1,1.0172875598129283
+1308,1309,262,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1309,1310,262,,theta1unitsum,twothirds_max_matching fair,1.290838674968559
+1310,1311,263,20.0,theta1unitsum,serial_dictatorship,1.2832016376342426
+1311,1312,263,20.0,theta1unitsum,ttc_matching,1.193199404398714
+1312,1313,263,20.0,theta1unitsum,epsilon_max_matching fair1,1.0093768630278601
+1313,1314,263,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1314,1315,263,,theta1unitsum,twothirds_max_matching fair,1.2398290531423903
+1315,1316,264,20.0,theta1unitsum,serial_dictatorship,1.3259020768980914
+1316,1317,264,20.0,theta1unitsum,ttc_matching,1.1929727649367692
+1317,1318,264,20.0,theta1unitsum,epsilon_max_matching fair1,1.0098556756862282
+1318,1319,264,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1319,1320,264,,theta1unitsum,twothirds_max_matching fair,1.345198817720758
+1320,1321,265,20.0,theta1unitsum,serial_dictatorship,1.3986883569518613
+1321,1322,265,20.0,theta1unitsum,ttc_matching,1.2081038991926614
+1322,1323,265,20.0,theta1unitsum,epsilon_max_matching fair1,1.0334178561003198
+1323,1324,265,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0027371367964815
+1324,1325,265,,theta1unitsum,twothirds_max_matching fair,1.1416400692963182
+1325,1326,266,20.0,theta1unitsum,serial_dictatorship,1.4791163840181056
+1326,1327,266,20.0,theta1unitsum,ttc_matching,1.3800663151490717
+1327,1328,266,20.0,theta1unitsum,epsilon_max_matching fair1,1.0271801754446217
+1328,1329,266,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1329,1330,266,,theta1unitsum,twothirds_max_matching fair,1.3268295075913232
+1330,1331,267,20.0,theta1unitsum,serial_dictatorship,1.2640807891173884
+1331,1332,267,20.0,theta1unitsum,ttc_matching,1.1361754793044267
+1332,1333,267,20.0,theta1unitsum,epsilon_max_matching fair1,1.0315924267846173
+1333,1334,267,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0014216552637287
+1334,1335,267,,theta1unitsum,twothirds_max_matching fair,1.3739236110319795
+1335,1336,268,20.0,theta1unitsum,serial_dictatorship,1.4152375546599076
+1336,1337,268,20.0,theta1unitsum,ttc_matching,1.2308195266268658
+1337,1338,268,20.0,theta1unitsum,epsilon_max_matching fair1,1.0178138689292664
+1338,1339,268,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1339,1340,268,,theta1unitsum,twothirds_max_matching fair,1.24840156095799
+1340,1341,269,20.0,theta1unitsum,serial_dictatorship,1.3741494981201279
+1341,1342,269,20.0,theta1unitsum,ttc_matching,1.231744115425243
+1342,1343,269,20.0,theta1unitsum,epsilon_max_matching fair1,1.004132490027472
+1343,1344,269,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1344,1345,269,,theta1unitsum,twothirds_max_matching fair,1.2231518881109493
+1345,1346,270,20.0,theta1unitsum,serial_dictatorship,1.3847939024701037
+1346,1347,270,20.0,theta1unitsum,ttc_matching,1.1527044856930417
+1347,1348,270,20.0,theta1unitsum,epsilon_max_matching fair1,1.013929824114435
+1348,1349,270,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1349,1350,270,,theta1unitsum,twothirds_max_matching fair,1.3943983183190451
+1350,1351,271,20.0,theta1unitsum,serial_dictatorship,1.269303371274441
+1351,1352,271,20.0,theta1unitsum,ttc_matching,1.1864690008539236
+1352,1353,271,20.0,theta1unitsum,epsilon_max_matching fair1,1.0033860365944574
+1353,1354,271,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0013231816258974
+1354,1355,271,,theta1unitsum,twothirds_max_matching fair,1.3690683057020812
+1355,1356,272,20.0,theta1unitsum,serial_dictatorship,1.2763296422924069
+1356,1357,272,20.0,theta1unitsum,ttc_matching,1.1961520365578924
+1357,1358,272,20.0,theta1unitsum,epsilon_max_matching fair1,1.0044151409922542
+1358,1359,272,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1359,1360,272,,theta1unitsum,twothirds_max_matching fair,1.2598952697563266
+1360,1361,273,20.0,theta1unitsum,serial_dictatorship,1.4610513189129344
+1361,1362,273,20.0,theta1unitsum,ttc_matching,1.2661401336841602
+1362,1363,273,20.0,theta1unitsum,epsilon_max_matching fair1,1.0105173413401407
+1363,1364,273,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1364,1365,273,,theta1unitsum,twothirds_max_matching fair,1.2707961319752608
+1365,1366,274,20.0,theta1unitsum,serial_dictatorship,1.3144281046976456
+1366,1367,274,20.0,theta1unitsum,ttc_matching,1.220850282415309
+1367,1368,274,20.0,theta1unitsum,epsilon_max_matching fair1,1.0027029935493388
+1368,1369,274,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1369,1370,274,,theta1unitsum,twothirds_max_matching fair,1.2982688779367662
+1370,1371,275,20.0,theta1unitsum,serial_dictatorship,1.3613038084844102
+1371,1372,275,20.0,theta1unitsum,ttc_matching,1.2507839399722365
+1372,1373,275,20.0,theta1unitsum,epsilon_max_matching fair1,1.0289188737515746
+1373,1374,275,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1374,1375,275,,theta1unitsum,twothirds_max_matching fair,1.2640946905103096
+1375,1376,276,20.0,theta1unitsum,serial_dictatorship,1.4430963848464136
+1376,1377,276,20.0,theta1unitsum,ttc_matching,1.2996949372894446
+1377,1378,276,20.0,theta1unitsum,epsilon_max_matching fair1,1.0141523287305378
+1378,1379,276,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.000195321801913
+1379,1380,276,,theta1unitsum,twothirds_max_matching fair,1.1936574679701493
+1380,1381,277,20.0,theta1unitsum,serial_dictatorship,1.3300277116247408
+1381,1382,277,20.0,theta1unitsum,ttc_matching,1.2319324402374603
+1382,1383,277,20.0,theta1unitsum,epsilon_max_matching fair1,1.0053187925119813
+1383,1384,277,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1384,1385,277,,theta1unitsum,twothirds_max_matching fair,1.2836640361371148
+1385,1386,278,20.0,theta1unitsum,serial_dictatorship,1.3315120476678848
+1386,1387,278,20.0,theta1unitsum,ttc_matching,1.312739715113649
+1387,1388,278,20.0,theta1unitsum,epsilon_max_matching fair1,1.0144575381952055
+1388,1389,278,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0005295049733252
+1389,1390,278,,theta1unitsum,twothirds_max_matching fair,1.254911739449835
+1390,1391,279,20.0,theta1unitsum,serial_dictatorship,1.3083807954592914
+1391,1392,279,20.0,theta1unitsum,ttc_matching,1.152624840596436
+1392,1393,279,20.0,theta1unitsum,epsilon_max_matching fair1,1.0274970209043492
+1393,1394,279,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1394,1395,279,,theta1unitsum,twothirds_max_matching fair,1.2543238110929302
+1395,1396,280,20.0,theta1unitsum,serial_dictatorship,1.3843466743429114
+1396,1397,280,20.0,theta1unitsum,ttc_matching,1.2319387331779152
+1397,1398,280,20.0,theta1unitsum,epsilon_max_matching fair1,1.0054879575380409
+1398,1399,280,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999997
+1399,1400,280,,theta1unitsum,twothirds_max_matching fair,1.3587389302818416
+1400,1401,281,20.0,theta1unitsum,serial_dictatorship,1.4172546174106093
+1401,1402,281,20.0,theta1unitsum,ttc_matching,1.1906559196397764
+1402,1403,281,20.0,theta1unitsum,epsilon_max_matching fair1,1.0040564835144246
+1403,1404,281,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999997
+1404,1405,281,,theta1unitsum,twothirds_max_matching fair,1.1076596696266094
+1405,1406,282,20.0,theta1unitsum,serial_dictatorship,1.4011241976552464
+1406,1407,282,20.0,theta1unitsum,ttc_matching,1.2659456564849247
+1407,1408,282,20.0,theta1unitsum,epsilon_max_matching fair1,1.0481179412020025
+1408,1409,282,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999997
+1409,1410,282,,theta1unitsum,twothirds_max_matching fair,1.4655759191020399
+1410,1411,283,20.0,theta1unitsum,serial_dictatorship,1.4030658636172428
+1411,1412,283,20.0,theta1unitsum,ttc_matching,1.2130491708053575
+1412,1413,283,20.0,theta1unitsum,epsilon_max_matching fair1,1.0167805215093246
+1413,1414,283,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+1414,1415,283,,theta1unitsum,twothirds_max_matching fair,1.314445902300815
+1415,1416,284,20.0,theta1unitsum,serial_dictatorship,1.2973725187398588
+1416,1417,284,20.0,theta1unitsum,ttc_matching,1.2490539920162762
+1417,1418,284,20.0,theta1unitsum,epsilon_max_matching fair1,0.9999999999999997
+1418,1419,284,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999997
+1419,1420,284,,theta1unitsum,twothirds_max_matching fair,1.4359689911626743
+1420,1421,285,20.0,theta1unitsum,serial_dictatorship,1.455553442834002
+1421,1422,285,20.0,theta1unitsum,ttc_matching,1.299099394508311
+1422,1423,285,20.0,theta1unitsum,epsilon_max_matching fair1,1.0167171889749
+1423,1424,285,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1424,1425,285,,theta1unitsum,twothirds_max_matching fair,1.4247798306812116
+1425,1426,286,20.0,theta1unitsum,serial_dictatorship,1.3488715598354886
+1426,1427,286,20.0,theta1unitsum,ttc_matching,1.1985892296185057
+1427,1428,286,20.0,theta1unitsum,epsilon_max_matching fair1,1.0107204255357343
+1428,1429,286,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0003710891222217
+1429,1430,286,,theta1unitsum,twothirds_max_matching fair,1.2322079342352477
+1430,1431,287,20.0,theta1unitsum,serial_dictatorship,1.4325006059180998
+1431,1432,287,20.0,theta1unitsum,ttc_matching,1.2303334440794906
+1432,1433,287,20.0,theta1unitsum,epsilon_max_matching fair1,1.0033145681103004
+1433,1434,287,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+1434,1435,287,,theta1unitsum,twothirds_max_matching fair,1.3088987763962578
+1435,1436,288,20.0,theta1unitsum,serial_dictatorship,1.3120265045297612
+1436,1437,288,20.0,theta1unitsum,ttc_matching,1.1863367851760098
+1437,1438,288,20.0,theta1unitsum,epsilon_max_matching fair1,1.0137362799332887
+1438,1439,288,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1439,1440,288,,theta1unitsum,twothirds_max_matching fair,1.2709564655290395
+1440,1441,289,20.0,theta1unitsum,serial_dictatorship,1.4683148762485831
+1441,1442,289,20.0,theta1unitsum,ttc_matching,1.2916642382308858
+1442,1443,289,20.0,theta1unitsum,epsilon_max_matching fair1,1.0384834947088706
+1443,1444,289,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0039331305721324
+1444,1445,289,,theta1unitsum,twothirds_max_matching fair,1.1505436192237006
+1445,1446,290,20.0,theta1unitsum,serial_dictatorship,1.430374556979564
+1446,1447,290,20.0,theta1unitsum,ttc_matching,1.2709301105801225
+1447,1448,290,20.0,theta1unitsum,epsilon_max_matching fair1,1.0394994670830926
+1448,1449,290,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1449,1450,290,,theta1unitsum,twothirds_max_matching fair,1.3933816738196028
+1450,1451,291,20.0,theta1unitsum,serial_dictatorship,1.4202245473900184
+1451,1452,291,20.0,theta1unitsum,ttc_matching,1.2249450848025345
+1452,1453,291,20.0,theta1unitsum,epsilon_max_matching fair1,1.0019803085898866
+1453,1454,291,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0006582307090726
+1454,1455,291,,theta1unitsum,twothirds_max_matching fair,1.1467641971812976
+1455,1456,292,20.0,theta1unitsum,serial_dictatorship,1.2683630096527596
+1456,1457,292,20.0,theta1unitsum,ttc_matching,1.2192554510611804
+1457,1458,292,20.0,theta1unitsum,epsilon_max_matching fair1,1.017082528024655
+1458,1459,292,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0003753617808337
+1459,1460,292,,theta1unitsum,twothirds_max_matching fair,1.1922418474182706
+1460,1461,293,20.0,theta1unitsum,serial_dictatorship,1.4823518405111045
+1461,1462,293,20.0,theta1unitsum,ttc_matching,1.2416789025312729
+1462,1463,293,20.0,theta1unitsum,epsilon_max_matching fair1,1.0014520639970028
+1463,1464,293,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1464,1465,293,,theta1unitsum,twothirds_max_matching fair,1.212592032105287
+1465,1466,294,20.0,theta1unitsum,serial_dictatorship,1.2643555651866458
+1466,1467,294,20.0,theta1unitsum,ttc_matching,1.160919299216316
+1467,1468,294,20.0,theta1unitsum,epsilon_max_matching fair1,1.0275636664352565
+1468,1469,294,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0021370338134
+1469,1470,294,,theta1unitsum,twothirds_max_matching fair,1.1042779069684387
+1470,1471,295,20.0,theta1unitsum,serial_dictatorship,1.229163543916524
+1471,1472,295,20.0,theta1unitsum,ttc_matching,1.104217578913331
+1472,1473,295,20.0,theta1unitsum,epsilon_max_matching fair1,1.0397229762053992
+1473,1474,295,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1474,1475,295,,theta1unitsum,twothirds_max_matching fair,1.356212308848249
+1475,1476,296,20.0,theta1unitsum,serial_dictatorship,1.2755652432764968
+1476,1477,296,20.0,theta1unitsum,ttc_matching,1.159449021534733
+1477,1478,296,20.0,theta1unitsum,epsilon_max_matching fair1,1.02312562450769
+1478,1479,296,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1479,1480,296,,theta1unitsum,twothirds_max_matching fair,1.3173872397562099
+1480,1481,297,20.0,theta1unitsum,serial_dictatorship,1.3013000281962994
+1481,1482,297,20.0,theta1unitsum,ttc_matching,1.1513541187764964
+1482,1483,297,20.0,theta1unitsum,epsilon_max_matching fair1,1.0318341919455098
+1483,1484,297,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0014633900154943
+1484,1485,297,,theta1unitsum,twothirds_max_matching fair,1.2620576848819343
+1485,1486,298,20.0,theta1unitsum,serial_dictatorship,1.4349629107065542
+1486,1487,298,20.0,theta1unitsum,ttc_matching,1.2606947534022765
+1487,1488,298,20.0,theta1unitsum,epsilon_max_matching fair1,1.0348543214983488
+1488,1489,298,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1489,1490,298,,theta1unitsum,twothirds_max_matching fair,1.4253982201540059
+1490,1491,299,20.0,theta1unitsum,serial_dictatorship,1.284743078397813
+1491,1492,299,20.0,theta1unitsum,ttc_matching,1.1935895055771149
+1492,1493,299,20.0,theta1unitsum,epsilon_max_matching fair1,1.0496180567457234
+1493,1494,299,20.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+1494,1495,299,,theta1unitsum,twothirds_max_matching fair,1.1378847232469191
+1495,1496,300,20.0,theta1unitsum,serial_dictatorship,1.275017038795994
+1496,1497,300,20.0,theta1unitsum,ttc_matching,1.1954765456687066
+1497,1498,300,20.0,theta1unitsum,epsilon_max_matching fair1,1.021669047622158
+1498,1499,300,20.0,theta1unitsum,epsilon_max_matching fair0.1,1.0005519797719893
+1499,1500,300,,theta1unitsum,twothirds_max_matching fair,1.2270550907418056
+1500,1501,301,50.0,theta1unitsum,serial_dictatorship,1.228388407760273
+1501,1502,301,50.0,theta1unitsum,ttc_matching,1.1828477696436595
+1502,1503,301,50.0,theta1unitsum,epsilon_max_matching fair1,1.0285424409208195
+1503,1504,301,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0004317120172905
+1504,1505,301,,theta1unitsum,twothirds_max_matching fair,1.323457170076193
+1505,1506,302,50.0,theta1unitsum,serial_dictatorship,1.2229096831586936
+1506,1507,302,50.0,theta1unitsum,ttc_matching,1.1648280766926613
+1507,1508,302,50.0,theta1unitsum,epsilon_max_matching fair1,1.0493093306613366
+1508,1509,302,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0012007821672326
+1509,1510,302,,theta1unitsum,twothirds_max_matching fair,1.356398066478801
+1510,1511,303,50.0,theta1unitsum,serial_dictatorship,1.2578317808609412
+1511,1512,303,50.0,theta1unitsum,ttc_matching,1.1703166532324867
+1512,1513,303,50.0,theta1unitsum,epsilon_max_matching fair1,1.0265483893159821
+1513,1514,303,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0007211630856123
+1514,1515,303,,theta1unitsum,twothirds_max_matching fair,1.3434520980743707
+1515,1516,304,50.0,theta1unitsum,serial_dictatorship,1.2167223568990921
+1516,1517,304,50.0,theta1unitsum,ttc_matching,1.166154449799956
+1517,1518,304,50.0,theta1unitsum,epsilon_max_matching fair1,1.027577438028323
+1518,1519,304,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000450958452468
+1519,1520,304,,theta1unitsum,twothirds_max_matching fair,1.3365020547556588
+1520,1521,305,50.0,theta1unitsum,serial_dictatorship,1.2491393908910238
+1521,1522,305,50.0,theta1unitsum,ttc_matching,1.1989591352365578
+1522,1523,305,50.0,theta1unitsum,epsilon_max_matching fair1,1.0124039311372217
+1523,1524,305,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0012335409215956
+1524,1525,305,,theta1unitsum,twothirds_max_matching fair,1.396978009535763
+1525,1526,306,50.0,theta1unitsum,serial_dictatorship,1.2360736324719515
+1526,1527,306,50.0,theta1unitsum,ttc_matching,1.1691399837150822
+1527,1528,306,50.0,theta1unitsum,epsilon_max_matching fair1,1.0453575788928076
+1528,1529,306,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0033000287616278
+1529,1530,306,,theta1unitsum,twothirds_max_matching fair,1.3530245678359116
+1530,1531,307,50.0,theta1unitsum,serial_dictatorship,1.2336125868433068
+1531,1532,307,50.0,theta1unitsum,ttc_matching,1.1816211596827675
+1532,1533,307,50.0,theta1unitsum,epsilon_max_matching fair1,1.0557153178042757
+1533,1534,307,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.002024460087955
+1534,1535,307,,theta1unitsum,twothirds_max_matching fair,1.4281554264054699
+1535,1536,308,50.0,theta1unitsum,serial_dictatorship,1.2234770988503338
+1536,1537,308,50.0,theta1unitsum,ttc_matching,1.1819157477803814
+1537,1538,308,50.0,theta1unitsum,epsilon_max_matching fair1,1.0381045928595412
+1538,1539,308,50.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1539,1540,308,,theta1unitsum,twothirds_max_matching fair,1.360274464563822
+1540,1541,309,50.0,theta1unitsum,serial_dictatorship,1.244117955402714
+1541,1542,309,50.0,theta1unitsum,ttc_matching,1.173500036414127
+1542,1543,309,50.0,theta1unitsum,epsilon_max_matching fair1,1.0276520153897606
+1543,1544,309,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0009339658752212
+1544,1545,309,,theta1unitsum,twothirds_max_matching fair,1.3495137106988275
+1545,1546,310,50.0,theta1unitsum,serial_dictatorship,1.2305063008849617
+1546,1547,310,50.0,theta1unitsum,ttc_matching,1.182123885909723
+1547,1548,310,50.0,theta1unitsum,epsilon_max_matching fair1,1.0357962158746976
+1548,1549,310,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.00019066358682
+1549,1550,310,,theta1unitsum,twothirds_max_matching fair,1.3551551626053395
+1550,1551,311,50.0,theta1unitsum,serial_dictatorship,1.1958916487577669
+1551,1552,311,50.0,theta1unitsum,ttc_matching,1.108962644681191
+1552,1553,311,50.0,theta1unitsum,epsilon_max_matching fair1,1.0427977062192484
+1553,1554,311,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0003147002370008
+1554,1555,311,,theta1unitsum,twothirds_max_matching fair,1.3778250924840951
+1555,1556,312,50.0,theta1unitsum,serial_dictatorship,1.2078363316912217
+1556,1557,312,50.0,theta1unitsum,ttc_matching,1.123320022731897
+1557,1558,312,50.0,theta1unitsum,epsilon_max_matching fair1,1.0345341822202063
+1558,1559,312,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0010634745875502
+1559,1560,312,,theta1unitsum,twothirds_max_matching fair,1.324777154020039
+1560,1561,313,50.0,theta1unitsum,serial_dictatorship,1.2305858127079354
+1561,1562,313,50.0,theta1unitsum,ttc_matching,1.1868826041351843
+1562,1563,313,50.0,theta1unitsum,epsilon_max_matching fair1,1.0302973651109903
+1563,1564,313,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0002876353499959
+1564,1565,313,,theta1unitsum,twothirds_max_matching fair,1.284430191290547
+1565,1566,314,50.0,theta1unitsum,serial_dictatorship,1.246627235928047
+1566,1567,314,50.0,theta1unitsum,ttc_matching,1.1625899927671222
+1567,1568,314,50.0,theta1unitsum,epsilon_max_matching fair1,1.0344430966401594
+1568,1569,314,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0012417074545006
+1569,1570,314,,theta1unitsum,twothirds_max_matching fair,1.4268074672169402
+1570,1571,315,50.0,theta1unitsum,serial_dictatorship,1.2138830873434876
+1571,1572,315,50.0,theta1unitsum,ttc_matching,1.14956216280778
+1572,1573,315,50.0,theta1unitsum,epsilon_max_matching fair1,1.0387638607726268
+1573,1574,315,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0019950789820473
+1574,1575,315,,theta1unitsum,twothirds_max_matching fair,1.313189948444724
+1575,1576,316,50.0,theta1unitsum,serial_dictatorship,1.237301590690436
+1576,1577,316,50.0,theta1unitsum,ttc_matching,1.1767122603857536
+1577,1578,316,50.0,theta1unitsum,epsilon_max_matching fair1,1.0498753305795778
+1578,1579,316,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000585437251061
+1579,1580,316,,theta1unitsum,twothirds_max_matching fair,1.430742760493146
+1580,1581,317,50.0,theta1unitsum,serial_dictatorship,1.2206695815019843
+1581,1582,317,50.0,theta1unitsum,ttc_matching,1.1888086058226521
+1582,1583,317,50.0,theta1unitsum,epsilon_max_matching fair1,1.0387835006135242
+1583,1584,317,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0014119941516728
+1584,1585,317,,theta1unitsum,twothirds_max_matching fair,1.3822121786602954
+1585,1586,318,50.0,theta1unitsum,serial_dictatorship,1.247593718815238
+1586,1587,318,50.0,theta1unitsum,ttc_matching,1.1766792285151841
+1587,1588,318,50.0,theta1unitsum,epsilon_max_matching fair1,1.0182151469468688
+1588,1589,318,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000292119562546
+1589,1590,318,,theta1unitsum,twothirds_max_matching fair,1.3479192315063369
+1590,1591,319,50.0,theta1unitsum,serial_dictatorship,1.2462717127588028
+1591,1592,319,50.0,theta1unitsum,ttc_matching,1.1540799674080422
+1592,1593,319,50.0,theta1unitsum,epsilon_max_matching fair1,1.0278964068464422
+1593,1594,319,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.001515964260349
+1594,1595,319,,theta1unitsum,twothirds_max_matching fair,1.3642723901321105
+1595,1596,320,50.0,theta1unitsum,serial_dictatorship,1.1986607666032572
+1596,1597,320,50.0,theta1unitsum,ttc_matching,1.1574061895255556
+1597,1598,320,50.0,theta1unitsum,epsilon_max_matching fair1,1.0255709791380054
+1598,1599,320,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0019746959289864
+1599,1600,320,,theta1unitsum,twothirds_max_matching fair,1.2964837291526703
+1600,1601,321,50.0,theta1unitsum,serial_dictatorship,1.2382757321292994
+1601,1602,321,50.0,theta1unitsum,ttc_matching,1.1594567543511967
+1602,1603,321,50.0,theta1unitsum,epsilon_max_matching fair1,1.0285424798956488
+1603,1604,321,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0015032137486293
+1604,1605,321,,theta1unitsum,twothirds_max_matching fair,1.3788308634481996
+1605,1606,322,50.0,theta1unitsum,serial_dictatorship,1.2357144158364448
+1606,1607,322,50.0,theta1unitsum,ttc_matching,1.199058465766292
+1607,1608,322,50.0,theta1unitsum,epsilon_max_matching fair1,1.0386301249022147
+1608,1609,322,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.00059759167256
+1609,1610,322,,theta1unitsum,twothirds_max_matching fair,1.3077896135295863
+1610,1611,323,50.0,theta1unitsum,serial_dictatorship,1.2158431891198478
+1611,1612,323,50.0,theta1unitsum,ttc_matching,1.1776290401159273
+1612,1613,323,50.0,theta1unitsum,epsilon_max_matching fair1,1.035658935888345
+1613,1614,323,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0001464588540514
+1614,1615,323,,theta1unitsum,twothirds_max_matching fair,1.396977546875438
+1615,1616,324,50.0,theta1unitsum,serial_dictatorship,1.2398363786862725
+1616,1617,324,50.0,theta1unitsum,ttc_matching,1.1887423560451182
+1617,1618,324,50.0,theta1unitsum,epsilon_max_matching fair1,1.0371085864213474
+1618,1619,324,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0008781517890937
+1619,1620,324,,theta1unitsum,twothirds_max_matching fair,1.3184775411236527
+1620,1621,325,50.0,theta1unitsum,serial_dictatorship,1.233452747509812
+1621,1622,325,50.0,theta1unitsum,ttc_matching,1.1639280646564023
+1622,1623,325,50.0,theta1unitsum,epsilon_max_matching fair1,1.0486767885286963
+1623,1624,325,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000106405131905
+1624,1625,325,,theta1unitsum,twothirds_max_matching fair,1.3925197386768922
+1625,1626,326,50.0,theta1unitsum,serial_dictatorship,1.2392970331759097
+1626,1627,326,50.0,theta1unitsum,ttc_matching,1.1678626694185121
+1627,1628,326,50.0,theta1unitsum,epsilon_max_matching fair1,1.027523444820709
+1628,1629,326,50.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1629,1630,326,,theta1unitsum,twothirds_max_matching fair,1.33860418739322
+1630,1631,327,50.0,theta1unitsum,serial_dictatorship,1.2431346138250814
+1631,1632,327,50.0,theta1unitsum,ttc_matching,1.1913464019109503
+1632,1633,327,50.0,theta1unitsum,epsilon_max_matching fair1,1.0456582486788555
+1633,1634,327,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0022765457590954
+1634,1635,327,,theta1unitsum,twothirds_max_matching fair,1.4093676037068734
+1635,1636,328,50.0,theta1unitsum,serial_dictatorship,1.2076693106036847
+1636,1637,328,50.0,theta1unitsum,ttc_matching,1.1540638311181193
+1637,1638,328,50.0,theta1unitsum,epsilon_max_matching fair1,1.0377637248029232
+1638,1639,328,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0017257109681403
+1639,1640,328,,theta1unitsum,twothirds_max_matching fair,1.3543173482773636
+1640,1641,329,50.0,theta1unitsum,serial_dictatorship,1.1842683529688716
+1641,1642,329,50.0,theta1unitsum,ttc_matching,1.1427621406376636
+1642,1643,329,50.0,theta1unitsum,epsilon_max_matching fair1,1.034762666491068
+1643,1644,329,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000265676478792
+1644,1645,329,,theta1unitsum,twothirds_max_matching fair,1.3001384191739505
+1645,1646,330,50.0,theta1unitsum,serial_dictatorship,1.2079976790829885
+1646,1647,330,50.0,theta1unitsum,ttc_matching,1.1746671603656302
+1647,1648,330,50.0,theta1unitsum,epsilon_max_matching fair1,1.041683025186055
+1648,1649,330,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0008932048751407
+1649,1650,330,,theta1unitsum,twothirds_max_matching fair,1.301411353208801
+1650,1651,331,50.0,theta1unitsum,serial_dictatorship,1.2361438326640584
+1651,1652,331,50.0,theta1unitsum,ttc_matching,1.1713823435588293
+1652,1653,331,50.0,theta1unitsum,epsilon_max_matching fair1,1.038181907658819
+1653,1654,331,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0009427156837862
+1654,1655,331,,theta1unitsum,twothirds_max_matching fair,1.3326044606653562
+1655,1656,332,50.0,theta1unitsum,serial_dictatorship,1.2212737857363831
+1656,1657,332,50.0,theta1unitsum,ttc_matching,1.164609312778312
+1657,1658,332,50.0,theta1unitsum,epsilon_max_matching fair1,1.0351392619714181
+1658,1659,332,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1659,1660,332,,theta1unitsum,twothirds_max_matching fair,1.3660759249110215
+1660,1661,333,50.0,theta1unitsum,serial_dictatorship,1.2022710370114622
+1661,1662,333,50.0,theta1unitsum,ttc_matching,1.162730512804416
+1662,1663,333,50.0,theta1unitsum,epsilon_max_matching fair1,1.029412012905806
+1663,1664,333,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0018471793090813
+1664,1665,333,,theta1unitsum,twothirds_max_matching fair,1.3768595954010943
+1665,1666,334,50.0,theta1unitsum,serial_dictatorship,1.2212930217099425
+1666,1667,334,50.0,theta1unitsum,ttc_matching,1.1682460842513929
+1667,1668,334,50.0,theta1unitsum,epsilon_max_matching fair1,1.0413995842424084
+1668,1669,334,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0014089079083979
+1669,1670,334,,theta1unitsum,twothirds_max_matching fair,1.3283908817208478
+1670,1671,335,50.0,theta1unitsum,serial_dictatorship,1.1852942040183518
+1671,1672,335,50.0,theta1unitsum,ttc_matching,1.1416044645518755
+1672,1673,335,50.0,theta1unitsum,epsilon_max_matching fair1,1.0264437162816078
+1673,1674,335,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1674,1675,335,,theta1unitsum,twothirds_max_matching fair,1.3576263113868219
+1675,1676,336,50.0,theta1unitsum,serial_dictatorship,1.230918195521027
+1676,1677,336,50.0,theta1unitsum,ttc_matching,1.1735534973284738
+1677,1678,336,50.0,theta1unitsum,epsilon_max_matching fair1,1.0273818733000646
+1678,1679,336,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0010856839913205
+1679,1680,336,,theta1unitsum,twothirds_max_matching fair,1.3025294118974409
+1680,1681,337,50.0,theta1unitsum,serial_dictatorship,1.2256212695791564
+1681,1682,337,50.0,theta1unitsum,ttc_matching,1.1795882210649256
+1682,1683,337,50.0,theta1unitsum,epsilon_max_matching fair1,1.028622378765427
+1683,1684,337,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0023163151061552
+1684,1685,337,,theta1unitsum,twothirds_max_matching fair,1.3184975076891696
+1685,1686,338,50.0,theta1unitsum,serial_dictatorship,1.2195985770131261
+1686,1687,338,50.0,theta1unitsum,ttc_matching,1.1714921624024255
+1687,1688,338,50.0,theta1unitsum,epsilon_max_matching fair1,1.0342466074979404
+1688,1689,338,50.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1689,1690,338,,theta1unitsum,twothirds_max_matching fair,1.381656069871567
+1690,1691,339,50.0,theta1unitsum,serial_dictatorship,1.2088075357069583
+1691,1692,339,50.0,theta1unitsum,ttc_matching,1.1434314821036209
+1692,1693,339,50.0,theta1unitsum,epsilon_max_matching fair1,1.0258968463465643
+1693,1694,339,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0007337500731859
+1694,1695,339,,theta1unitsum,twothirds_max_matching fair,1.384554975068772
+1695,1696,340,50.0,theta1unitsum,serial_dictatorship,1.1944474761696866
+1696,1697,340,50.0,theta1unitsum,ttc_matching,1.144393729034392
+1697,1698,340,50.0,theta1unitsum,epsilon_max_matching fair1,1.0306837469785513
+1698,1699,340,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0
+1699,1700,340,,theta1unitsum,twothirds_max_matching fair,1.3677825152804741
+1700,1701,341,50.0,theta1unitsum,serial_dictatorship,1.23405443662938
+1701,1702,341,50.0,theta1unitsum,ttc_matching,1.1708971232160752
+1702,1703,341,50.0,theta1unitsum,epsilon_max_matching fair1,1.0419876215949238
+1703,1704,341,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0004042362365322
+1704,1705,341,,theta1unitsum,twothirds_max_matching fair,1.3117022478019107
+1705,1706,342,50.0,theta1unitsum,serial_dictatorship,1.2263939072458085
+1706,1707,342,50.0,theta1unitsum,ttc_matching,1.1694682441722024
+1707,1708,342,50.0,theta1unitsum,epsilon_max_matching fair1,1.0290833260086087
+1708,1709,342,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000855672539796
+1709,1710,342,,theta1unitsum,twothirds_max_matching fair,1.3580071559727978
+1710,1711,343,50.0,theta1unitsum,serial_dictatorship,1.2241706141817508
+1711,1712,343,50.0,theta1unitsum,ttc_matching,1.1594862586254089
+1712,1713,343,50.0,theta1unitsum,epsilon_max_matching fair1,1.0377400663965313
+1713,1714,343,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0016850936491728
+1714,1715,343,,theta1unitsum,twothirds_max_matching fair,1.322891007894201
+1715,1716,344,50.0,theta1unitsum,serial_dictatorship,1.218791900476203
+1716,1717,344,50.0,theta1unitsum,ttc_matching,1.1674943615809485
+1717,1718,344,50.0,theta1unitsum,epsilon_max_matching fair1,1.0286228901165246
+1718,1719,344,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0008671915968321
+1719,1720,344,,theta1unitsum,twothirds_max_matching fair,1.372012746362164
+1720,1721,345,50.0,theta1unitsum,serial_dictatorship,1.2069864505950278
+1721,1722,345,50.0,theta1unitsum,ttc_matching,1.1733264601792106
+1722,1723,345,50.0,theta1unitsum,epsilon_max_matching fair1,1.0238216235415083
+1723,1724,345,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0002109986713414
+1724,1725,345,,theta1unitsum,twothirds_max_matching fair,1.3109011008807416
+1725,1726,346,50.0,theta1unitsum,serial_dictatorship,1.2646218647404255
+1726,1727,346,50.0,theta1unitsum,ttc_matching,1.2003493560126441
+1727,1728,346,50.0,theta1unitsum,epsilon_max_matching fair1,1.051553679901394
+1728,1729,346,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0002304792442953
+1729,1730,346,,theta1unitsum,twothirds_max_matching fair,1.3665341307433339
+1730,1731,347,50.0,theta1unitsum,serial_dictatorship,1.2304200899447661
+1731,1732,347,50.0,theta1unitsum,ttc_matching,1.1779136233602199
+1732,1733,347,50.0,theta1unitsum,epsilon_max_matching fair1,1.0265344172276667
+1733,1734,347,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0006399693611945
+1734,1735,347,,theta1unitsum,twothirds_max_matching fair,1.3770408391589708
+1735,1736,348,50.0,theta1unitsum,serial_dictatorship,1.2321836149793848
+1736,1737,348,50.0,theta1unitsum,ttc_matching,1.2016513303923868
+1737,1738,348,50.0,theta1unitsum,epsilon_max_matching fair1,1.0329000060514824
+1738,1739,348,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000276745238923
+1739,1740,348,,theta1unitsum,twothirds_max_matching fair,1.3811406594440239
+1740,1741,349,50.0,theta1unitsum,serial_dictatorship,1.1998981653607368
+1741,1742,349,50.0,theta1unitsum,ttc_matching,1.1356641269610968
+1742,1743,349,50.0,theta1unitsum,epsilon_max_matching fair1,1.0395106288914324
+1743,1744,349,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0020341812518452
+1744,1745,349,,theta1unitsum,twothirds_max_matching fair,1.3454818793310284
+1745,1746,350,50.0,theta1unitsum,serial_dictatorship,1.2132614571709144
+1746,1747,350,50.0,theta1unitsum,ttc_matching,1.1783313112629537
+1747,1748,350,50.0,theta1unitsum,epsilon_max_matching fair1,1.0355717946897094
+1748,1749,350,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.001966328711106
+1749,1750,350,,theta1unitsum,twothirds_max_matching fair,1.3914775576227085
+1750,1751,351,50.0,theta1unitsum,serial_dictatorship,1.2022023270583617
+1751,1752,351,50.0,theta1unitsum,ttc_matching,1.155551353220448
+1752,1753,351,50.0,theta1unitsum,epsilon_max_matching fair1,1.0334335463473592
+1753,1754,351,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0011012120148834
+1754,1755,351,,theta1unitsum,twothirds_max_matching fair,1.381834461177992
+1755,1756,352,50.0,theta1unitsum,serial_dictatorship,1.2436098782248133
+1756,1757,352,50.0,theta1unitsum,ttc_matching,1.198069432976955
+1757,1758,352,50.0,theta1unitsum,epsilon_max_matching fair1,1.0299073189442147
+1758,1759,352,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0035690140958975
+1759,1760,352,,theta1unitsum,twothirds_max_matching fair,1.3090624979956784
+1760,1761,353,50.0,theta1unitsum,serial_dictatorship,1.234224507858643
+1761,1762,353,50.0,theta1unitsum,ttc_matching,1.185327951630799
+1762,1763,353,50.0,theta1unitsum,epsilon_max_matching fair1,1.0394915355450933
+1763,1764,353,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0018781269320427
+1764,1765,353,,theta1unitsum,twothirds_max_matching fair,1.292414622232568
+1765,1766,354,50.0,theta1unitsum,serial_dictatorship,1.2046189410676529
+1766,1767,354,50.0,theta1unitsum,ttc_matching,1.1511779320940279
+1767,1768,354,50.0,theta1unitsum,epsilon_max_matching fair1,1.0285940173568298
+1768,1769,354,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.001071287289757
+1769,1770,354,,theta1unitsum,twothirds_max_matching fair,1.3323465720555165
+1770,1771,355,50.0,theta1unitsum,serial_dictatorship,1.233533937897878
+1771,1772,355,50.0,theta1unitsum,ttc_matching,1.160179963498662
+1772,1773,355,50.0,theta1unitsum,epsilon_max_matching fair1,1.0197785964323038
+1773,1774,355,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0005508649197743
+1774,1775,355,,theta1unitsum,twothirds_max_matching fair,1.404749242285818
+1775,1776,356,50.0,theta1unitsum,serial_dictatorship,1.2556330002405582
+1776,1777,356,50.0,theta1unitsum,ttc_matching,1.2073915767161671
+1777,1778,356,50.0,theta1unitsum,epsilon_max_matching fair1,1.0305309694784999
+1778,1779,356,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000394598215925
+1779,1780,356,,theta1unitsum,twothirds_max_matching fair,1.4181315871677949
+1780,1781,357,50.0,theta1unitsum,serial_dictatorship,1.2205626279979964
+1781,1782,357,50.0,theta1unitsum,ttc_matching,1.1599045745164551
+1782,1783,357,50.0,theta1unitsum,epsilon_max_matching fair1,1.0215028621036655
+1783,1784,357,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.002172242592122
+1784,1785,357,,theta1unitsum,twothirds_max_matching fair,1.370320062118526
+1785,1786,358,50.0,theta1unitsum,serial_dictatorship,1.210540625213591
+1786,1787,358,50.0,theta1unitsum,ttc_matching,1.1524137523119802
+1787,1788,358,50.0,theta1unitsum,epsilon_max_matching fair1,1.0378504894353375
+1788,1789,358,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0019448810142135
+1789,1790,358,,theta1unitsum,twothirds_max_matching fair,1.4036878633825247
+1790,1791,359,50.0,theta1unitsum,serial_dictatorship,1.2036948240506704
+1791,1792,359,50.0,theta1unitsum,ttc_matching,1.1555105569952153
+1792,1793,359,50.0,theta1unitsum,epsilon_max_matching fair1,1.0376330967815819
+1793,1794,359,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1794,1795,359,,theta1unitsum,twothirds_max_matching fair,1.289265003163436
+1795,1796,360,50.0,theta1unitsum,serial_dictatorship,1.2174853034624393
+1796,1797,360,50.0,theta1unitsum,ttc_matching,1.1673385285757396
+1797,1798,360,50.0,theta1unitsum,epsilon_max_matching fair1,1.0339048434812272
+1798,1799,360,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0015658800712344
+1799,1800,360,,theta1unitsum,twothirds_max_matching fair,1.37946229195205
+1800,1801,361,50.0,theta1unitsum,serial_dictatorship,1.2415370112616662
+1801,1802,361,50.0,theta1unitsum,ttc_matching,1.1701064202452904
+1802,1803,361,50.0,theta1unitsum,epsilon_max_matching fair1,1.0333205061704047
+1803,1804,361,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0013954350115937
+1804,1805,361,,theta1unitsum,twothirds_max_matching fair,1.2741911101601227
+1805,1806,362,50.0,theta1unitsum,serial_dictatorship,1.2201278844726537
+1806,1807,362,50.0,theta1unitsum,ttc_matching,1.1770412716007446
+1807,1808,362,50.0,theta1unitsum,epsilon_max_matching fair1,1.032125958049598
+1808,1809,362,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0016783172174288
+1809,1810,362,,theta1unitsum,twothirds_max_matching fair,1.3215237184776398
+1810,1811,363,50.0,theta1unitsum,serial_dictatorship,1.2140570012772836
+1811,1812,363,50.0,theta1unitsum,ttc_matching,1.1669855523631785
+1812,1813,363,50.0,theta1unitsum,epsilon_max_matching fair1,1.0406057022983044
+1813,1814,363,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000486833083346
+1814,1815,363,,theta1unitsum,twothirds_max_matching fair,1.3244732913023793
+1815,1816,364,50.0,theta1unitsum,serial_dictatorship,1.2443780441570111
+1816,1817,364,50.0,theta1unitsum,ttc_matching,1.2038573860845547
+1817,1818,364,50.0,theta1unitsum,epsilon_max_matching fair1,1.0206665133938757
+1818,1819,364,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0017403177587532
+1819,1820,364,,theta1unitsum,twothirds_max_matching fair,1.3383571435487507
+1820,1821,365,50.0,theta1unitsum,serial_dictatorship,1.195212276974531
+1821,1822,365,50.0,theta1unitsum,ttc_matching,1.1461847454625333
+1822,1823,365,50.0,theta1unitsum,epsilon_max_matching fair1,1.0500600938905549
+1823,1824,365,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000804221338709
+1824,1825,365,,theta1unitsum,twothirds_max_matching fair,1.381098207178173
+1825,1826,366,50.0,theta1unitsum,serial_dictatorship,1.233593530863538
+1826,1827,366,50.0,theta1unitsum,ttc_matching,1.1731602526401668
+1827,1828,366,50.0,theta1unitsum,epsilon_max_matching fair1,1.0304284642317925
+1828,1829,366,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000917778420233
+1829,1830,366,,theta1unitsum,twothirds_max_matching fair,1.2833342404444197
+1830,1831,367,50.0,theta1unitsum,serial_dictatorship,1.2807640094521164
+1831,1832,367,50.0,theta1unitsum,ttc_matching,1.2272236001202155
+1832,1833,367,50.0,theta1unitsum,epsilon_max_matching fair1,1.0324283149238744
+1833,1834,367,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0023520653221727
+1834,1835,367,,theta1unitsum,twothirds_max_matching fair,1.3785198223010977
+1835,1836,368,50.0,theta1unitsum,serial_dictatorship,1.2331916366203606
+1836,1837,368,50.0,theta1unitsum,ttc_matching,1.1787705913862327
+1837,1838,368,50.0,theta1unitsum,epsilon_max_matching fair1,1.0519072092740016
+1838,1839,368,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0015215359834573
+1839,1840,368,,theta1unitsum,twothirds_max_matching fair,1.3782121193001986
+1840,1841,369,50.0,theta1unitsum,serial_dictatorship,1.1997645067207559
+1841,1842,369,50.0,theta1unitsum,ttc_matching,1.1642842002188352
+1842,1843,369,50.0,theta1unitsum,epsilon_max_matching fair1,1.041910136619569
+1843,1844,369,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0006978658741323
+1844,1845,369,,theta1unitsum,twothirds_max_matching fair,1.3631608505695165
+1845,1846,370,50.0,theta1unitsum,serial_dictatorship,1.2483026994436117
+1846,1847,370,50.0,theta1unitsum,ttc_matching,1.1825586039987963
+1847,1848,370,50.0,theta1unitsum,epsilon_max_matching fair1,1.030956562043885
+1848,1849,370,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0012126363361769
+1849,1850,370,,theta1unitsum,twothirds_max_matching fair,1.354528477609946
+1850,1851,371,50.0,theta1unitsum,serial_dictatorship,1.2071875374228942
+1851,1852,371,50.0,theta1unitsum,ttc_matching,1.1684546829579174
+1852,1853,371,50.0,theta1unitsum,epsilon_max_matching fair1,1.0411568201288914
+1853,1854,371,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0006263507754931
+1854,1855,371,,theta1unitsum,twothirds_max_matching fair,1.385081442303266
+1855,1856,372,50.0,theta1unitsum,serial_dictatorship,1.2352821540070773
+1856,1857,372,50.0,theta1unitsum,ttc_matching,1.203274724484505
+1857,1858,372,50.0,theta1unitsum,epsilon_max_matching fair1,1.0255197906829217
+1858,1859,372,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0008378833555298
+1859,1860,372,,theta1unitsum,twothirds_max_matching fair,1.3323937117746185
+1860,1861,373,50.0,theta1unitsum,serial_dictatorship,1.204470440598744
+1861,1862,373,50.0,theta1unitsum,ttc_matching,1.1597426478453703
+1862,1863,373,50.0,theta1unitsum,epsilon_max_matching fair1,1.0235880356248976
+1863,1864,373,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000000000000002
+1864,1865,373,,theta1unitsum,twothirds_max_matching fair,1.3620180764694938
+1865,1866,374,50.0,theta1unitsum,serial_dictatorship,1.2072244354767934
+1866,1867,374,50.0,theta1unitsum,ttc_matching,1.1468874302812342
+1867,1868,374,50.0,theta1unitsum,epsilon_max_matching fair1,1.0447137210456856
+1868,1869,374,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000529615964038
+1869,1870,374,,theta1unitsum,twothirds_max_matching fair,1.3450949143876405
+1870,1871,375,50.0,theta1unitsum,serial_dictatorship,1.2275994208464138
+1871,1872,375,50.0,theta1unitsum,ttc_matching,1.18574735738678
+1872,1873,375,50.0,theta1unitsum,epsilon_max_matching fair1,1.0344417773299213
+1873,1874,375,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0041410951956486
+1874,1875,375,,theta1unitsum,twothirds_max_matching fair,1.3768574278928372
+1875,1876,376,50.0,theta1unitsum,serial_dictatorship,1.1917945974873791
+1876,1877,376,50.0,theta1unitsum,ttc_matching,1.1388202163504793
+1877,1878,376,50.0,theta1unitsum,epsilon_max_matching fair1,1.0568695723062456
+1878,1879,376,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.001210438513862
+1879,1880,376,,theta1unitsum,twothirds_max_matching fair,1.4289811608106158
+1880,1881,377,50.0,theta1unitsum,serial_dictatorship,1.2208275401416677
+1881,1882,377,50.0,theta1unitsum,ttc_matching,1.1820938325833499
+1882,1883,377,50.0,theta1unitsum,epsilon_max_matching fair1,1.0283217652119885
+1883,1884,377,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0009223815907589
+1884,1885,377,,theta1unitsum,twothirds_max_matching fair,1.3285143191851685
+1885,1886,378,50.0,theta1unitsum,serial_dictatorship,1.256431261476634
+1886,1887,378,50.0,theta1unitsum,ttc_matching,1.1847829373720635
+1887,1888,378,50.0,theta1unitsum,epsilon_max_matching fair1,1.0507047112500696
+1888,1889,378,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0023149574394778
+1889,1890,378,,theta1unitsum,twothirds_max_matching fair,1.380282647496632
+1890,1891,379,50.0,theta1unitsum,serial_dictatorship,1.2102913990169144
+1891,1892,379,50.0,theta1unitsum,ttc_matching,1.1474157936418765
+1892,1893,379,50.0,theta1unitsum,epsilon_max_matching fair1,1.030938775789916
+1893,1894,379,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.000278015784045
+1894,1895,379,,theta1unitsum,twothirds_max_matching fair,1.3309039471814195
+1895,1896,380,50.0,theta1unitsum,serial_dictatorship,1.1689479720700666
+1896,1897,380,50.0,theta1unitsum,ttc_matching,1.1430384931643716
+1897,1898,380,50.0,theta1unitsum,epsilon_max_matching fair1,1.038197277676299
+1898,1899,380,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0029074460013496
+1899,1900,380,,theta1unitsum,twothirds_max_matching fair,1.3012882649516466
+1900,1901,381,50.0,theta1unitsum,serial_dictatorship,1.2547434272857834
+1901,1902,381,50.0,theta1unitsum,ttc_matching,1.1590511629196871
+1902,1903,381,50.0,theta1unitsum,epsilon_max_matching fair1,1.0223958533380155
+1903,1904,381,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0002078836460433
+1904,1905,381,,theta1unitsum,twothirds_max_matching fair,1.3551871641538142
+1905,1906,382,50.0,theta1unitsum,serial_dictatorship,1.1926704077910621
+1906,1907,382,50.0,theta1unitsum,ttc_matching,1.155635292650566
+1907,1908,382,50.0,theta1unitsum,epsilon_max_matching fair1,1.0578584884828233
+1908,1909,382,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.001409083519838
+1909,1910,382,,theta1unitsum,twothirds_max_matching fair,1.366063306390908
+1910,1911,383,50.0,theta1unitsum,serial_dictatorship,1.2168212113663635
+1911,1912,383,50.0,theta1unitsum,ttc_matching,1.1616431962494194
+1912,1913,383,50.0,theta1unitsum,epsilon_max_matching fair1,1.0242826695892455
+1913,1914,383,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0005825700014772
+1914,1915,383,,theta1unitsum,twothirds_max_matching fair,1.3330109611303713
+1915,1916,384,50.0,theta1unitsum,serial_dictatorship,1.2082043576380754
+1916,1917,384,50.0,theta1unitsum,ttc_matching,1.1704296615639342
+1917,1918,384,50.0,theta1unitsum,epsilon_max_matching fair1,1.032294420738044
+1918,1919,384,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.00084255915549
+1919,1920,384,,theta1unitsum,twothirds_max_matching fair,1.3479370397740906
+1920,1921,385,50.0,theta1unitsum,serial_dictatorship,1.2091145364828733
+1921,1922,385,50.0,theta1unitsum,ttc_matching,1.1661767412059638
+1922,1923,385,50.0,theta1unitsum,epsilon_max_matching fair1,1.034087498271595
+1923,1924,385,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0003918022958975
+1924,1925,385,,theta1unitsum,twothirds_max_matching fair,1.3469596867110956
+1925,1926,386,50.0,theta1unitsum,serial_dictatorship,1.2411510633514422
+1926,1927,386,50.0,theta1unitsum,ttc_matching,1.1787394198406003
+1927,1928,386,50.0,theta1unitsum,epsilon_max_matching fair1,1.0387109301577888
+1928,1929,386,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0020403578393424
+1929,1930,386,,theta1unitsum,twothirds_max_matching fair,1.3208348257057456
+1930,1931,387,50.0,theta1unitsum,serial_dictatorship,1.2469810975857707
+1931,1932,387,50.0,theta1unitsum,ttc_matching,1.181927729698551
+1932,1933,387,50.0,theta1unitsum,epsilon_max_matching fair1,1.0464586443178296
+1933,1934,387,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0022155544645641
+1934,1935,387,,theta1unitsum,twothirds_max_matching fair,1.4605753795340501
+1935,1936,388,50.0,theta1unitsum,serial_dictatorship,1.2567181073486573
+1936,1937,388,50.0,theta1unitsum,ttc_matching,1.1838553403029413
+1937,1938,388,50.0,theta1unitsum,epsilon_max_matching fair1,1.0338036177635117
+1938,1939,388,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0004684168966003
+1939,1940,388,,theta1unitsum,twothirds_max_matching fair,1.3806847322819504
+1940,1941,389,50.0,theta1unitsum,serial_dictatorship,1.2055669109256566
+1941,1942,389,50.0,theta1unitsum,ttc_matching,1.137907404328815
+1942,1943,389,50.0,theta1unitsum,epsilon_max_matching fair1,1.0347660947732598
+1943,1944,389,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0005635360897749
+1944,1945,389,,theta1unitsum,twothirds_max_matching fair,1.3073056546929798
+1945,1946,390,50.0,theta1unitsum,serial_dictatorship,1.1970239850666222
+1946,1947,390,50.0,theta1unitsum,ttc_matching,1.1486968088322211
+1947,1948,390,50.0,theta1unitsum,epsilon_max_matching fair1,1.0392682170115846
+1948,1949,390,50.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999998
+1949,1950,390,,theta1unitsum,twothirds_max_matching fair,1.3452644311060615
+1950,1951,391,50.0,theta1unitsum,serial_dictatorship,1.2010180331884657
+1951,1952,391,50.0,theta1unitsum,ttc_matching,1.133529458243903
+1952,1953,391,50.0,theta1unitsum,epsilon_max_matching fair1,1.0245579898238235
+1953,1954,391,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0009342300524144
+1954,1955,391,,theta1unitsum,twothirds_max_matching fair,1.3455554500171707
+1955,1956,392,50.0,theta1unitsum,serial_dictatorship,1.2494117804525726
+1956,1957,392,50.0,theta1unitsum,ttc_matching,1.2043547520083528
+1957,1958,392,50.0,theta1unitsum,epsilon_max_matching fair1,1.0276375241953093
+1958,1959,392,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0023768571936507
+1959,1960,392,,theta1unitsum,twothirds_max_matching fair,1.3423005223079862
+1960,1961,393,50.0,theta1unitsum,serial_dictatorship,1.2077269448101886
+1961,1962,393,50.0,theta1unitsum,ttc_matching,1.1568164194490211
+1962,1963,393,50.0,theta1unitsum,epsilon_max_matching fair1,1.032015872813119
+1963,1964,393,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000947391456492
+1964,1965,393,,theta1unitsum,twothirds_max_matching fair,1.426370677799227
+1965,1966,394,50.0,theta1unitsum,serial_dictatorship,1.2105126223440357
+1966,1967,394,50.0,theta1unitsum,ttc_matching,1.1464953331607073
+1967,1968,394,50.0,theta1unitsum,epsilon_max_matching fair1,1.015631410398571
+1968,1969,394,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0000910605483568
+1969,1970,394,,theta1unitsum,twothirds_max_matching fair,1.3279536678173427
+1970,1971,395,50.0,theta1unitsum,serial_dictatorship,1.1946277669616596
+1971,1972,395,50.0,theta1unitsum,ttc_matching,1.1467892109732538
+1972,1973,395,50.0,theta1unitsum,epsilon_max_matching fair1,1.0449524759553341
+1973,1974,395,50.0,theta1unitsum,epsilon_max_matching fair0.1,0.9999999999999999
+1974,1975,395,,theta1unitsum,twothirds_max_matching fair,1.3415532822610816
+1975,1976,396,50.0,theta1unitsum,serial_dictatorship,1.2176914240396655
+1976,1977,396,50.0,theta1unitsum,ttc_matching,1.1657671611140328
+1977,1978,396,50.0,theta1unitsum,epsilon_max_matching fair1,1.041273485688961
+1978,1979,396,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0028190848609047
+1979,1980,396,,theta1unitsum,twothirds_max_matching fair,1.415817274438198
+1980,1981,397,50.0,theta1unitsum,serial_dictatorship,1.2067989114175326
+1981,1982,397,50.0,theta1unitsum,ttc_matching,1.1403649158352571
+1982,1983,397,50.0,theta1unitsum,epsilon_max_matching fair1,1.0170260216736522
+1983,1984,397,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0015053105335803
+1984,1985,397,,theta1unitsum,twothirds_max_matching fair,1.3746676577089731
+1985,1986,398,50.0,theta1unitsum,serial_dictatorship,1.2693107023131371
+1986,1987,398,50.0,theta1unitsum,ttc_matching,1.2103838584504947
+1987,1988,398,50.0,theta1unitsum,epsilon_max_matching fair1,1.0324691850229581
+1988,1989,398,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0008193482634158
+1989,1990,398,,theta1unitsum,twothirds_max_matching fair,1.3408949075552898
+1990,1991,399,50.0,theta1unitsum,serial_dictatorship,1.1950062558259809
+1991,1992,399,50.0,theta1unitsum,ttc_matching,1.1646414640961549
+1992,1993,399,50.0,theta1unitsum,epsilon_max_matching fair1,1.0255818711248281
+1993,1994,399,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.001754936280027
+1994,1995,399,,theta1unitsum,twothirds_max_matching fair,1.328938662613803
+1995,1996,400,50.0,theta1unitsum,serial_dictatorship,1.196672345486289
+1996,1997,400,50.0,theta1unitsum,ttc_matching,1.1482810130495327
+1997,1998,400,50.0,theta1unitsum,epsilon_max_matching fair1,1.0300762680050741
+1998,1999,400,50.0,theta1unitsum,epsilon_max_matching fair0.1,1.0001538266229237
+1999,2000,400,,theta1unitsum,twothirds_max_matching fair,1.3550909640487034
+2000,2001,401,100.0,theta1unitsum,serial_dictatorship,1.143225307454937
+2001,2002,401,100.0,theta1unitsum,ttc_matching,1.107100449447635
+2002,2003,401,100.0,theta1unitsum,epsilon_max_matching fair1,1.0628936756754468
+2003,2004,401,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0046115581047619
+2004,2005,401,,theta1unitsum,twothirds_max_matching fair,1.3662976394123576
+2005,2006,402,100.0,theta1unitsum,serial_dictatorship,1.1587440289237632
+2006,2007,402,100.0,theta1unitsum,ttc_matching,1.1317617714150803
+2007,2008,402,100.0,theta1unitsum,epsilon_max_matching fair1,1.0679816492767946
+2008,2009,402,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0041451547434035
+2009,2010,402,,theta1unitsum,twothirds_max_matching fair,1.3658494481289427
+2010,2011,403,100.0,theta1unitsum,serial_dictatorship,1.1566885435585539
+2011,2012,403,100.0,theta1unitsum,ttc_matching,1.1269442403948418
+2012,2013,403,100.0,theta1unitsum,epsilon_max_matching fair1,1.0757761068056368
+2013,2014,403,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0045621767710524
+2014,2015,403,,theta1unitsum,twothirds_max_matching fair,1.3903380353775434
+2015,2016,404,100.0,theta1unitsum,serial_dictatorship,1.169584708761911
+2016,2017,404,100.0,theta1unitsum,ttc_matching,1.1334958065676148
+2017,2018,404,100.0,theta1unitsum,epsilon_max_matching fair1,1.0702150296539468
+2018,2019,404,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0028171893624853
+2019,2020,404,,theta1unitsum,twothirds_max_matching fair,1.3457256538853504
+2020,2021,405,100.0,theta1unitsum,serial_dictatorship,1.160776386786354
+2021,2022,405,100.0,theta1unitsum,ttc_matching,1.1396313719527353
+2022,2023,405,100.0,theta1unitsum,epsilon_max_matching fair1,1.0830233274309038
+2023,2024,405,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003846731251747
+2024,2025,405,,theta1unitsum,twothirds_max_matching fair,1.4129618922002423
+2025,2026,406,100.0,theta1unitsum,serial_dictatorship,1.1453420555784917
+2026,2027,406,100.0,theta1unitsum,ttc_matching,1.1134063165600239
+2027,2028,406,100.0,theta1unitsum,epsilon_max_matching fair1,1.058227540809924
+2028,2029,406,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0031461460333309
+2029,2030,406,,theta1unitsum,twothirds_max_matching fair,1.351253909494336
+2030,2031,407,100.0,theta1unitsum,serial_dictatorship,1.159066244608919
+2031,2032,407,100.0,theta1unitsum,ttc_matching,1.1329665352700038
+2032,2033,407,100.0,theta1unitsum,epsilon_max_matching fair1,1.059535089542476
+2033,2034,407,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0045751914475083
+2034,2035,407,,theta1unitsum,twothirds_max_matching fair,1.3856060201551017
+2035,2036,408,100.0,theta1unitsum,serial_dictatorship,1.1595300807893243
+2036,2037,408,100.0,theta1unitsum,ttc_matching,1.1360717259327446
+2037,2038,408,100.0,theta1unitsum,epsilon_max_matching fair1,1.077881891032653
+2038,2039,408,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0030424574002317
+2039,2040,408,,theta1unitsum,twothirds_max_matching fair,1.3686550774022472
+2040,2041,409,100.0,theta1unitsum,serial_dictatorship,1.1477029317963878
+2041,2042,409,100.0,theta1unitsum,ttc_matching,1.1288534439933793
+2042,2043,409,100.0,theta1unitsum,epsilon_max_matching fair1,1.0701964875146865
+2043,2044,409,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0027535569768296
+2044,2045,409,,theta1unitsum,twothirds_max_matching fair,1.3630326791243326
+2045,2046,410,100.0,theta1unitsum,serial_dictatorship,1.1528371274540048
+2046,2047,410,100.0,theta1unitsum,ttc_matching,1.1293889292882022
+2047,2048,410,100.0,theta1unitsum,epsilon_max_matching fair1,1.052620779498425
+2048,2049,410,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003763642406005
+2049,2050,410,,theta1unitsum,twothirds_max_matching fair,1.3582727621024209
+2050,2051,411,100.0,theta1unitsum,serial_dictatorship,1.152517338447858
+2051,2052,411,100.0,theta1unitsum,ttc_matching,1.1286750990898033
+2052,2053,411,100.0,theta1unitsum,epsilon_max_matching fair1,1.0733187037551164
+2053,2054,411,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0020828558507449
+2054,2055,411,,theta1unitsum,twothirds_max_matching fair,1.3879150328333671
+2055,2056,412,100.0,theta1unitsum,serial_dictatorship,1.1481800083423217
+2056,2057,412,100.0,theta1unitsum,ttc_matching,1.123927178814806
+2057,2058,412,100.0,theta1unitsum,epsilon_max_matching fair1,1.0677224402449976
+2058,2059,412,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0034482096679835
+2059,2060,412,,theta1unitsum,twothirds_max_matching fair,1.3614513912871244
+2060,2061,413,100.0,theta1unitsum,serial_dictatorship,1.1385031103792675
+2061,2062,413,100.0,theta1unitsum,ttc_matching,1.1134521841683347
+2062,2063,413,100.0,theta1unitsum,epsilon_max_matching fair1,1.0707681414692767
+2063,2064,413,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0065505443828628
+2064,2065,413,,theta1unitsum,twothirds_max_matching fair,1.3583269600556573
+2065,2066,414,100.0,theta1unitsum,serial_dictatorship,1.1447730607861049
+2066,2067,414,100.0,theta1unitsum,ttc_matching,1.1245356488223905
+2067,2068,414,100.0,theta1unitsum,epsilon_max_matching fair1,1.0766924135914562
+2068,2069,414,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003099552894834
+2069,2070,414,,theta1unitsum,twothirds_max_matching fair,1.341986961596433
+2070,2071,415,100.0,theta1unitsum,serial_dictatorship,1.1653472356533128
+2071,2072,415,100.0,theta1unitsum,ttc_matching,1.1439894100200765
+2072,2073,415,100.0,theta1unitsum,epsilon_max_matching fair1,1.0612666029134006
+2073,2074,415,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003667722247438
+2074,2075,415,,theta1unitsum,twothirds_max_matching fair,1.3395844774715067
+2075,2076,416,100.0,theta1unitsum,serial_dictatorship,1.1618699070971183
+2076,2077,416,100.0,theta1unitsum,ttc_matching,1.1276178572008508
+2077,2078,416,100.0,theta1unitsum,epsilon_max_matching fair1,1.0675941227207382
+2078,2079,416,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0037319073175037
+2079,2080,416,,theta1unitsum,twothirds_max_matching fair,1.3869216605060928
+2080,2081,417,100.0,theta1unitsum,serial_dictatorship,1.1577112811583143
+2081,2082,417,100.0,theta1unitsum,ttc_matching,1.1318300478662642
+2082,2083,417,100.0,theta1unitsum,epsilon_max_matching fair1,1.0683952867082929
+2083,2084,417,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0032076896529507
+2084,2085,417,,theta1unitsum,twothirds_max_matching fair,1.3927706481856048
+2085,2086,418,100.0,theta1unitsum,serial_dictatorship,1.164232544741834
+2086,2087,418,100.0,theta1unitsum,ttc_matching,1.126292077811137
+2087,2088,418,100.0,theta1unitsum,epsilon_max_matching fair1,1.0655604574676174
+2088,2089,418,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0034545321788366
+2089,2090,418,,theta1unitsum,twothirds_max_matching fair,1.3420689498580725
+2090,2091,419,100.0,theta1unitsum,serial_dictatorship,1.156529186040264
+2091,2092,419,100.0,theta1unitsum,ttc_matching,1.1307091658296324
+2092,2093,419,100.0,theta1unitsum,epsilon_max_matching fair1,1.0813112699183414
+2093,2094,419,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0037294107687722
+2094,2095,419,,theta1unitsum,twothirds_max_matching fair,1.372816057326664
+2095,2096,420,100.0,theta1unitsum,serial_dictatorship,1.1572789459311492
+2096,2097,420,100.0,theta1unitsum,ttc_matching,1.1243757641548748
+2097,2098,420,100.0,theta1unitsum,epsilon_max_matching fair1,1.0764794740394394
+2098,2099,420,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0021123839749937
+2099,2100,420,,theta1unitsum,twothirds_max_matching fair,1.3874865831619823
+2100,2101,421,100.0,theta1unitsum,serial_dictatorship,1.1519293211670425
+2101,2102,421,100.0,theta1unitsum,ttc_matching,1.127818069713889
+2102,2103,421,100.0,theta1unitsum,epsilon_max_matching fair1,1.068874456254279
+2103,2104,421,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0042454836290735
+2104,2105,421,,theta1unitsum,twothirds_max_matching fair,1.4008525684333615
+2105,2106,422,100.0,theta1unitsum,serial_dictatorship,1.1456922770500568
+2106,2107,422,100.0,theta1unitsum,ttc_matching,1.129885076539084
+2107,2108,422,100.0,theta1unitsum,epsilon_max_matching fair1,1.0619756026560687
+2108,2109,422,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0028440514286932
+2109,2110,422,,theta1unitsum,twothirds_max_matching fair,1.3702033180055377
+2110,2111,423,100.0,theta1unitsum,serial_dictatorship,1.1620477693877806
+2111,2112,423,100.0,theta1unitsum,ttc_matching,1.1371823196809903
+2112,2113,423,100.0,theta1unitsum,epsilon_max_matching fair1,1.0761472570064674
+2113,2114,423,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003013240958893
+2114,2115,423,,theta1unitsum,twothirds_max_matching fair,1.371278030820517
+2115,2116,424,100.0,theta1unitsum,serial_dictatorship,1.1533456571788983
+2116,2117,424,100.0,theta1unitsum,ttc_matching,1.1286065145783828
+2117,2118,424,100.0,theta1unitsum,epsilon_max_matching fair1,1.058241427389535
+2118,2119,424,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0034349784354897
+2119,2120,424,,theta1unitsum,twothirds_max_matching fair,1.3250166811009891
+2120,2121,425,100.0,theta1unitsum,serial_dictatorship,1.1419234166242769
+2121,2122,425,100.0,theta1unitsum,ttc_matching,1.1176970476054866
+2122,2123,425,100.0,theta1unitsum,epsilon_max_matching fair1,1.0694120324261107
+2123,2124,425,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0018567234926992
+2124,2125,425,,theta1unitsum,twothirds_max_matching fair,1.364558388036211
+2125,2126,426,100.0,theta1unitsum,serial_dictatorship,1.1407494649893666
+2126,2127,426,100.0,theta1unitsum,ttc_matching,1.12175056028449
+2127,2128,426,100.0,theta1unitsum,epsilon_max_matching fair1,1.0608864126002586
+2128,2129,426,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0024708654777137
+2129,2130,426,,theta1unitsum,twothirds_max_matching fair,1.3505604094564856
+2130,2131,427,100.0,theta1unitsum,serial_dictatorship,1.1452407156425657
+2131,2132,427,100.0,theta1unitsum,ttc_matching,1.1246943341366962
+2132,2133,427,100.0,theta1unitsum,epsilon_max_matching fair1,1.0654867690588194
+2133,2134,427,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0031564474434675
+2134,2135,427,,theta1unitsum,twothirds_max_matching fair,1.3588050332723636
+2135,2136,428,100.0,theta1unitsum,serial_dictatorship,1.155290113582021
+2136,2137,428,100.0,theta1unitsum,ttc_matching,1.1305122140082793
+2137,2138,428,100.0,theta1unitsum,epsilon_max_matching fair1,1.0574983644123093
+2138,2139,428,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0028452083439106
+2139,2140,428,,theta1unitsum,twothirds_max_matching fair,1.3574663500601754
+2140,2141,429,100.0,theta1unitsum,serial_dictatorship,1.1654597377918325
+2141,2142,429,100.0,theta1unitsum,ttc_matching,1.1425480311757765
+2142,2143,429,100.0,theta1unitsum,epsilon_max_matching fair1,1.0681932829128193
+2143,2144,429,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002130703946022
+2144,2145,429,,theta1unitsum,twothirds_max_matching fair,1.3339944318245889
+2145,2146,430,100.0,theta1unitsum,serial_dictatorship,1.1555194683405965
+2146,2147,430,100.0,theta1unitsum,ttc_matching,1.1261966518982842
+2147,2148,430,100.0,theta1unitsum,epsilon_max_matching fair1,1.0682858605246033
+2148,2149,430,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0028083392775122
+2149,2150,430,,theta1unitsum,twothirds_max_matching fair,1.364660976761241
+2150,2151,431,100.0,theta1unitsum,serial_dictatorship,1.158416616548258
+2151,2152,431,100.0,theta1unitsum,ttc_matching,1.1358550194383765
+2152,2153,431,100.0,theta1unitsum,epsilon_max_matching fair1,1.0674729056491647
+2153,2154,431,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0036667296459936
+2154,2155,431,,theta1unitsum,twothirds_max_matching fair,1.3569900838039617
+2155,2156,432,100.0,theta1unitsum,serial_dictatorship,1.1508919527431114
+2156,2157,432,100.0,theta1unitsum,ttc_matching,1.1194736622651678
+2157,2158,432,100.0,theta1unitsum,epsilon_max_matching fair1,1.0666378606209814
+2158,2159,432,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0041812341773912
+2159,2160,432,,theta1unitsum,twothirds_max_matching fair,1.3658939573396591
+2160,2161,433,100.0,theta1unitsum,serial_dictatorship,1.170601750334444
+2161,2162,433,100.0,theta1unitsum,ttc_matching,1.1432279322877776
+2162,2163,433,100.0,theta1unitsum,epsilon_max_matching fair1,1.0628707911856043
+2163,2164,433,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003647187906477
+2164,2165,433,,theta1unitsum,twothirds_max_matching fair,1.3753909784178457
+2165,2166,434,100.0,theta1unitsum,serial_dictatorship,1.1580379859095726
+2166,2167,434,100.0,theta1unitsum,ttc_matching,1.1307564992573547
+2167,2168,434,100.0,theta1unitsum,epsilon_max_matching fair1,1.0674142047344513
+2168,2169,434,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0021912014778405
+2169,2170,434,,theta1unitsum,twothirds_max_matching fair,1.3431112471504238
+2170,2171,435,100.0,theta1unitsum,serial_dictatorship,1.141425358801029
+2171,2172,435,100.0,theta1unitsum,ttc_matching,1.1133451109713164
+2172,2173,435,100.0,theta1unitsum,epsilon_max_matching fair1,1.0646694527084988
+2173,2174,435,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.004324770071782
+2174,2175,435,,theta1unitsum,twothirds_max_matching fair,1.3389453545596883
+2175,2176,436,100.0,theta1unitsum,serial_dictatorship,1.1724751294138902
+2176,2177,436,100.0,theta1unitsum,ttc_matching,1.1406062893762048
+2177,2178,436,100.0,theta1unitsum,epsilon_max_matching fair1,1.0659455373466244
+2178,2179,436,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0034588798054402
+2179,2180,436,,theta1unitsum,twothirds_max_matching fair,1.3461530886577544
+2180,2181,437,100.0,theta1unitsum,serial_dictatorship,1.1569687760733829
+2181,2182,437,100.0,theta1unitsum,ttc_matching,1.1325739313304304
+2182,2183,437,100.0,theta1unitsum,epsilon_max_matching fair1,1.0713667643941729
+2183,2184,437,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0029522620090072
+2184,2185,437,,theta1unitsum,twothirds_max_matching fair,1.3798517031789468
+2185,2186,438,100.0,theta1unitsum,serial_dictatorship,1.1609890853341602
+2186,2187,438,100.0,theta1unitsum,ttc_matching,1.1400804675189984
+2187,2188,438,100.0,theta1unitsum,epsilon_max_matching fair1,1.062867886040549
+2188,2189,438,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0033356846244086
+2189,2190,438,,theta1unitsum,twothirds_max_matching fair,1.3721170590415048
+2190,2191,439,100.0,theta1unitsum,serial_dictatorship,1.149139186604862
+2191,2192,439,100.0,theta1unitsum,ttc_matching,1.1263874527938607
+2192,2193,439,100.0,theta1unitsum,epsilon_max_matching fair1,1.0770307036165865
+2193,2194,439,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0028897715982596
+2194,2195,439,,theta1unitsum,twothirds_max_matching fair,1.373430578675848
+2195,2196,440,100.0,theta1unitsum,serial_dictatorship,1.1653191595318322
+2196,2197,440,100.0,theta1unitsum,ttc_matching,1.143437683781794
+2197,2198,440,100.0,theta1unitsum,epsilon_max_matching fair1,1.0722854699399973
+2198,2199,440,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0038565908522168
+2199,2200,440,,theta1unitsum,twothirds_max_matching fair,1.3785647133526338
+2200,2201,441,100.0,theta1unitsum,serial_dictatorship,1.1570049181856294
+2201,2202,441,100.0,theta1unitsum,ttc_matching,1.1303794467651487
+2202,2203,441,100.0,theta1unitsum,epsilon_max_matching fair1,1.0736759821402933
+2203,2204,441,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0038026435674525
+2204,2205,441,,theta1unitsum,twothirds_max_matching fair,1.3508511521622615
+2205,2206,442,100.0,theta1unitsum,serial_dictatorship,1.15826803861778
+2206,2207,442,100.0,theta1unitsum,ttc_matching,1.1242394913214955
+2207,2208,442,100.0,theta1unitsum,epsilon_max_matching fair1,1.072522970335981
+2208,2209,442,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.00480440609832
+2209,2210,442,,theta1unitsum,twothirds_max_matching fair,1.360823167876798
+2210,2211,443,100.0,theta1unitsum,serial_dictatorship,1.1452041694823965
+2211,2212,443,100.0,theta1unitsum,ttc_matching,1.1196644085640135
+2212,2213,443,100.0,theta1unitsum,epsilon_max_matching fair1,1.0646593806498117
+2213,2214,443,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.005265627922089
+2214,2215,443,,theta1unitsum,twothirds_max_matching fair,1.3219085010898097
+2215,2216,444,100.0,theta1unitsum,serial_dictatorship,1.1611542664110794
+2216,2217,444,100.0,theta1unitsum,ttc_matching,1.1318611359450588
+2217,2218,444,100.0,theta1unitsum,epsilon_max_matching fair1,1.082337512183304
+2218,2219,444,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0033296130507345
+2219,2220,444,,theta1unitsum,twothirds_max_matching fair,1.3883683127337332
+2220,2221,445,100.0,theta1unitsum,serial_dictatorship,1.1584333523691717
+2221,2222,445,100.0,theta1unitsum,ttc_matching,1.129070433686236
+2222,2223,445,100.0,theta1unitsum,epsilon_max_matching fair1,1.0691502148066676
+2223,2224,445,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0035365997077277
+2224,2225,445,,theta1unitsum,twothirds_max_matching fair,1.350323275480747
+2225,2226,446,100.0,theta1unitsum,serial_dictatorship,1.1716628037832753
+2226,2227,446,100.0,theta1unitsum,ttc_matching,1.1370806658575254
+2227,2228,446,100.0,theta1unitsum,epsilon_max_matching fair1,1.065816558307626
+2228,2229,446,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0037186161453444
+2229,2230,446,,theta1unitsum,twothirds_max_matching fair,1.3557682776855942
+2230,2231,447,100.0,theta1unitsum,serial_dictatorship,1.1556667398685359
+2231,2232,447,100.0,theta1unitsum,ttc_matching,1.1282410766442312
+2232,2233,447,100.0,theta1unitsum,epsilon_max_matching fair1,1.0718099504060823
+2233,2234,447,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002445976509775
+2234,2235,447,,theta1unitsum,twothirds_max_matching fair,1.3527929185480203
+2235,2236,448,100.0,theta1unitsum,serial_dictatorship,1.1440862299086871
+2236,2237,448,100.0,theta1unitsum,ttc_matching,1.116893136108218
+2237,2238,448,100.0,theta1unitsum,epsilon_max_matching fair1,1.069038096034991
+2238,2239,448,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0021162882583674
+2239,2240,448,,theta1unitsum,twothirds_max_matching fair,1.3815824377158585
+2240,2241,449,100.0,theta1unitsum,serial_dictatorship,1.152881669842707
+2241,2242,449,100.0,theta1unitsum,ttc_matching,1.1256928235418204
+2242,2243,449,100.0,theta1unitsum,epsilon_max_matching fair1,1.061020340522371
+2243,2244,449,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0048821046290795
+2244,2245,449,,theta1unitsum,twothirds_max_matching fair,1.3385700513364838
+2245,2246,450,100.0,theta1unitsum,serial_dictatorship,1.167006523098981
+2246,2247,450,100.0,theta1unitsum,ttc_matching,1.1432509649485256
+2247,2248,450,100.0,theta1unitsum,epsilon_max_matching fair1,1.064702807083711
+2248,2249,450,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0021898501828947
+2249,2250,450,,theta1unitsum,twothirds_max_matching fair,1.4173418382908876
+2250,2251,451,100.0,theta1unitsum,serial_dictatorship,1.1619989066720344
+2251,2252,451,100.0,theta1unitsum,ttc_matching,1.1309536208195603
+2252,2253,451,100.0,theta1unitsum,epsilon_max_matching fair1,1.075411415378244
+2253,2254,451,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0026281079989474
+2254,2255,451,,theta1unitsum,twothirds_max_matching fair,1.355638015398269
+2255,2256,452,100.0,theta1unitsum,serial_dictatorship,1.1552695834413995
+2256,2257,452,100.0,theta1unitsum,ttc_matching,1.1273744405473394
+2257,2258,452,100.0,theta1unitsum,epsilon_max_matching fair1,1.0697792486495672
+2258,2259,452,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0038384945097352
+2259,2260,452,,theta1unitsum,twothirds_max_matching fair,1.3652811024922695
+2260,2261,453,100.0,theta1unitsum,serial_dictatorship,1.1553291600983127
+2261,2262,453,100.0,theta1unitsum,ttc_matching,1.1273194626216154
+2262,2263,453,100.0,theta1unitsum,epsilon_max_matching fair1,1.0766408214693741
+2263,2264,453,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0029156007342601
+2264,2265,453,,theta1unitsum,twothirds_max_matching fair,1.3845655215880512
+2265,2266,454,100.0,theta1unitsum,serial_dictatorship,1.1466144878619957
+2266,2267,454,100.0,theta1unitsum,ttc_matching,1.1175805403409795
+2267,2268,454,100.0,theta1unitsum,epsilon_max_matching fair1,1.0586600972475726
+2268,2269,454,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0041708630232602
+2269,2270,454,,theta1unitsum,twothirds_max_matching fair,1.3797308865453193
+2270,2271,455,100.0,theta1unitsum,serial_dictatorship,1.1534080267763254
+2271,2272,455,100.0,theta1unitsum,ttc_matching,1.1210770855038192
+2272,2273,455,100.0,theta1unitsum,epsilon_max_matching fair1,1.0757348375937998
+2273,2274,455,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0064435318570504
+2274,2275,455,,theta1unitsum,twothirds_max_matching fair,1.348475938206158
+2275,2276,456,100.0,theta1unitsum,serial_dictatorship,1.1688621462910875
+2276,2277,456,100.0,theta1unitsum,ttc_matching,1.1345267846950944
+2277,2278,456,100.0,theta1unitsum,epsilon_max_matching fair1,1.0649692979779144
+2278,2279,456,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0030856860701767
+2279,2280,456,,theta1unitsum,twothirds_max_matching fair,1.3778872462754632
+2280,2281,457,100.0,theta1unitsum,serial_dictatorship,1.1599215900648945
+2281,2282,457,100.0,theta1unitsum,ttc_matching,1.131185929090626
+2282,2283,457,100.0,theta1unitsum,epsilon_max_matching fair1,1.0693564170791683
+2283,2284,457,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0047646515491866
+2284,2285,457,,theta1unitsum,twothirds_max_matching fair,1.3927832451929223
+2285,2286,458,100.0,theta1unitsum,serial_dictatorship,1.1468887703116033
+2286,2287,458,100.0,theta1unitsum,ttc_matching,1.1267831972129043
+2287,2288,458,100.0,theta1unitsum,epsilon_max_matching fair1,1.0655565131431715
+2288,2289,458,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0037286897942037
+2289,2290,458,,theta1unitsum,twothirds_max_matching fair,1.3726945749708828
+2290,2291,459,100.0,theta1unitsum,serial_dictatorship,1.161760606524477
+2291,2292,459,100.0,theta1unitsum,ttc_matching,1.1417180378201313
+2292,2293,459,100.0,theta1unitsum,epsilon_max_matching fair1,1.0577505971241317
+2293,2294,459,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0046819243752767
+2294,2295,459,,theta1unitsum,twothirds_max_matching fair,1.371188798265831
+2295,2296,460,100.0,theta1unitsum,serial_dictatorship,1.159905762969635
+2296,2297,460,100.0,theta1unitsum,ttc_matching,1.1375863082756665
+2297,2298,460,100.0,theta1unitsum,epsilon_max_matching fair1,1.0665515142269424
+2298,2299,460,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0042343817108692
+2299,2300,460,,theta1unitsum,twothirds_max_matching fair,1.3839746268781243
+2300,2301,461,100.0,theta1unitsum,serial_dictatorship,1.1528936566129795
+2301,2302,461,100.0,theta1unitsum,ttc_matching,1.1297860026538735
+2302,2303,461,100.0,theta1unitsum,epsilon_max_matching fair1,1.0762076625843098
+2303,2304,461,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0031295073540134
+2304,2305,461,,theta1unitsum,twothirds_max_matching fair,1.3603910369251395
+2305,2306,462,100.0,theta1unitsum,serial_dictatorship,1.1696990345404181
+2306,2307,462,100.0,theta1unitsum,ttc_matching,1.1489765538959742
+2307,2308,462,100.0,theta1unitsum,epsilon_max_matching fair1,1.06657362114554
+2308,2309,462,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002545888904915
+2309,2310,462,,theta1unitsum,twothirds_max_matching fair,1.3302214389991893
+2310,2311,463,100.0,theta1unitsum,serial_dictatorship,1.1706469618294635
+2311,2312,463,100.0,theta1unitsum,ttc_matching,1.142281631477971
+2312,2313,463,100.0,theta1unitsum,epsilon_max_matching fair1,1.0654151428930185
+2313,2314,463,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0037039536495893
+2314,2315,463,,theta1unitsum,twothirds_max_matching fair,1.388503258442415
+2315,2316,464,100.0,theta1unitsum,serial_dictatorship,1.144728245110959
+2316,2317,464,100.0,theta1unitsum,ttc_matching,1.1146571020623697
+2317,2318,464,100.0,theta1unitsum,epsilon_max_matching fair1,1.0759079604577095
+2318,2319,464,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0041972799074503
+2319,2320,464,,theta1unitsum,twothirds_max_matching fair,1.3368945038048219
+2320,2321,465,100.0,theta1unitsum,serial_dictatorship,1.1537713525189242
+2321,2322,465,100.0,theta1unitsum,ttc_matching,1.1249479408017218
+2322,2323,465,100.0,theta1unitsum,epsilon_max_matching fair1,1.0616389290009463
+2323,2324,465,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.004259731618185
+2324,2325,465,,theta1unitsum,twothirds_max_matching fair,1.3675347400074407
+2325,2326,466,100.0,theta1unitsum,serial_dictatorship,1.1403766712171335
+2326,2327,466,100.0,theta1unitsum,ttc_matching,1.1161257683910961
+2327,2328,466,100.0,theta1unitsum,epsilon_max_matching fair1,1.06340374847211
+2328,2329,466,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002037358846964
+2329,2330,466,,theta1unitsum,twothirds_max_matching fair,1.3320480930807426
+2330,2331,467,100.0,theta1unitsum,serial_dictatorship,1.163322487821418
+2331,2332,467,100.0,theta1unitsum,ttc_matching,1.1322299195984924
+2332,2333,467,100.0,theta1unitsum,epsilon_max_matching fair1,1.0720580607500008
+2333,2334,467,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0053447097719523
+2334,2335,467,,theta1unitsum,twothirds_max_matching fair,1.3616936959976322
+2335,2336,468,100.0,theta1unitsum,serial_dictatorship,1.1420393009237686
+2336,2337,468,100.0,theta1unitsum,ttc_matching,1.1245472019118032
+2337,2338,468,100.0,theta1unitsum,epsilon_max_matching fair1,1.0551290057973608
+2338,2339,468,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0035813365206536
+2339,2340,468,,theta1unitsum,twothirds_max_matching fair,1.3689946958798498
+2340,2341,469,100.0,theta1unitsum,serial_dictatorship,1.1679380533953467
+2341,2342,469,100.0,theta1unitsum,ttc_matching,1.142253368882717
+2342,2343,469,100.0,theta1unitsum,epsilon_max_matching fair1,1.0719129347606748
+2343,2344,469,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0022960954031206
+2344,2345,469,,theta1unitsum,twothirds_max_matching fair,1.3531992777747386
+2345,2346,470,100.0,theta1unitsum,serial_dictatorship,1.1530964249898525
+2346,2347,470,100.0,theta1unitsum,ttc_matching,1.1233982184865472
+2347,2348,470,100.0,theta1unitsum,epsilon_max_matching fair1,1.0702411322749183
+2348,2349,470,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0048369452608967
+2349,2350,470,,theta1unitsum,twothirds_max_matching fair,1.3531442466660404
+2350,2351,471,100.0,theta1unitsum,serial_dictatorship,1.1547512313977764
+2351,2352,471,100.0,theta1unitsum,ttc_matching,1.1279504348946612
+2352,2353,471,100.0,theta1unitsum,epsilon_max_matching fair1,1.0722690747790362
+2353,2354,471,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0045362216296743
+2354,2355,471,,theta1unitsum,twothirds_max_matching fair,1.3472873969934067
+2355,2356,472,100.0,theta1unitsum,serial_dictatorship,1.1694193457714435
+2356,2357,472,100.0,theta1unitsum,ttc_matching,1.142218198592772
+2357,2358,472,100.0,theta1unitsum,epsilon_max_matching fair1,1.067736469951211
+2358,2359,472,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0025610043923499
+2359,2360,472,,theta1unitsum,twothirds_max_matching fair,1.3993086345399952
+2360,2361,473,100.0,theta1unitsum,serial_dictatorship,1.1528951304474808
+2361,2362,473,100.0,theta1unitsum,ttc_matching,1.125691478153948
+2362,2363,473,100.0,theta1unitsum,epsilon_max_matching fair1,1.065322616768906
+2363,2364,473,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0033469740060585
+2364,2365,473,,theta1unitsum,twothirds_max_matching fair,1.373114226756051
+2365,2366,474,100.0,theta1unitsum,serial_dictatorship,1.1442818506632135
+2366,2367,474,100.0,theta1unitsum,ttc_matching,1.1174939705520885
+2367,2368,474,100.0,theta1unitsum,epsilon_max_matching fair1,1.0678966579989044
+2368,2369,474,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0046251307366303
+2369,2370,474,,theta1unitsum,twothirds_max_matching fair,1.4002118576702511
+2370,2371,475,100.0,theta1unitsum,serial_dictatorship,1.1641797398179048
+2371,2372,475,100.0,theta1unitsum,ttc_matching,1.131388981079924
+2372,2373,475,100.0,theta1unitsum,epsilon_max_matching fair1,1.0738841634968472
+2373,2374,475,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0049173176287398
+2374,2375,475,,theta1unitsum,twothirds_max_matching fair,1.3709031951301935
+2375,2376,476,100.0,theta1unitsum,serial_dictatorship,1.1670631060868841
+2376,2377,476,100.0,theta1unitsum,ttc_matching,1.1357418284969791
+2377,2378,476,100.0,theta1unitsum,epsilon_max_matching fair1,1.080809626013065
+2378,2379,476,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0038652451778096
+2379,2380,476,,theta1unitsum,twothirds_max_matching fair,1.3791992273004525
+2380,2381,477,100.0,theta1unitsum,serial_dictatorship,1.1464643108817683
+2381,2382,477,100.0,theta1unitsum,ttc_matching,1.1220050039505256
+2382,2383,477,100.0,theta1unitsum,epsilon_max_matching fair1,1.0609066374419616
+2383,2384,477,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0052389782262348
+2384,2385,477,,theta1unitsum,twothirds_max_matching fair,1.3641169619671214
+2385,2386,478,100.0,theta1unitsum,serial_dictatorship,1.1651573813802454
+2386,2387,478,100.0,theta1unitsum,ttc_matching,1.1323785681901126
+2387,2388,478,100.0,theta1unitsum,epsilon_max_matching fair1,1.0602397221501922
+2388,2389,478,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002914000040011
+2389,2390,478,,theta1unitsum,twothirds_max_matching fair,1.3530299830865598
+2390,2391,479,100.0,theta1unitsum,serial_dictatorship,1.1517648238218725
+2391,2392,479,100.0,theta1unitsum,ttc_matching,1.119504015946026
+2392,2393,479,100.0,theta1unitsum,epsilon_max_matching fair1,1.068271297013677
+2393,2394,479,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0016056714973995
+2394,2395,479,,theta1unitsum,twothirds_max_matching fair,1.3607638802553683
+2395,2396,480,100.0,theta1unitsum,serial_dictatorship,1.1602771827789757
+2396,2397,480,100.0,theta1unitsum,ttc_matching,1.1411706237390595
+2397,2398,480,100.0,theta1unitsum,epsilon_max_matching fair1,1.0860476477231975
+2398,2399,480,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0030239415766649
+2399,2400,480,,theta1unitsum,twothirds_max_matching fair,1.3520229772240309
+2400,2401,481,100.0,theta1unitsum,serial_dictatorship,1.1414150794189872
+2401,2402,481,100.0,theta1unitsum,ttc_matching,1.1227158382451208
+2402,2403,481,100.0,theta1unitsum,epsilon_max_matching fair1,1.0564697673023624
+2403,2404,481,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002997196389848
+2404,2405,481,,theta1unitsum,twothirds_max_matching fair,1.3598356322591016
+2405,2406,482,100.0,theta1unitsum,serial_dictatorship,1.1360061977480445
+2406,2407,482,100.0,theta1unitsum,ttc_matching,1.1157427056258171
+2407,2408,482,100.0,theta1unitsum,epsilon_max_matching fair1,1.0654466961037754
+2408,2409,482,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0049875683184917
+2409,2410,482,,theta1unitsum,twothirds_max_matching fair,1.3690367782963515
+2410,2411,483,100.0,theta1unitsum,serial_dictatorship,1.150991337589512
+2411,2412,483,100.0,theta1unitsum,ttc_matching,1.1219125231057823
+2412,2413,483,100.0,theta1unitsum,epsilon_max_matching fair1,1.07696050908268
+2413,2414,483,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003587427679267
+2414,2415,483,,theta1unitsum,twothirds_max_matching fair,1.3782668775316445
+2415,2416,484,100.0,theta1unitsum,serial_dictatorship,1.144252655557796
+2416,2417,484,100.0,theta1unitsum,ttc_matching,1.1236039658699297
+2417,2418,484,100.0,theta1unitsum,epsilon_max_matching fair1,1.069425040585504
+2418,2419,484,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0030534602068928
+2419,2420,484,,theta1unitsum,twothirds_max_matching fair,1.3380761364058162
+2420,2421,485,100.0,theta1unitsum,serial_dictatorship,1.1634357819256087
+2421,2422,485,100.0,theta1unitsum,ttc_matching,1.132184064440023
+2422,2423,485,100.0,theta1unitsum,epsilon_max_matching fair1,1.0708523759440187
+2423,2424,485,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0039573448839454
+2424,2425,485,,theta1unitsum,twothirds_max_matching fair,1.3402680750866742
+2425,2426,486,100.0,theta1unitsum,serial_dictatorship,1.1627657779703982
+2426,2427,486,100.0,theta1unitsum,ttc_matching,1.134614450986576
+2427,2428,486,100.0,theta1unitsum,epsilon_max_matching fair1,1.0628914900556923
+2428,2429,486,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0049468706356208
+2429,2430,486,,theta1unitsum,twothirds_max_matching fair,1.3676002393605844
+2430,2431,487,100.0,theta1unitsum,serial_dictatorship,1.167490728373188
+2431,2432,487,100.0,theta1unitsum,ttc_matching,1.1357514983316475
+2432,2433,487,100.0,theta1unitsum,epsilon_max_matching fair1,1.0636975406701747
+2433,2434,487,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.003480817402528
+2434,2435,487,,theta1unitsum,twothirds_max_matching fair,1.400767997810676
+2435,2436,488,100.0,theta1unitsum,serial_dictatorship,1.144582200601593
+2436,2437,488,100.0,theta1unitsum,ttc_matching,1.1205159231789081
+2437,2438,488,100.0,theta1unitsum,epsilon_max_matching fair1,1.0585801372420203
+2438,2439,488,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0023118288940258
+2439,2440,488,,theta1unitsum,twothirds_max_matching fair,1.3745349203671782
+2440,2441,489,100.0,theta1unitsum,serial_dictatorship,1.1552196613060803
+2441,2442,489,100.0,theta1unitsum,ttc_matching,1.1357081723023026
+2442,2443,489,100.0,theta1unitsum,epsilon_max_matching fair1,1.0713107417582253
+2443,2444,489,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002270456864147
+2444,2445,489,,theta1unitsum,twothirds_max_matching fair,1.3608302567393125
+2445,2446,490,100.0,theta1unitsum,serial_dictatorship,1.1558129128880341
+2446,2447,490,100.0,theta1unitsum,ttc_matching,1.1283768925688578
+2447,2448,490,100.0,theta1unitsum,epsilon_max_matching fair1,1.0635700869398128
+2448,2449,490,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0045351173125472
+2449,2450,490,,theta1unitsum,twothirds_max_matching fair,1.3597459256881343
+2450,2451,491,100.0,theta1unitsum,serial_dictatorship,1.1484726300405823
+2451,2452,491,100.0,theta1unitsum,ttc_matching,1.1191375216970751
+2452,2453,491,100.0,theta1unitsum,epsilon_max_matching fair1,1.0666252542374222
+2453,2454,491,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0044531442512605
+2454,2455,491,,theta1unitsum,twothirds_max_matching fair,1.3609183610023756
+2455,2456,492,100.0,theta1unitsum,serial_dictatorship,1.148782317265149
+2456,2457,492,100.0,theta1unitsum,ttc_matching,1.1258480240882034
+2457,2458,492,100.0,theta1unitsum,epsilon_max_matching fair1,1.0585274815286907
+2458,2459,492,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0043622272894135
+2459,2460,492,,theta1unitsum,twothirds_max_matching fair,1.3620710119202044
+2460,2461,493,100.0,theta1unitsum,serial_dictatorship,1.1505992093607387
+2461,2462,493,100.0,theta1unitsum,ttc_matching,1.1311546986339323
+2462,2463,493,100.0,theta1unitsum,epsilon_max_matching fair1,1.0686723983393573
+2463,2464,493,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.002792139647938
+2464,2465,493,,theta1unitsum,twothirds_max_matching fair,1.3703552540469104
+2465,2466,494,100.0,theta1unitsum,serial_dictatorship,1.1497920342207515
+2466,2467,494,100.0,theta1unitsum,ttc_matching,1.116964684596713
+2467,2468,494,100.0,theta1unitsum,epsilon_max_matching fair1,1.067721162974721
+2468,2469,494,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.006192888537854
+2469,2470,494,,theta1unitsum,twothirds_max_matching fair,1.359625935340157
+2470,2471,495,100.0,theta1unitsum,serial_dictatorship,1.1531024258121227
+2471,2472,495,100.0,theta1unitsum,ttc_matching,1.129323525979692
+2472,2473,495,100.0,theta1unitsum,epsilon_max_matching fair1,1.0681608083160405
+2473,2474,495,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.004041680945624
+2474,2475,495,,theta1unitsum,twothirds_max_matching fair,1.360908384710644
+2475,2476,496,100.0,theta1unitsum,serial_dictatorship,1.154702567534835
+2476,2477,496,100.0,theta1unitsum,ttc_matching,1.1350539232739751
+2477,2478,496,100.0,theta1unitsum,epsilon_max_matching fair1,1.0755643812476319
+2478,2479,496,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.00371285835646
+2479,2480,496,,theta1unitsum,twothirds_max_matching fair,1.3850331343850488
+2480,2481,497,100.0,theta1unitsum,serial_dictatorship,1.162036140518351
+2481,2482,497,100.0,theta1unitsum,ttc_matching,1.1300968507929992
+2482,2483,497,100.0,theta1unitsum,epsilon_max_matching fair1,1.08307553437459
+2483,2484,497,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0030768356031114
+2484,2485,497,,theta1unitsum,twothirds_max_matching fair,1.3828760179759472
+2485,2486,498,100.0,theta1unitsum,serial_dictatorship,1.1639163078469938
+2486,2487,498,100.0,theta1unitsum,ttc_matching,1.1243670571202098
+2487,2488,498,100.0,theta1unitsum,epsilon_max_matching fair1,1.06613130616869
+2488,2489,498,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0031771605313085
+2489,2490,498,,theta1unitsum,twothirds_max_matching fair,1.3800755330675871
+2490,2491,499,100.0,theta1unitsum,serial_dictatorship,1.1553761598127068
+2491,2492,499,100.0,theta1unitsum,ttc_matching,1.1241480031296243
+2492,2493,499,100.0,theta1unitsum,epsilon_max_matching fair1,1.0626039585648124
+2493,2494,499,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0025943667399888
+2494,2495,499,,theta1unitsum,twothirds_max_matching fair,1.3204815932561034
+2495,2496,500,100.0,theta1unitsum,serial_dictatorship,1.1413890970704097
+2496,2497,500,100.0,theta1unitsum,ttc_matching,1.1195987882295404
+2497,2498,500,100.0,theta1unitsum,epsilon_max_matching fair1,1.0668880669957534
+2498,2499,500,100.0,theta1unitsum,epsilon_max_matching fair0.1,1.0024398100208316
+2499,2500,500,,theta1unitsum,twothirds_max_matching fair,1.387740745260383
