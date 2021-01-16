@@ -262,38 +262,37 @@ if __name__=='__main__':
 
     # current experiment: theta=0.2, val=unit_range, prio=pareto
 
+    theta=5
+    norm = "range"
+    crit = "" # empty string and pareto are the same
 
+    val_type = f"theta{str(theta)}unit{norm}"
+  
 
-
-
-
-
-    val_type = "theta1unitrange" #adjust valuation name here
-
-    filenames = ["rdata/ord_n5_theta1.txt", "rdata/ord_n10_theta1.txt", "rdata/ord_n20_theta1.txt", "rdata/ord_n50_theta1.txt", "rdata/ord_n100_theta1.txt"] #adjust input files here
     sizes = [5,10,20,50,100]
 
-    for j in range(len(sizes)):
-        print('current n value is', sizes[j])
+    for size in [5,10,20,50,100]:
+        filename = f"rdata/ord_n{size}_theta{str(theta)}.txt"
+        print('current n value is', size)
 
-        G_list = instantiator.generate_list_from_ordinal_preferences(filenames[j], sizes[j], 100, "unit_range") #adjust unit-range vs unit-sum here
+        G_list = instantiator.generate_list_from_ordinal_preferences(filename, size, 100, "unit_"+norm) #adjust unit-range vs unit-sum here
         val_index = instantiator.index - 100
 
         for i in range(len(G_list)):
             G = G_list[i]
 
             #adjust experiments here
-            sim.serial_dictatorship_experiment(val_index,val_type,G)
-            sim.top_trading_cycles_experiment(val_index,val_type,G)
-            sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,1,prio='pareto')
-            sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,0.1,prio='pareto')
-            sim.modified_max_matching_experiment(val_index,val_type,G,prio='pareto')
+            # sim.serial_dictatorship_experiment(val_index,val_type,G)
+            # sim.top_trading_cycles_experiment(val_index,val_type,G)
+            # sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,1,prio=crit)
+            # sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,0.1,prio=crit)
+            sim.modified_max_matching_experiment(val_index,val_type,G,prio=crit)
 
             val_index += 1
 
     # adjust naming conventions here
-    s = "ijcaidata/"+val_type+".csv"
-    s_instances = "ijcaidata/"+val_type+".csv"
+    s = "ijcaidata/"+val_type+crit+".csv"
+    s_instances = "ijcaidata/"+val_type+crit+"instances.csv"
 
     df = pd.DataFrame(sim.history)
     df.to_csv(s)
