@@ -284,9 +284,9 @@ if __name__=='__main__':
             #adjust experiments here
             # sim.serial_dictatorship_experiment(val_index,val_type,G)
             # sim.top_trading_cycles_experiment(val_index,val_type,G)
-            # sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,1,prio=crit)
-            # sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,0.1,prio=crit)
-            sim.modified_max_matching_experiment(val_index,val_type,G,prio=crit)
+            sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,1,prio=crit)
+            sim.epsilon_max_matching_prio_experiment(val_index,val_type,G,0.1,prio=crit)
+            # sim.modified_max_matching_experiment(val_index,val_type,G,prio=crit)
 
             val_index += 1
 

@@ -34,7 +34,7 @@ def rankify_graph(G, agent_cap=None):
 
 def priority_augment(G, prio='pareto', agent_cap=None):
     """Augments a weighted bipartite graph G to generate a new weighted biparitite graph H, such that G and H have identical vertices,
-    but solving the maximum weight matching problem on H will yield a matching in G that is maximum weight subject to either rank maximality,
+    but solving the maximum weight matching problem on H will yield a matching in G that is maximum weight subject to either pareto optimality, rank maximality,
     max-cardinality rank maximality, or fairness. The augmentation is based on the paper associated with this experiment.
 
     Args:
@@ -402,7 +402,7 @@ def top_trading_cycles(G, agent_cap=None, initial_matching=None):
 
 def compute_epsilon_bucket(x,n,epsilon):
     """Helper function which computes which bucket of (2/2+epsilon)^i x should be rounded to, given n agents. x must be in [0,1]; if x
-    is too small to be bucketed, 0 will be returned instead.
+    is too small to be bucketed, -1 will be returned instead.
     
     Args:
         x (float): Edge value in [0,1].
@@ -416,7 +416,7 @@ def compute_epsilon_bucket(x,n,epsilon):
     threshold = np.power(2/(2+epsilon), cap)
 
     if x < threshold:
-        return 0
+        return -1
     else:
         return np.ceil(np.log(x)/np.log(2/(2+epsilon)))
 
@@ -444,7 +444,7 @@ def epsilon_max_matching(G, epsilon, prio='pareto', agent_cap=None):
     for (u,v) in G.edges:
         new_weight = compute_epsilon_bucket(G[u][v]['weight'], agent_cap, epsilon)
 
-        if new_weight != 0:        
+        if new_weight != -1:        
             H.add_weighted_edges_from([(u,v, np.power((2/(2+epsilon)),new_weight))])
         else:
             H.add_weighted_edges_from([(u,v,np.finfo(np.float).eps)]) #hack to still include this edge in matching
