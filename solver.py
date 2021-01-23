@@ -3,6 +3,7 @@
 import networkx as nx
 import numpy as np
 import pandas as pd
+import random
 
 
 def rankify_graph(G, agent_cap=None):
@@ -172,7 +173,7 @@ def rank_maximal_allocation(G,agent_cap=None):
     return S
 
 
-def serial_dictatorship(G, agent_cap=None, need_ranks=True):
+def serial_dictatorship(G, agent_cap=None, need_ranks=True, deterministic=False):
     """ Returns a matching of G created by running serial dictatorship. G is assumed to be a weighted bipartite graph.
 
     Args:
@@ -181,6 +182,8 @@ def serial_dictatorship(G, agent_cap=None, need_ranks=True):
         agent_cap (int): The numerical label of the last agent; that is, if agents are enumerated by nodes 1 through i, then agent_cap is equal to i. Defaults
         to len(G.nodes)//2 if not given.
         need_ranks (bool): whether or not the G already has ranks assigned to the edges. Defaults to True.
+        deterministic (bool): whether or not the agents should pick in the order of agent 1 to agent n, or if this list should be randomly permuted. Defaults to
+        False.
 
     Returns:
         A set of 2-tuples representing the matching found by serial dictatorship.
@@ -194,7 +197,12 @@ def serial_dictatorship(G, agent_cap=None, need_ranks=True):
 
     M = set()
 
-    for i in range(1, agent_cap+1):
+    agents = list(range(1,agent_cap+1))
+    
+    if not deterministic:
+        random.shuffle(agents)
+
+    for i in agents:
         if i in H.nodes and len(H.adj[i]) != 0 :
             most_preferred = min(H.adj[i].keys(), key = lambda k: H.adj[i][k]['rank'])
             M.add((i, most_preferred))
@@ -374,7 +382,11 @@ def top_trading_cycles(G, agent_cap=None, initial_matching=None):
         agent_cap = len(G.nodes)//2
         
     if initial_matching is None:
-        initial_matching = set([(i+1, i+agent_cap+1) for i in range(agent_cap)])
+        agents = list(range(1,agent_cap+1))
+        goods = list(range(agent_cap+1, 2*agent_cap+1))
+        random.shuffle(goods)
+
+        initial_matching = set([(agents[i], goods[i]) for i in range(len(agents))])
         
     agents_to_goods_d = dict(initial_matching)
     goods_to_agents_d = dict([(b,a) for (a,b) in initial_matching])

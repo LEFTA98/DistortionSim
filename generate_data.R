@@ -1,4 +1,5 @@
 require(PerMallows)
+require(gtools)
 
 setwd("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/rdata")
 
@@ -14,13 +15,19 @@ set.seed(42)
 
 for(k in 1:length(theta_vals)){
 	for(i in 1:length(trial_sizes)){
+
+		mean <- 1:trial_sizes[i]
+		mean <- permute(mean)
             
-		A = rmm(n=trial_sizes[i], sigma0=1:trial_sizes[i],theta = theta_vals[k])
+		A = rmm(n=trial_sizes[i], sigma0=mean,theta = theta_vals[k])
 		write.table(A,file=file_names[k,i], append=FALSE, sep = ",", row.names=FALSE, col.names = FALSE)
 
 			for(j in 1:(num_iterations-1)){
 
-				A = rmm(n=trial_sizes[i], sigma0=1:trial_sizes[i],theta = theta_vals[k])
+				mean <- 1:trial_sizes[i]
+				mean <- permute(mean)
+
+				A = rmm(n=trial_sizes[i], sigma0=mean,theta = theta_vals[k])
 		            write.table(A,file=file_names[k,i], append=TRUE, sep = ",", row.names=FALSE, col.names = FALSE)
 		}
 	}
