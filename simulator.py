@@ -261,10 +261,11 @@ if __name__=='__main__':
     # df = pd.Series(sim.instance_generator.history)
     # df.to_csv("C:/Users/sqshy/Desktop/University/Fifth Year/research/DistortionSim/updateddata/unit_range_arrow_-1_pareto.csv") #adjust instance data path name here
 
+    #still need to modify which experiments to run from below
     #parameters for directly modifying arguments from file
-    # theta=5
-    # norm = "sum"
-    # crit = "" # empty string and pareto are the same
+    theta=0.2
+    norm = "range"
+    crit = "" # empty string and pareto are the same
 
     #argparse parameters
     parser = argparse.ArgumentParser("DistortionSim")
@@ -279,6 +280,8 @@ if __name__=='__main__':
     theta = args.theta
     norm = args.norm
     crit = args.crit
+
+    #end parameter differences
 
     val_type = f"theta{theta}unit{norm}"
   
